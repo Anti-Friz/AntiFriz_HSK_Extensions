@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo62Blunderbuss</defName>
+		<label>.62 Blunderbuss Ball</label>
+		<parent>AmmoGonne</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_62Blunderbuss</defName>
+		<label>.62 Blunderbuss Ball</label>
+		<ammoTypes>
+			<Ammo_62Blunderbuss_Buck>Bullet_62Blunderbuss_Buck</Ammo_62Blunderbuss_Buck>
+      <Ammo_62Blunderbuss_Bird>Bullet_62Blunderbuss_Bird</Ammo_62Blunderbuss_Bird>
+    </ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="62BlunderbussBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Round bullet with powder, wrapped in paper.</description>
+		<statBases>
+			<Mass>0.06</Mass>
+			<Bulk>0.06</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo62Blunderbuss</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.45</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="62BlunderbussBase">
+		<defName>Ammo_62Blunderbuss_Buck</defName>
+		<label>.62 Blunderbuss Buck and Ball</label>
+		<graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.2</MarketValue>
+		</statBases>
+		<ammoClass>BuckandBall</ammoClass>
+		<cookOffProjectile>Bullet_62Blunderbuss_Lead</cookOffProjectile>
+	</ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="62BlunderbussBase">
+    <defName>Ammo_62Blunderbuss_Bird</defName>
+    <label>.62 Blunderbuss Bird and Ball</label>
+    <graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.2</MarketValue>
+    </statBases>
+    <ammoClass>BuckandBall</ammoClass>
+    <cookOffProjectile>Bullet_62Blunderbuss_Bird</cookOffProjectile>
+  </ThingDef>
+  
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base62BlunderbussBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>125</speed>
+			<dropsCasings>False</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base62BlunderbussBullet">
+		<defName>Bullet_62Blunderbuss_Buck</defName>
+		<label>.62 Blunderbuss Buck and Ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<pelletCount>7</pelletCount>
+			<!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
+      <armorPenetrationSharp>3</armorPenetrationSharp>
+      <armorPenetrationBlunt>3.14</armorPenetrationBlunt>
+      <spreadMult>17.8</spreadMult>
+		</projectile>
+	</ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base62BlunderbussBullet">
+    <defName>Bullet_62Blunderbuss_Bird</defName>
+    <label>.62 Blunderbuss Bird and Ball</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>6</damageAmountBase>
+      <pelletCount>20</pelletCount>
+      <!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
+      <armorPenetrationSharp>3</armorPenetrationSharp>
+      <armorPenetrationBlunt>3.14</armorPenetrationBlunt>
+      <spreadMult>17.8</spreadMult>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+	<!-- BUCK AND BALL FORGE-->
+	<RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+		<defName>MakeAmmo_62Blunderbuss_Buck</defName>
+		<label>make .62 Blunderbuss Buck and Ball x25</label>
+		<description>Craft 25 .62 Blunderbuss Buck and Ball rounds.</description>
+		<jobString>Making .62 Blunderbuss Buck and Ball rounds.</jobString>
+		<workAmount>450</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Powder</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_62Blunderbuss_Buck>25</Ammo_62Blunderbuss_Buck>
+		</products>
+		<skillRequirements>
+			<Crafting>1</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Muskets_B1</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+  
+  <!-- BUCK AND BALL FORGE-->
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_62Blunderbuss_Buck</defName>
+    <label>make .62 Blunderbuss Buck and Ball x25</label>
+    <description>Craft 25 .62 Blunderbuss Buck and Ball rounds.</description>
+    <jobString>Making .62 Blunderbuss Buck and Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+            <li>USLDBar</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Powder</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_62Blunderbuss_Bird>25</Ammo_62Blunderbuss_Bird>
+    </products>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+</Defs>

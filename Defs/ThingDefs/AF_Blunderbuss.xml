@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ==================THING============================ -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>AF_Blunderbuss</defName>
+        <label>Blunderbuss, .62 caliber</label>
+        <description>A short-barreled shotgun with a muzzle that widens from back to front; the muzzle is 1.25 caliber. This doesn’t much affect performance, but very intimidation against anyone it’s pointed at! \nCaliber: .62</description>
+        <graphicData>
+            <texPath>AFBlunderbuss</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <thingCategories>
+          <li>Musket</li>
+        </thingCategories>
+        <weaponTags>
+          <li>Rifles</li>
+        </weaponTags>
+        <statBases>
+          <MarketValue>365</MarketValue>
+          <SightsEfficiency>0.4</SightsEfficiency>
+          <ShotSpread>1.75</ShotSpread>
+          <SwayFactor>1</SwayFactor>
+          <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+          <Bulk>10</Bulk>
+          <Mass>11.2</Mass>
+          <WorkToMake>6000</WorkToMake>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_87Blunderbuss_Lead</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>32</range>
+                <soundCast>BrownBess</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>15</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>3</reloadTime>
+                <ammoSet>AmmoSet_87Blunderbuss</ammoSet>
+            </li>
+        </comps>
+      <modExtensions>
+        <li Class="CombatExtended.GunDrawExtension">
+          <DrawSize>1.6,1.6</DrawSize>
+        </li>
+      </modExtensions>
+        <smeltProducts>
+          <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+
+
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_Blunderbuss</defName>
+    <label>Build Blunderbuss</label>
+    <description>Builds a short-barreled shotgun with a muzzle that widens from back to front .\nCaliber: .62 Blunderbuss</description>
+    <jobString>Building Blunderbuss.</jobString>
+    <workAmount>6000</workAmount>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>38</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>18</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_Blunderbuss>1</AF_Blunderbuss>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentMedieval</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+  </RecipeDef>
+</Defs>

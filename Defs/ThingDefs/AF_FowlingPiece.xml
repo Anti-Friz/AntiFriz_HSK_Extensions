@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ==================FowlingPieceSingle============================ -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>AF_FowlingPieceSingle</defName>
+        <label>FowlingPiece, 12G caliber</label>
+        <description>A very long-barreled shotgun designed for hunting, customarily loaded with birdshot. \nCaliber: 12G</description>
+        <graphicData>
+            <texPath>AFFowlingPiece</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <thingCategories>
+          <li>Musket</li>
+        </thingCategories>
+        <weaponTags>
+          <li>Rifles</li>
+        </weaponTags>
+        <statBases>
+          <MarketValue>370</MarketValue>
+          <SightsEfficiency>0.3</SightsEfficiency>
+          <ShotSpread>2</ShotSpread>
+          <SwayFactor>1</SwayFactor>
+          <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+          <Bulk>10</Bulk>
+          <Mass>6.9</Mass>
+          <WorkToMake>6000</WorkToMake>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_87FowlingPiece_Lead</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>23</range>
+                <soundCast>Pistolet</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>AmmoSet_87FowlingPiece</ammoSet>
+            </li>
+        </comps>
+      <modExtensions>
+        <li Class="CombatExtended.GunDrawExtension">
+          <DrawSize>1.6,1.6</DrawSize>
+        </li>
+      </modExtensions>
+        <smeltProducts>
+          <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+  <!-- ==================FowlingPieceDouble============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_FowlingPieceDouble</defName>
+    <label>FowlingPiece, 12G caliber</label>
+    <description>A very long double barreled shotgun designed for hunting, customarily loaded with birdshot. \nCaliber: 12G</description>
+    <graphicData>
+      <texPath>AFFowlingPiece</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>Musket</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>370</MarketValue>
+      <SightsEfficiency>0.3</SightsEfficiency>
+      <ShotSpread>2</ShotSpread>
+      <SwayFactor>1</SwayFactor>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+      <Bulk>10</Bulk>
+      <Mass>6.9</Mass>
+      <WorkToMake>6000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_87FowlingPiece_Lead</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>23</range>
+        <soundCast>Pistolet</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_87FowlingPiece</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.6,1.6</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <Weapon_Parts>1</Weapon_Parts>
+    </smeltProducts>
+  </ThingDef>
+
+  <!-- ====================RECIPE_FowlingPieceSingle========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_FowlingPiece</defName>
+    <label>Build FowlingPiece</label>
+    <description>Builds a miniature cannon, cast in bronze, mounted on the end of a wooden pole. .\nCaliber: 12G FowlingPiece</description>
+    <jobString>Building FowlingPiece.</jobString>
+    <workAmount>6000</workAmount>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_FowlingPiece>1</AF_FowlingPiece>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentMedieval</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+  </RecipeDef>
+  <!-- ====================RECIPE_FowlingPieceSingle========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_FowlingPiece</defName>
+    <label>Build FowlingPiece</label>
+    <description>Builds a miniature cannon, cast in bronze, mounted on the end of a wooden pole. .\nCaliber: 12G FowlingPiece</description>
+    <jobString>Building FowlingPiece.</jobString>
+    <workAmount>6000</workAmount>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_FowlingPiece>1</AF_FowlingPiece>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentMedieval</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+  </RecipeDef>
+</Defs>

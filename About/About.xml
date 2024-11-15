@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>AntiFriz Extensions SK</name>
+	<author>AntiFriz</author>
+	<packageId>AntiFriz.SK</packageId>
+	<supportedVersions>
+        <li>1.5</li>
+	</supportedVersions>
+	<description>This mod add something.</description>
+    <url>https://github.com/pacas/RW-Pacas-HSK-Patches</url>
+</ModMetaData>

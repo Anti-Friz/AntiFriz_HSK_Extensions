@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoIronFireLance</defName>
+		<label>Firelance powder</label>
+		<parent>Firelance powder</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_IronFireLance</defName>
+		<label>Firelance powder</label>
+		<ammoTypes>
+      <Ammo_IronFireLance_RocksPowder>Bullet_IronFireLance_RocksPowder</Ammo_IronFireLance_RocksPowder>
+    </ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="IronFireLanceBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Powder and rocks, wrapped in paper.</description>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Bulk>0.05</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoIronFireLance</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.45</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="IronFireLanceBase">
+		<defName>Ammo_IronFireLance_RocksPowder</defName>
+		<label>Powder and rocks</label>
+		<graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ammoClass>DragonsBreath</ammoClass>
+		<cookOffProjectile>Bullet_IronFireLance_RocksPowder</cookOffProjectile>
+	</ThingDef>
+	
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseIronFireLance" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Mote/FireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>1</damageAmountBase>
+      <pelletCount>24</pelletCount>
+      <damageDef>PrometheumFlame</damageDef>
+      <!-- <armorPenetrationBase>0.1</armorPenetrationBase> -->
+      <armorPenetrationSharp>0</armorPenetrationSharp>
+      <armorPenetrationBlunt>0</armorPenetrationBlunt>
+      <spreadMult>60.4</spreadMult>
+      <speed>100</speed>
+      <castShadow>false</castShadow>
+			<dropsCasings>False</dropsCasings>
+		</projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ProjectileFleck">
+        <FleckDatas>
+          <li>
+            <fleck>Fleck_CEFlamethrowerTrail</fleck>
+            <emissionsPerTick>1.4</emissionsPerTick>
+            <flecksPerEmission>1.4</flecksPerEmission>
+            <scale>3</scale>
+          </li>
+          <li>
+            <fleck>Fleck_CEFlamethrowerSmokeTrail</fleck>
+            <emissionsPerTick>1.4</emissionsPerTick>
+            <flecksPerEmission>1</flecksPerEmission>
+            <scale>3</scale>
+          </li>
+        </FleckDatas>
+      </li>
+    </comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseIronFireLance">
+		<defName>Bullet_IronFireLance_RocksPowder</defName>
+		<label>Powder and rocks</label>
+	</ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <!-- BALL FORGE-->
+	<RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+		<defName>MakeAmmo_IronFireLance_RocksPowder</defName>
+		<label>make Iron FireLance Rocks Powder x25</label>
+		<description>Craft 25 Iron FireLance Rocks Powder, and measure out powder charge.</description>
+		<jobString>Making Iron FireLance Rocks Powder.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CrushedStone</li>
+					</thingDefs>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SerpentinePowder</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>CrushedStone</li>
+			</categories>
+			<thingDefs>
+				<li>SerpentinePowder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+      <Ammo_IronFireLance_RocksPowder>25</Ammo_IronFireLance_RocksPowder>
+		</products>
+		<skillRequirements>
+			<Crafting>1</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>PreMuskets_B1</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+
+</Defs>
