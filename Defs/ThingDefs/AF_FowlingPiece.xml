@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_FowlingPiece</defName>
+    <label>12 Gauge</label>
+    <ammoTypes>
+      <Ammo_Gauge_Salt>Bullet_Gauge_Salt</Ammo_Gauge_Salt>
+      <Ammo_10Gauge_Buck>Bullet_10Gauge_Buck</Ammo_10Gauge_Buck>
+      <Ammo_12Gauge_Magnum>Bullet_12Gauge_Magnum</Ammo_12Gauge_Magnum>
+      <Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
+      <Ammo_12Gauge_Bird>Bullet_12Gauge_Bird</Ammo_12Gauge_Bird>
+      <Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
+      <Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
+      <Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  
     <!-- ==================FowlingPieceSingle============================ -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>AF_FowlingPieceSingle</defName>
@@ -30,7 +45,7 @@
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_87FowlingPiece_Lead</defaultProjectile>
+                <defaultProjectile>Ammo_12Gauge_Bird</defaultProjectile>
                 <warmupTime>1.5</warmupTime>
                 <range>23</range>
                 <soundCast>Pistolet</soundCast>
@@ -45,7 +60,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
                 <reloadTime>6</reloadTime>
-                <ammoSet>AmmoSet_87FowlingPiece</ammoSet>
+                <ammoSet>AmmoSet_FowlingPiece</ammoSet>
             </li>
         </comps>
       <modExtensions>
@@ -87,7 +102,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_87FowlingPiece_Lead</defaultProjectile>
+        <defaultProjectile>Ammo_12Gauge_Bird</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>23</range>
         <soundCast>Pistolet</soundCast>
@@ -102,7 +117,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_87FowlingPiece</ammoSet>
+        <ammoSet>AmmoSet_FowlingPiece</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -166,7 +181,7 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
-    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
   </RecipeDef>
   <!-- ====================RECIPE_FowlingPieceSingle========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -219,6 +234,6 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
-    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
   </RecipeDef>
 </Defs>

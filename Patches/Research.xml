@@ -24,7 +24,7 @@
           <value>
             <ResearchProjectDef ParentName="MedievalBase">
               <defName>PreMuskets_B1</defName>
-              <label>MedievalFirearm_B1</label>
+              <label>Medieval Firearm</label>
               <description>Learn to make a very early firearms, like gonne or firelance.</description>
               <baseCost>480</baseCost>
               <techLevel>Medieval</techLevel>
@@ -40,6 +40,51 @@
             </ResearchProjectDef>
           </value>
         </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef ParentName="MedievalBase">
+              <defName>AF_Matchlocks</defName>
+              <label>Matchlocks</label>
+              <description>1</description>
+              <baseCost>480</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>Muskets_B1</li>
+              </prerequisites>
+              <researchViewX>4.00</researchViewX>
+              <researchViewY>32.00</researchViewY>
+              <tab>Weapon_SK</tab>
+              <modExtensions>
+                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+              </modExtensions>
+            </ResearchProjectDef>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef ParentName="MedievalBase">
+              <defName>AF_Wheellocks</defName>
+              <label>Wheellocks</label>
+              <description>1</description>
+              <baseCost>500</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>Muskets_B1</li>
+              </prerequisites>
+              <researchViewX>4.00</researchViewX>
+              <researchViewY>33.00</researchViewY>
+              <tab>Weapon_SK</tab>
+              <modExtensions>
+                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+              </modExtensions>
+            </ResearchProjectDef>
+          </value>
+        </li>
+    
       </operations>
     </match>
   </Operation>
