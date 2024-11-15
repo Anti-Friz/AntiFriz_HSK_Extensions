@@ -10,7 +10,7 @@
       <operations>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewX</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/researchViewX</xpath>
           <!-- replace prerequisite of Muskets_B1 -->
           <value>
             <prerequisites>
