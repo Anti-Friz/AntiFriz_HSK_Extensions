@@ -4,7 +4,7 @@
 	<ThingCategoryDef>
 		<defName>AmmoIronFireLance</defName>
 		<label>Firelance powder</label>
-		<parent>Firelance powder</parent>
+		<parent>AmmoMusket</parent>
 		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
 	</ThingCategoryDef>
 	

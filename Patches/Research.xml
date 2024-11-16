@@ -24,7 +24,7 @@
           <value>
             <ResearchProjectDef ParentName="MedievalBase">
               <defName>PreMuskets_B1</defName>
-              <label>Medieval Firearm</label>
+              <label>Early Experiments</label>
               <description>Learn to make a very early firearms, like gonne or firelance.</description>
               <baseCost>480</baseCost>
               <techLevel>Medieval</techLevel>
@@ -84,7 +84,50 @@
             </ResearchProjectDef>
           </value>
         </li>
-    
+        
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef ParentName="MedievalBase">
+              <defName>AF_Matchlocks_Rifles</defName>
+              <label>Matchlocks</label>
+              <description>1</description>
+              <baseCost>220</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>Muskets_B2</li>
+              </prerequisites>
+              <researchViewX>5.00</researchViewX>
+              <researchViewY>32.00</researchViewY>
+              <tab>Weapon_SK</tab>
+              <modExtensions>
+                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+              </modExtensions>
+            </ResearchProjectDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef ParentName="MedievalBase">
+              <defName>AF_Wheellocks_Rifles</defName>
+              <label>Wheellocks</label>
+              <description>1</description>
+              <baseCost>240</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>Muskets_B2</li>
+              </prerequisites>
+              <researchViewX>5.00</researchViewX>
+              <researchViewY>33.00</researchViewY>
+              <tab>Weapon_SK</tab>
+              <modExtensions>
+                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+              </modExtensions>
+            </ResearchProjectDef>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

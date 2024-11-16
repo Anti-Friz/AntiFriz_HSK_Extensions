@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo60Сaliber</defName>
+		<label>.60 caliber Ball</label>
+		<parent>AmmoMusket</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_60Сaliber</defName>
+		<label>.60 caliber Ball</label>
+		<ammoTypes>
+			<Ammo_60Сaliber_Lead>Bullet_60Сaliber_Lead</Ammo_60Сaliber_Lead>
+    </ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="60СaliberBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Round bullet with powder, wrapped in paper.</description>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Bulk>0.03</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo60Сaliber</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.45</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="60СaliberBase">
+		<defName>Ammo_60Сaliber_Lead</defName>
+		<label>.60 caliber Ball</label>
+		<graphicData>
+			<texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.2</MarketValue>
+		</statBases>
+		<ammoClass>LeadBall</ammoClass>
+		<cookOffProjectile>Bullet_60Сaliber_Lead</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base60СaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>100</speed>
+			<dropsCasings>False</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base60СaliberBullet">
+		<defName>Bullet_60Сaliber_Lead</defName>
+		<label>.60 caliber Ball (Lead)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>18</damageAmountBase>
+			<!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
+			<armorPenetrationSharp>5.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>55</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <!-- BALL FORGE-->
+	<RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+		<defName>MakeAmmo_60Сaliber_Lead</defName>
+		<label>make .60 caliber Ball x25</label>
+		<description>Craft 25 .60 caliber Ball rounds, and measure out powder charge.</description>
+		<jobString>Making .60 caliber Ball rounds.</jobString>
+		<workAmount>450</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LeadBar</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SerpentinePowder</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>SerpentinePowder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_60Сaliber_Lead>25</Ammo_60Сaliber_Lead>
+		</products>
+		<skillRequirements>
+			<Crafting>1</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>AF_Matchlocks</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+	
+</Defs>
