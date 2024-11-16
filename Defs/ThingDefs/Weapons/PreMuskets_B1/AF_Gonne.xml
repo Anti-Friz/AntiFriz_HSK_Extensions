@@ -2,11 +2,11 @@
 <Defs>
     <!-- ==================THING============================ -->
     <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>AF_FiveGonne</defName>
-        <label>Five Eyed Gonne, .87 caliber</label>
-        <description>Miniature cannon, cast in bronze, mounted on the end of a wooden pole, that goes about as far as possible toward repeated fire. Each barrel have touchholes for five charges, which are set off starting from the far end; \nCaliber: .87</description>
+        <defName>AF_Gonne</defName>
+        <label>Gonne, .87 caliber</label>
+        <description>Miniature cannon, cast in bronze, mounted on the end of a wooden pole. \nCaliber: .87</description>
         <graphicData>
-            <texPath>AFTenEyedGonne</texPath>
+            <texPath>AFGonne</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,22 +17,22 @@
           <li>Rifles</li>
         </weaponTags>
         <statBases>
-          <MarketValue>350</MarketValue>
-          <SightsEfficiency>0.2</SightsEfficiency>
+          <MarketValue>200</MarketValue>
+          <SightsEfficiency>0.3</SightsEfficiency>
           <ShotSpread>2</ShotSpread>
           <SwayFactor>1</SwayFactor>
-          <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+          <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
           <Bulk>10</Bulk>
-          <Mass>22</Mass>
-          <WorkToMake>8000</WorkToMake>
+          <Mass>6.9</Mass>
+          <WorkToMake>6000</WorkToMake>
         </statBases>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_87Gonne_Lead</defaultProjectile>
-                <warmupTime>1.3</warmupTime>
-                <range>20</range>
+                <warmupTime>1.2</warmupTime>
+                <range>23</range>
                 <soundCast>Pistolet</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -43,7 +43,7 @@
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>5</magazineSize>
+                <magazineSize>1</magazineSize>
                 <reloadTime>6</reloadTime>
                 <ammoSet>AmmoSet_87Gonne</ammoSet>
             </li>
@@ -65,7 +65,7 @@
     <label>Build Gonne</label>
     <description>Builds a miniature cannon, cast in bronze, mounted on the end of a wooden pole. .\nCaliber: .87 Gonne</description>
     <jobString>Building Gonne.</jobString>
-    <workAmount>8000</workAmount>
+    <workAmount>6000</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
@@ -76,7 +76,7 @@
             <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -84,7 +84,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>72</count>
+        <count>16</count>
       </li>
       <li>
         <filter>
@@ -96,7 +96,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_FiveGonne>1</AF_FiveGonne>
+      <AF_Gonne>1</AF_Gonne>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ==================THING============================ -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>AF_BreechloadingCarbine</defName>
+        <label>Breechloading Carbine, .54 caliber</label>
+        <description>The rifled barrel is short but the construction is substantial. \nCaliber: .54</description>
+        <graphicData>
+            <texPath>AFBreechloadingCarbine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <thingCategories>
+          <li>Musket</li>
+        </thingCategories>
+        <weaponTags>
+          <li>Rifles</li>
+        </weaponTags>
+        <statBases>
+          <MarketValue>270</MarketValue>
+          <SightsEfficiency>0.95</SightsEfficiency>
+          <ShotSpread>0.5</ShotSpread>
+          <SwayFactor>1.4</SwayFactor>
+          <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+          <Bulk>10</Bulk>
+          <Mass>9.3</Mass>
+          <WorkToMake>8000</WorkToMake>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_54Сaliber_Lead</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>55</range>
+                <soundCast>Springfield</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>1.5</reloadTime>
+                <ammoSet>AmmoSet_54Сaliber</ammoSet>
+            </li>
+        </comps>
+      <modExtensions>
+        <li Class="CombatExtended.GunDrawExtension">
+          <DrawSize>1.4,1.4</DrawSize>
+        </li>
+      </modExtensions>
+        <smeltProducts>
+          <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+
+
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_BreechloadingCarbine</defName>
+    <label>Build Breechloading Carbine</label>
+    <description>Breechloading Carbine. .\nCaliber: .54</description>
+    <jobString>Building Gonne.</jobString>
+    <workAmount>8000</workAmount>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>18</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_BreechloadingCarbine>1</AF_BreechloadingCarbine>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Matchlocks_Rifles</researchPrerequisite>
+  </RecipeDef>
+</Defs>

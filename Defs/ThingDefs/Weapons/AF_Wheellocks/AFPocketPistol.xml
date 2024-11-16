@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>AF_PocketPistol</defName>
+        <label>Pocket Pistol</label>
+        <description>A small pistol with a very short barrel – just over 4” long – designed to be concealed under clothing. \nCaliber: .33</description>
+        <graphicData>
+            <texPath>AFPocketPistol</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>BPInteract</soundInteract>
+        <statBases>
+            <MarketValue>190</MarketValue>
+            <SightsEfficiency>0.2</SightsEfficiency>
+            <ShotSpread>2.5</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+            <Bulk>1</Bulk>
+            <Mass>0.75</Mass>
+            <WorkToMake>5500</WorkToMake>
+			<MaxHitPoints>15</MaxHitPoints>
+			<SellPriceFactor>0.6</SellPriceFactor>
+        </statBases>
+        <weaponTags>
+			<li>Musket</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_33Сaliber_Lead</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>10</range>
+                <soundCast>Pistolet</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2.5</reloadTime>
+                <ammoSet>AmmoSet_33Сaliber</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts Inherit="false">
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- RECIPE -->
+	
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildGun_AF_PocketPistol</defName>
+		<label>Build Pocket Pistol</label>
+		<description>Tantsutsu.</description>
+		<jobString>Building Pocket Pistol.</jobString>
+		<workAmount>6000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentMedieval</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>7</count>
+			</li>
+		</ingredients>
+		<products>
+      <AF_PocketPistol>1</AF_PocketPistol>
+  </products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentMedieval</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>AF_Wheellocks</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+	
+</Defs>

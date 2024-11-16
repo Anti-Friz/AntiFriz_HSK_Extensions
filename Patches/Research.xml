@@ -31,8 +31,8 @@
               <prerequisites>
                 <li>GunPowderTech</li>
               </prerequisites>
-              <researchViewX>4.00</researchViewX>
-              <researchViewY>34.00</researchViewY>
+              <researchViewX>1.00</researchViewX>
+              <researchViewY>100.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -53,8 +53,8 @@
               <prerequisites>
                 <li>Muskets_B1</li>
               </prerequisites>
-              <researchViewX>4.00</researchViewX>
-              <researchViewY>32.00</researchViewY>
+              <researchViewX>2.00</researchViewX>
+              <researchViewY>100.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -75,8 +75,8 @@
               <prerequisites>
                 <li>Muskets_B1</li>
               </prerequisites>
-              <researchViewX>4.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
+              <researchViewX>3.00</researchViewX>
+              <researchViewY>100.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -97,8 +97,8 @@
               <prerequisites>
                 <li>Muskets_B2</li>
               </prerequisites>
-              <researchViewX>5.00</researchViewX>
-              <researchViewY>32.00</researchViewY>
+              <researchViewX>4.00</researchViewX>
+              <researchViewY>100.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -120,7 +120,7 @@
                 <li>Muskets_B2</li>
               </prerequisites>
               <researchViewX>5.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
+              <researchViewY>100.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>

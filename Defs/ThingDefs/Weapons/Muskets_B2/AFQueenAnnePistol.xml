@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>AF_QueenAnnePistol</defName>
+        <label>Queen Anne Pistol</label>
+        <description>The 8” barrel is “brass” (meaning cast bronze), and screws into the combined lock and grip. To reload, the barrel must be unscrewed, but this allows use of bullets with minimal windage, improving accuracy. \nCaliber: .50</description>
+        <graphicData>
+            <texPath>AFQueenAnnePistol</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>BPInteract</soundInteract>
+        <statBases>
+            <MarketValue>135</MarketValue>
+            <SightsEfficiency>0.65</SightsEfficiency>
+            <ShotSpread>1.75</ShotSpread>
+            <SwayFactor>1.5</SwayFactor>
+            <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+            <Bulk>3</Bulk>
+            <Mass>2.4</Mass>
+            <WorkToMake>6500</WorkToMake>
+			<MaxHitPoints>75</MaxHitPoints>
+			<SellPriceFactor>0.6</SellPriceFactor>
+        </statBases>
+        <weaponTags>
+			<li>Musket</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_50Сaliber_Lead</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>20</range>
+                <soundCast>Pistolet</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>5</reloadTime>
+                <ammoSet>AmmoSet_50Сaliber</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts Inherit="false">
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- RECIPE -->
+	
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildGun_AFQueenAnnePistol</defName>
+		<label>Build Queen Anne Pistol</label>
+		<description>Queen Anne Pistol.</description>
+		<jobString>Building Queen Anne pistol.</jobString>
+		<workAmount>8000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentMedieval</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>15</count>
+      </li>
+		</ingredients>
+		<products>
+      <AF_QueenAnnePistol>1</AF_QueenAnnePistol>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentMedieval</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+        <li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Muskets_B2</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+	
+</Defs>

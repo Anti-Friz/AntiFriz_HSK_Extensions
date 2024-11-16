@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>AF_Petronel</defName>
+        <label>Petronel</label>
+        <description>Cavalry weapon with a pistol-like grip, used with the grip resting against the breastplate of a cuirass, and often held two-handed.. \nCaliber: .60</description>
+        <graphicData>
+            <texPath>AFPetronel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>BPInteract</soundInteract>
+        <statBases>
+            <MarketValue>280</MarketValue>
+            <SightsEfficiency>0.45</SightsEfficiency>
+            <ShotSpread>2</ShotSpread>
+            <SwayFactor>1.5</SwayFactor>
+            <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+            <Bulk>5</Bulk>
+            <Mass>7.75</Mass>
+            <WorkToMake>5500</WorkToMake>
+			<MaxHitPoints>45</MaxHitPoints>
+			<SellPriceFactor>0.6</SellPriceFactor>
+        </statBases>
+        <weaponTags>
+			<li>Musket</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_60Сaliber_Lead</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>30</range>
+                <soundCast>Pistolet</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>5</reloadTime>
+                <ammoSet>AmmoSet_60Сaliber</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts Inherit="false">
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- RECIPE -->
+	
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildGun_AF_Petronel</defName>
+		<label>Build Petronel</label>
+		<description>Petronel.</description>
+		<jobString>Building Petronel pistol.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentMedieval</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+      <AF_Petronel>1</AF_Petronel>
+  </products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentMedieval</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>AF_Wheellocks</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+	
+</Defs>

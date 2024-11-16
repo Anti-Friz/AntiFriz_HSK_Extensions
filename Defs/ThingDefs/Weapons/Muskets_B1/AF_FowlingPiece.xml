@@ -200,7 +200,7 @@
             <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -208,7 +208,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>16</count>
+        <count>26</count>
       </li>
       <li>
         <filter>
@@ -220,7 +220,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_FowlingPiece>1</AF_FowlingPiece>
+      <AF_FowlingPieceDouble>1</AF_FowlingPieceDouble>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

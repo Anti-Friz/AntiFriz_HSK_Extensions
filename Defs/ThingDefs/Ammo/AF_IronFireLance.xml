@@ -77,7 +77,7 @@
       <!-- <armorPenetrationBase>0.1</armorPenetrationBase> -->
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
-      <spreadMult>60.4</spreadMult>
+      <spreadMult>1.4</spreadMult>
       <speed>100</speed>
       <castShadow>false</castShadow>
 			<dropsCasings>False</dropsCasings>

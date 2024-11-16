@@ -30,7 +30,7 @@
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_87Blunderbuss_Lead</defaultProjectile>
+                <defaultProjectile>Bullet_62Blunderbuss_Buck</defaultProjectile>
                 <warmupTime>1.5</warmupTime>
                 <range>32</range>
                 <soundCast>BrownBess</soundCast>
@@ -45,7 +45,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
                 <reloadTime>3</reloadTime>
-                <ammoSet>AmmoSet_87Blunderbuss</ammoSet>
+                <ammoSet>AmmoSet_62Blunderbuss</ammoSet>
             </li>
         </comps>
       <modExtensions>
