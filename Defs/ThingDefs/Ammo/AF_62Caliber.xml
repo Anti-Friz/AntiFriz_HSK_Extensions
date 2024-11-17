@@ -23,7 +23,7 @@
     <defName>AmmoSet_62Caliber</defName>
     <label>.62 Caliber</label>
     <ammoTypes>
-      <Ammo_62BCaliber_Lead>Bullet_62BCaliber_Lead</Ammo_62BCaliber_Lead<>
+      <Ammo_62BCaliber_Lead>Bullet_62BCaliber_Lead</Ammo_62BCaliber_Lead>
       <Ammo_62Blunderbuss_Buck>Bullet_62Blunderbuss_Buck</Ammo_62Blunderbuss_Buck>
       <Ammo_62Blunderbuss_Bird>Bullet_62Blunderbuss_Bird</Ammo_62Blunderbuss_Bird>
     </ammoTypes>

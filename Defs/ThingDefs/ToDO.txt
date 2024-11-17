@@ -1,0 +1,8 @@
+﻿Not working:
+Research (Break Tree).
+	test 17.11.24
+Ammo for blunderbass.
+	test 17.11.24
+Errors in FireLance (but working great o.o)
+	test 17.11.24
+Things with "C" in Defs (try to select by double click)

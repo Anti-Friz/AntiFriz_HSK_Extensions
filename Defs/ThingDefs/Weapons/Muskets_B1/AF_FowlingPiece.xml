@@ -34,7 +34,7 @@
         <statBases>
           <MarketValue>370</MarketValue>
           <SightsEfficiency>0.3</SightsEfficiency>
-          <ShotSpread>2</ShotSpread>
+          <ShotSpread>1.2</ShotSpread>
           <SwayFactor>1</SwayFactor>
           <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
           <Bulk>10</Bulk>
@@ -91,7 +91,7 @@
     <statBases>
       <MarketValue>370</MarketValue>
       <SightsEfficiency>0.3</SightsEfficiency>
-      <ShotSpread>2</ShotSpread>
+      <ShotSpread>1.2</ShotSpread>
       <SwayFactor>1</SwayFactor>
       <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
       <Bulk>10</Bulk>

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingCategoryDef>
-    <defName>Ammo47Сaliber</defName>
+    <defName>Ammo47Caliber</defName>
     <label>.47 caliber Ball</label>
     <parent>AmmoMusket</parent>
     <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
@@ -11,16 +11,16 @@
   <!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_47Сaliber</defName>
+    <defName>AmmoSet_47Caliber</defName>
     <label>.47 caliber Ball</label>
     <ammoTypes>
-      <Ammo_47Сaliber_Lead>Bullet_47Сaliber_Lead</Ammo_47Сaliber_Lead>
+      <Ammo_47Caliber_Lead>Bullet_47Caliber_Lead</Ammo_47Caliber_Lead>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
   <!-- ==================== Ammo ========================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="47СaliberBase" ParentName="SmallAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="47CaliberBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Round bullet with powder, wrapped in paper.</description>
     <statBases>
       <Mass>0.025</Mass>
@@ -31,7 +31,7 @@
       <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <thingCategories>
-      <li>Ammo47Сaliber</li>
+      <li>Ammo47Caliber</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -47,8 +47,8 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="47СaliberBase">
-    <defName>Ammo_47Сaliber_Lead</defName>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="47CaliberBase">
+    <defName>Ammo_47Caliber_Lead</defName>
     <label>.47 caliber Ball</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
@@ -58,12 +58,12 @@
       <MarketValue>0.2</MarketValue>
     </statBases>
     <ammoClass>LeadBall</ammoClass>
-    <cookOffProjectile>Bullet_47Сaliber_Lead</cookOffProjectile>
+    <cookOffProjectile>Bullet_47Caliber_Lead</cookOffProjectile>
   </ThingDef>
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base47СaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base47CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -75,8 +75,8 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base47СaliberBullet">
-    <defName>Bullet_47Сaliber_Lead</defName>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base47CaliberBullet">
+    <defName>Bullet_47Caliber_Lead</defName>
     <label>.47 caliber Ball (Lead)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>10</damageAmountBase>
@@ -90,7 +90,7 @@
 
   <!-- BALL FORGE-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_47Сaliber_Lead</defName>
+    <defName>MakeAmmo_47Caliber_Lead</defName>
     <label>make .47 caliber Ball x25</label>
     <description>Craft 25 .47 caliber Ball rounds, and measure out powder charge.</description>
     <jobString>Making .47 caliber Ball rounds.</jobString>
@@ -122,7 +122,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_47Сaliber_Lead>25</Ammo_47Сaliber_Lead>
+      <Ammo_47Caliber_Lead>25</Ammo_47Caliber_Lead>
     </products>
     <skillRequirements>
       <Crafting>1</Crafting>

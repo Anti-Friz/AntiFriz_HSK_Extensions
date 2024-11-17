@@ -123,7 +123,7 @@
 						<li>CrushedStone</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
@@ -131,7 +131,7 @@
 						<li>SerpentinePowder</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

@@ -31,7 +31,7 @@
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_33Сaliber_Lead</defaultProjectile>
+                <defaultProjectile>Bullet_33Caliber_Lead</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>10</range>
                 <soundCast>Pistolet</soundCast>
@@ -46,7 +46,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
                 <reloadTime>2.5</reloadTime>
-                <ammoSet>AmmoSet_33Сaliber</ammoSet>
+                <ammoSet>AmmoSet_33Caliber</ammoSet>
             </li>
         </comps>
         <smeltProducts Inherit="false">

@@ -6,7 +6,7 @@
         <label>Jäger Rifle, .54 caliber</label>
         <description>The hunting rifled barrel is short but the construction is substantial. \nCaliber: .65</description>
         <graphicData>
-            <texPath>AFBreechloadingCarbine</texPath>
+            <texPath>AFJagerRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -30,7 +30,7 @@
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_54Сaliber_Lead</defaultProjectile>
+                <defaultProjectile>Bullet_65Caliber_Lead</defaultProjectile>
                 <warmupTime>1.2</warmupTime>
                 <range>65</range>
                 <soundCast>Springfield</soundCast>
@@ -45,7 +45,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
                 <reloadTime>6</reloadTime>
-                <ammoSet>AmmoSet_65Сaliber</ammoSet>
+                <ammoSet>AmmoSet_65Caliber</ammoSet>
             </li>
         </comps>
       <modExtensions>
