@@ -69,7 +69,7 @@
 			<MarketValue>0.2</MarketValue>
 		</statBases>
 		<ammoClass>BuckandBall</ammoClass>
-		<cookOffProjectile>Bullet_62Blunderbuss_Lead</cookOffProjectile>
+		<cookOffProjectile>Bullet_62Blunderbuss_Buck</cookOffProjectile>
 	</ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="62BlunderbussBase">

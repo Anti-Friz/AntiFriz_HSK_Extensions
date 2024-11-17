@@ -110,6 +110,7 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Matchlocks_Rifles</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <!--<researchPrerequisite>AF_Matchlocks_Rifles</researchPrerequisite>-->
   </RecipeDef>
 </Defs>

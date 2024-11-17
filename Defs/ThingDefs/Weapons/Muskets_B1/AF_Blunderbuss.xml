@@ -19,7 +19,7 @@
         <statBases>
           <MarketValue>365</MarketValue>
           <SightsEfficiency>0.4</SightsEfficiency>
-          <ShotSpread>1.75</ShotSpread>
+          <ShotSpread>0.7</ShotSpread>
           <SwayFactor>1</SwayFactor>
           <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
           <Bulk>10</Bulk>

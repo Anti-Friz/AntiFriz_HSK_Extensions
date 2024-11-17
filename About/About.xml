@@ -6,6 +6,21 @@
 	<supportedVersions>
         <li>1.5</li>
 	</supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>ceteam.combatextended</li>
+  </loadAfter>
 	<description>This mod add something.</description>
     <url>https://github.com/pacas/RW-Pacas-HSK-Patches</url>
 </ModMetaData>

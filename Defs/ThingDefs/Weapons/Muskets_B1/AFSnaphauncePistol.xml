@@ -106,7 +106,8 @@
 		<recipeUsers>
 			<li>FabricationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>Muskets_B1</researchPrerequisite> <!-- Smithing -->
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <!-- <researchPrerequisite>Muskets_B1</researchPrerequisite> Smithing -->
 	</RecipeDef>
 	
 </Defs>

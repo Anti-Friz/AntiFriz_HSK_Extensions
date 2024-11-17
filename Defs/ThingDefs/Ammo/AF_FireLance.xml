@@ -73,7 +73,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>1</damageAmountBase>
       <pelletCount>24</pelletCount>
-      <damageDef>PrometheumFlame</damageDef>
+      <damageDef>Flame</damageDef>
       <!-- <armorPenetrationBase>0.1</armorPenetrationBase> -->
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>

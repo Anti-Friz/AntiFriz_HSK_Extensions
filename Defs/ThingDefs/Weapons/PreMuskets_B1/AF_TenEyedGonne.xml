@@ -111,6 +111,7 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
-    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <!--<researchPrerequisite>PreMuskets_B1</researchPrerequisite>-->
   </RecipeDef>
 </Defs>
