@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_JagerRifle</defName>
-    <label>Jäger Rifle, .54 caliber</label>
-    <description>The hunting rifled barrel is short but the construction is substantial. \nCaliber: .65</description>
+    <defName>AF_FlintlockFusil</defName>
+    <label>Flintlock Fusil, .55 caliber</label>
+    <description>The fusil is similar to a caliver, but with a flintlock rather than a matchlock. \nCaliber: .55</description>
     <graphicData>
-      <texPath>Things/Weapons/AFJagerRifle</texPath>
+      <texPath>Things/Weapons/AFFlintlockFusil</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -22,17 +22,17 @@
       <ShotSpread>0.35</ShotSpread>
       <SwayFactor>1.4</SwayFactor>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>9</Bulk>
-      <Mass>11</Mass>
+      <Bulk>8</Bulk>
+      <Mass>6.5</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_65Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_55Caliber_Lead</defaultProjectile>
         <warmupTime>1.2</warmupTime>
-        <range>65</range>
+        <range>75</range>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -45,7 +45,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_65Caliber</ammoSet>
+        <ammoSet>AmmoSet_55Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -59,10 +59,10 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_JagerRifle</defName>
-    <label>Build Jäger Rifle</label>
-    <description>Jäger Rifle. .\nCaliber: .65</description>
-    <jobString>Building Jäger Rifle.</jobString>
+    <defName>BuildAF_FlintlockFusil</defName>
+    <label>Build Flintlock Fusil</label>
+    <description>Flintlock Fusil. .\nCaliber: .55</description>
+    <jobString>Building Flintlock Fusil.</jobString>
     <workAmount>8000</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
@@ -94,7 +94,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_JagerRifle>1</AF_JagerRifle>
+      <AF_FlintlockFusil>1</AF_FlintlockFusil>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -108,6 +108,6 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Matchlocks_Rifles</researchPrerequisite>
+    <researchPrerequisite>Muskets_B2</researchPrerequisite>
   </RecipeDef>
 </Defs>
