@@ -135,10 +135,8 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>CrushedStone</li>
-			</categories>
-			<thingDefs>
+      <thingDefs>
+        <li>CrushedStone</li>
 				<li>SerpentinePowder</li>
 			</thingDefs>
 		</fixedIngredientFilter>

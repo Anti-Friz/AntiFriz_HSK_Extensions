@@ -22,7 +22,7 @@
 			<SellPriceFactor>0.6</SellPriceFactor>
         </statBases>
         <weaponTags>
-			<li>Musket</li>
+			<li>BlackPowderGun</li>
         </weaponTags>
         <thingCategories>
             <li>Pistols</li>
@@ -104,7 +104,7 @@
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
-			<li>FabricationBench</li>
+			<li>MusketBench</li>
 		</recipeUsers>
 		<researchPrerequisite>Muskets_B1</researchPrerequisite> <!-- Smithing -->
 	</RecipeDef>

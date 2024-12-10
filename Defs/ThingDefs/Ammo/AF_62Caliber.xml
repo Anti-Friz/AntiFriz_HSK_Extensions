@@ -42,7 +42,7 @@
 			<li>CE_AutoEnableCrafting</li>
 		</tradeTags>
 		<thingCategories>
-			<li>Ammo62Blunderbuss</li>
+			<li>Ammo62Caliber</li>
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -289,7 +289,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>Muskets_B2</researchPrerequisite>
     <!-- Smithing -->
   </RecipeDef>
   

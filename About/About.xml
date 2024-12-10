@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>AntiFriz Extensions SK</name>
+	<name>AntiFriz SK Extensions</name>
 	<author>AntiFriz</author>
 	<packageId>AntiFriz.SK</packageId>
 	<supportedVersions>
@@ -20,7 +20,9 @@
     <li>Ludeon.RimWorld.Ideology</li>
     <li>Ludeon.RimWorld.Biotech</li>
     <li>ceteam.combatextended</li>
+    <li>XxNelsonxX.Parabellum</li>
+    <li>ViTech.MedievalOverhaul</li>
   </loadAfter>
-	<description>This mod add something.</description>
+	<description>This mod something add and patching.</description>
     <url>https://github.com/pacas/RW-Pacas-HSK-Patches</url>
 </ModMetaData>

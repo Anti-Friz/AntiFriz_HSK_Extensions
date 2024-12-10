@@ -14,76 +14,75 @@
       <Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
-  
-    <!-- ==================FowlingPieceSingle============================ -->
-    <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>AF_FowlingPieceSingle</defName>
-        <label>FowlingPiece, 12G caliber</label>
-        <description>A very long-barreled shotgun designed for hunting, customarily loaded with birdshot. \nCaliber: 12G</description>
-        <graphicData>
-            <texPath>AFFowlingPiece</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Shotgun</soundInteract>
-        <thingCategories>
-          <li>Musket</li>
-        </thingCategories>
-        <weaponTags>
-          <li>Rifles</li>
-        </weaponTags>
-        <statBases>
-          <MarketValue>370</MarketValue>
-          <SightsEfficiency>0.3</SightsEfficiency>
-          <ShotSpread>0.3</ShotSpread>
-          <SwayFactor>1.1</SwayFactor>
-          <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
-          <Bulk>10</Bulk>
-          <Mass>6.9</Mass>
-          <WorkToMake>6000</WorkToMake>
-        </statBases>
-        <verbs>
-            <li Class="CombatExtended.VerbPropertiesCE">
-                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Ammo_12Gauge_Bird</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
-                <range>23</range>
-                <soundCast>BrownBess</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <comps>
-            <li Class="CombatExtended.CompProperties_FireModes">
-                <aiAimMode>AimedShot</aiAimMode>
-            </li>
-            <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>1</magazineSize>
-                <reloadTime>6</reloadTime>
-                <ammoSet>AmmoSet_FowlingPiece</ammoSet>
-            </li>
-        </comps>
-      <modExtensions>
-        <li Class="CombatExtended.GunDrawExtension">
-          <DrawSize>1.6,1.6</DrawSize>
-        </li>
-      </modExtensions>
-        <smeltProducts>
-          <Weapon_Parts>1</Weapon_Parts>
-        </smeltProducts>
-    </ThingDef>
+  <!-- ==================FowlingPieceSingle============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_FowlingPieceSingle</defName>
+    <label>FowlingPiece, 12G caliber</label>
+    <description>A very long-barreled shotgun designed for hunting, customarily loaded with birdshot. \nCaliber: 12G</description>
+    <graphicData>
+      <texPath>Things/Weapons/AFFowlingPiece</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>370</MarketValue>
+      <SightsEfficiency>0.3</SightsEfficiency>
+      <ShotSpread>0.3</ShotSpread>
+      <SwayFactor>1.1</SwayFactor>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <Bulk>10</Bulk>
+      <Mass>6.9</Mass>
+      <WorkToMake>6000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Ammo_12Gauge_Bird</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>23</range>
+        <soundCast>BrownBess</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_FowlingPiece</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.6,1.6</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <Weapon_Parts>1</Weapon_Parts>
+    </smeltProducts>
+  </ThingDef>
   <!-- ==================FowlingPieceDouble============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_FowlingPieceDouble</defName>
     <label>FowlingPiece, 12G caliber</label>
     <description>A very long double barreled shotgun designed for hunting, customarily loaded with birdshot. \nCaliber: 12G</description>
     <graphicData>
-      <texPath>AFFowlingPiece</texPath>
+      <texPath>Things/Weapons/AFFowlingPiece</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <thingCategories>
-      <li>Musket</li>
+      <li>BlackPowderGun</li>
     </thingCategories>
     <weaponTags>
       <li>Rifles</li>
@@ -130,7 +129,6 @@
       <Weapon_Parts>1</Weapon_Parts>
     </smeltProducts>
   </ThingDef>
-
   <!-- ====================RECIPE_FowlingPieceSingle========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_FowlingPiece</defName>
@@ -168,7 +166,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_FowlingPiece>1</AF_FowlingPiece>
+      <AF_FowlingPieceSingle>1</AF_FowlingPieceSingle>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -180,7 +178,7 @@
       </categories>
     </fixedIngredientFilter>
     <recipeUsers>
-      <li>FabricationBench</li>
+      <li>MusketBench</li>
     </recipeUsers>
     <researchPrerequisite>Muskets_B1</researchPrerequisite>
   </RecipeDef>
@@ -233,7 +231,7 @@
       </categories>
     </fixedIngredientFilter>
     <recipeUsers>
-      <li>FabricationBench</li>
+      <li>MusketBench</li>
     </recipeUsers>
     <researchPrerequisite>Muskets_B1</researchPrerequisite>
   </RecipeDef>

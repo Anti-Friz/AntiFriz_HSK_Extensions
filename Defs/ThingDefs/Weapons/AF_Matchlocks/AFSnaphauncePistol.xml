@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BaseGun_ShortBarreled">
-    <defName>AF_Tantsutsu</defName>
-    <label>Tantsutsu</label>
-    <description>Tantsutsu are made as presentation weapons \nCaliber: .70</description>
+    <defName>AF_SnaphauncePistol</defName>
+    <label>Snaphaunce Pistol</label>
+    <description>An early variant on the flintlock pistol with a comparatively long 11” barrel. \nCaliber: .45</description>
     <graphicData>
-      <texPath>Things/Weapons/AFTantsutsu</texPath>
+      <texPath>Things/Weapons/AFQueenAnnePistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>BPInteract</soundInteract>
     <statBases>
-      <MarketValue>610</MarketValue>
-      <SightsEfficiency>0.5</SightsEfficiency>
-      <ShotSpread>2</ShotSpread>
+      <MarketValue>135</MarketValue>
+      <SightsEfficiency>0.65</SightsEfficiency>
+      <ShotSpread>1.75</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
       <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
       <Bulk>3</Bulk>
-      <Mass>4.5</Mass>
-      <WorkToMake>8000</WorkToMake>
-      <Beauty>2</Beauty>
-      <MaxHitPoints>30</MaxHitPoints>
+      <Mass>1.3</Mass>
+      <WorkToMake>6500</WorkToMake>
+      <MaxHitPoints>35</MaxHitPoints>
       <SellPriceFactor>0.6</SellPriceFactor>
     </statBases>
     <weaponTags>
@@ -32,9 +31,9 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_70Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_45Caliber_Lead</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <range>15</range>
+        <range>20</range>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -46,8 +45,8 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_70Caliber</ammoSet>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_45Caliber</ammoSet>
       </li>
     </comps>
     <smeltProducts Inherit="false">
@@ -56,10 +55,10 @@
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildGun_AF_Tantsutsu</defName>
-    <label>Build Tantsutsu</label>
-    <description>Tantsutsu.</description>
-    <jobString>Building Tantsutsu pistol.</jobString>
+    <defName>BuildGun_AFQueenAnnePistol</defName>
+    <label>Build Snaphaunce Pistol</label>
+    <description>Snaphaunce Pistol.</description>
+    <jobString>Building Snaphaunce Pistol.</jobString>
     <workAmount>8000</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
@@ -79,7 +78,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>15</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -87,11 +86,11 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>10</count>
+        <count>15</count>
       </li>
     </ingredients>
     <products>
-      <AF_Tantsutsu>1</AF_Tantsutsu>
+      <AF_QueenAnnePistol>1</AF_QueenAnnePistol>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

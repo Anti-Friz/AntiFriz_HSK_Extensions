@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Blunderbuss</defName>
-    <label>Blunderbuss, .62 caliber</label>
-    <description>A short-barreled shotgun with a muzzle that widens from back to front; the muzzle is 1.25 caliber. This doesn’t much affect performance, but very intimidation against anyone it’s pointed at! \nCaliber: .62</description>
+    <defName>AF_BreechloadingCarbine</defName>
+    <label>Breechloading Carbine, .54 caliber</label>
+    <description>The rifled barrel is short but the construction is substantial. \nCaliber: .54</description>
     <graphicData>
-      <texPath>Things/Weapons/AFBlunderbuss</texPath>
+      <texPath>Things/Weapons/AFBreechloadingCarbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,25 +17,25 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>365</MarketValue>
-      <SightsEfficiency>0.4</SightsEfficiency>
-      <ShotSpread>0.7</ShotSpread>
-      <SwayFactor>1</SwayFactor>
-      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+      <MarketValue>270</MarketValue>
+      <SightsEfficiency>0.95</SightsEfficiency>
+      <ShotSpread>0.5</ShotSpread>
+      <SwayFactor>1.4</SwayFactor>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
       <Bulk>10</Bulk>
-      <Mass>11.2</Mass>
-      <WorkToMake>6000</WorkToMake>
+      <Mass>9.3</Mass>
+      <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Blunderbuss_Buck</defaultProjectile>
-        <warmupTime>1.5</warmupTime>
-        <range>32</range>
-        <soundCast>BrownBess</soundCast>
+        <defaultProjectile>Bullet_54Caliber_Lead</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>55</range>
+        <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>15</muzzleFlashScale>
+        <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
     <comps>
@@ -44,13 +44,13 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>3</reloadTime>
-        <ammoSet>AmmoSet_62Blunderbuss</ammoSet>
+        <reloadTime>1.5</reloadTime>
+        <ammoSet>AmmoSet_54Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.6,1.6</DrawSize>
+        <DrawSize>1.4,1.4</DrawSize>
       </li>
     </modExtensions>
     <smeltProducts>
@@ -59,22 +59,22 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Blunderbuss</defName>
-    <label>Build Blunderbuss</label>
-    <description>Builds a short-barreled shotgun with a muzzle that widens from back to front .\nCaliber: .62 Blunderbuss</description>
-    <jobString>Building Blunderbuss.</jobString>
-    <workAmount>6000</workAmount>
+    <defName>BuildAF_BreechloadingCarbine</defName>
+    <label>Build Breechloading Carbine</label>
+    <description>Breechloading Carbine. .\nCaliber: .54</description>
+    <jobString>Building Gonne.</jobString>
+    <workAmount>8000</workAmount>
     <skillRequirements>
-      <Crafting>8</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentMedieval</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>6</count>
       </li>
       <li>
         <filter>
@@ -82,7 +82,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>38</count>
+        <count>35</count>
       </li>
       <li>
         <filter>
@@ -94,11 +94,11 @@
       </li>
     </ingredients>
     <products>
-      <AF_Blunderbuss>1</AF_Blunderbuss>
+      <AF_BreechloadingCarbine>1</AF_BreechloadingCarbine>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentMedieval</li>
+        <li>ComponentIndustrial</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -108,6 +108,6 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>AF_Wheellocks_Rifles</researchPrerequisite>
   </RecipeDef>
 </Defs>

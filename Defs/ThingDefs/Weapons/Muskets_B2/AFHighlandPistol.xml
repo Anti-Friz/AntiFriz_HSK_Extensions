@@ -1,103 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	 <ThingDef ParentName="BaseGun_ShortBarreled">
-        <defName>AF_HighlandPistol</defName>
-        <label>Highland Pistol</label>
-        <description>Its 8” barrel makes it a convenient belt pistol. Unusually for the era, it’s made entirely of steel. \nCaliber: .52</description>
-        <graphicData>
-            <texPath>AFHighlandPistol</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>BPInteract</soundInteract>
-        <statBases>
-            <MarketValue>135</MarketValue>
-            <SightsEfficiency>0.6</SightsEfficiency>
-            <ShotSpread>2</ShotSpread>
-            <SwayFactor>1.5</SwayFactor>
-            <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
-            <Bulk>3</Bulk>
-            <Mass>2.75</Mass>
-            <WorkToMake>8000</WorkToMake>
-			<MaxHitPoints>60</MaxHitPoints>
-			<SellPriceFactor>0.6</SellPriceFactor>
-        </statBases>
-        <weaponTags>
-			<li>Musket</li>
-        </weaponTags>
-        <thingCategories>
-            <li>Pistols</li>
-        </thingCategories>
-        <verbs>
-            <li Class="CombatExtended.VerbPropertiesCE">
-                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_52Caliber_Lead</defaultProjectile>
-                <warmupTime>1</warmupTime>
-                <range>19</range>
-                <soundCast>Pistolet</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-            </li>
-        </verbs>
-        <comps>
-            <li Class="CombatExtended.CompProperties_FireModes">
-                <aiAimMode>AimedShot</aiAimMode>
-            </li>
-            <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>1</magazineSize>
-                <reloadTime>3</reloadTime>
-                <ammoSet>AmmoSet_52Caliber</ammoSet>
-            </li>
-        </comps>
-        <smeltProducts Inherit="false">
-            <ComponentIndustrial>4</ComponentIndustrial>
-        </smeltProducts>
-    </ThingDef>
-	
-	<!-- RECIPE -->
-	
-	<RecipeDef ParentName="RangedWeaponRecipeBase">
-		<defName>BuildGun_AF_Tantsutsu</defName>
-		<label>Build AF_Tantsutsu</label>
-		<description>Tantsutsu.</description>
-		<jobString>Building Tantsutsu pistol.</jobString>
-		<workAmount>8000</workAmount>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentMedieval</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>SLDBar</li>
-					</categories>
-				</filter>
-				<count>35</count>
-			</li>
-		</ingredients>
-		<products>
+  <ThingDef ParentName="BaseGun_ShortBarreled">
+    <defName>AF_HighlandPistol</defName>
+    <label>Highland Pistol</label>
+    <description>Its 8” barrel makes it a convenient belt pistol. Unusually for the era, it’s made entirely of steel. \nCaliber: .52</description>
+    <graphicData>
+      <texPath>Things/Weapons/AFHighlandPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BPInteract</soundInteract>
+    <statBases>
+      <MarketValue>135</MarketValue>
+      <SightsEfficiency>0.6</SightsEfficiency>
+      <ShotSpread>2</ShotSpread>
+      <SwayFactor>1.5</SwayFactor>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <Bulk>3</Bulk>
+      <Mass>2.75</Mass>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>60</MaxHitPoints>
+      <SellPriceFactor>0.6</SellPriceFactor>
+    </statBases>
+    <weaponTags>
+      <li>BlackPowderGun</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Pistols</li>
+    </thingCategories>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_52Caliber_Lead</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>19</range>
+        <soundCast>Pistolet</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_52Caliber</ammoSet>
+      </li>
+    </comps>
+    <smeltProducts Inherit="false">
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </smeltProducts>
+  </ThingDef>
+  <!-- RECIPE -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildGun_AF_Tantsutsu</defName>
+    <label>Build Tantsutsu</label>
+    <description>Tantsutsu.</description>
+    <jobString>Building Tantsutsu pistol.</jobString>
+    <workAmount>8000</workAmount>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>35</count>
+      </li>
+    </ingredients>
+    <products>
       <AF_HighlandPistol>1</AF_HighlandPistol>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>ComponentMedieval</li>
-			</thingDefs>
-			<categories>
-				<li>SLDBar</li>
-			</categories>
-		</fixedIngredientFilter>
-		<recipeUsers>
-			<li>FabricationBench</li>
-		</recipeUsers>
-		<researchPrerequisite>Muskets_B2</researchPrerequisite> <!-- Smithing -->
-	</RecipeDef>
-	
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentMedieval</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+  </RecipeDef>
 </Defs>

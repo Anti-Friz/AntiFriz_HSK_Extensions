@@ -2,8 +2,8 @@
 <Defs>
 
   <ThingCategoryDef>
-    <defName>Ammo56Caliber</defName>
-    <label>.56 caliber Ball</label>
+    <defName>Ammo65Caliber</defName>
+    <label>.65 caliber Ball</label>
     <parent>AmmoMusket</parent>
     <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
   </ThingCategoryDef>
@@ -11,16 +11,16 @@
   <!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_56Caliber</defName>
-    <label>.56 caliber Ball</label>
+    <defName>AmmoSet_65Caliber</defName>
+    <label>.65 caliber Ball</label>
     <ammoTypes>
-      <Ammo_56Caliber_Lead>Bullet_56Caliber_Lead</Ammo_56Caliber_Lead>
+      <Ammo_65Caliber_Lead>Bullet_65Caliber_Lead</Ammo_65Caliber_Lead>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
   <!-- ==================== Ammo ========================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="56CaliberBase" ParentName="SmallAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="65CaliberBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Round bullet with powder, wrapped in paper.</description>
     <statBases>
       <Mass>0.06</Mass>
@@ -31,14 +31,14 @@
       <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <thingCategories>
-      <li>Ammo56Caliber</li>
+      <li>Ammo65Caliber</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>0.45</explosiveRadius>
         <explosiveDamageType>Flame</explosiveDamageType>
         <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.563</startWickHitPointsPercent>
+        <startWickHitPointsPercent>0.653</startWickHitPointsPercent>
         <wickTicks>
           <min>5</min>
           <max>10</max>
@@ -47,9 +47,9 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="56CaliberBase">
-    <defName>Ammo_56Caliber_Lead</defName>
-    <label>.56 caliber Ball</label>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="65CaliberBase">
+    <defName>Ammo_65Caliber_Lead</defName>
+    <label>.65 caliber Ball</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -58,12 +58,12 @@
       <MarketValue>0.2</MarketValue>
     </statBases>
     <ammoClass>LeadBall</ammoClass>
-    <cookOffProjectile>Bullet_56Caliber_Lead</cookOffProjectile>
+    <cookOffProjectile>Bullet_65Caliber_Lead</cookOffProjectile>
   </ThingDef>
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base56CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base65CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -75,9 +75,9 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base56CaliberBullet">
-    <defName>Bullet_56Caliber_Lead</defName>
-    <label>.56 caliber Ball (Lead)</label>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base65CaliberBullet">
+    <defName>Bullet_65Caliber_Lead</defName>
+    <label>.65 caliber Ball (Lead)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>19</damageAmountBase>
       <!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
@@ -90,10 +90,10 @@
 
   <!-- BALL FORGE-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_56Caliber_Lead</defName>
-    <label>make .56 caliber Ball x25</label>
-    <description>Craft 25 .56 caliber Ball rounds, and measure out powder charge.</description>
-    <jobString>Making .56 caliber Ball rounds.</jobString>
+    <defName>MakeAmmo_65Caliber_Lead</defName>
+    <label>make .65 caliber Ball x25</label>
+    <description>Craft 25 .65 caliber Ball rounds, and measure out powder charge.</description>
+    <jobString>Making .65 caliber Ball rounds.</jobString>
     <workAmount>450</workAmount>
     <ingredients>
       <li>
@@ -122,14 +122,14 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_56Caliber_Lead>25</Ammo_56Caliber_Lead>
+      <Ammo_65Caliber_Lead>25</Ammo_65Caliber_Lead>
     </products>
     <skillRequirements>
       <Crafting>1</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>AF_Wheellocks_Rifles</researchPrerequisite>
     <!-- Smithing -->
   </RecipeDef>
 

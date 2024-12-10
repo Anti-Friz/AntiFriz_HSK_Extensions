@@ -271,9 +271,9 @@
     <ingredients>
       <li>
         <filter>
-          <categories>
+          <thingDefs>
             <li>Ammo_12Gauge_ElectroSlug</li>
-          </categories>
+          </thingDefs>
         </filter>
         <count>3</count>
       </li>
@@ -289,10 +289,8 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>SerpentinePowder</li>
-      </thingDefs>
-      <categories>
         <li>Ammo_12Gauge_ElectroSlug</li>
-      </categories>
+      </thingDefs>
     </fixedIngredientFilter>
     <products>
       <Ammo_87Gonne_Emp>3</Ammo_87Gonne_Emp>
@@ -332,10 +330,8 @@
       </li>
     </ingredients>
     <fixedIngredientFilter>
-      <categories>
-        <li>Ammo_Bolt_Light_Metallic</li>
-      </categories>
       <thingDefs>
+        <li>Ammo_Bolt_Light_Metallic</li>
         <li>SerpentinePowder</li>
       </thingDefs>
     </fixedIngredientFilter>

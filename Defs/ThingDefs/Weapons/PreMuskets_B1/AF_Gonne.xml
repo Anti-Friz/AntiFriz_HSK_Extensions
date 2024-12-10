@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- ==================THING============================ -->
-    <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>AF_Gonne</defName>
-        <label>Gonne, .87 caliber</label>
-        <description>Miniature cannon, cast in bronze, mounted on the end of a wooden pole. \nCaliber: .87</description>
-        <graphicData>
-            <texPath>AFGonne</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Shotgun</soundInteract>
-        <thingCategories>
-          <li>Musket</li>
-        </thingCategories>
-        <weaponTags>
-          <li>Rifles</li>
-        </weaponTags>
-        <statBases>
-          <MarketValue>200</MarketValue>
-          <SightsEfficiency>0.3</SightsEfficiency>
-          <ShotSpread>2</ShotSpread>
-          <SwayFactor>1</SwayFactor>
-          <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
-          <Bulk>10</Bulk>
-          <Mass>6.9</Mass>
-          <WorkToMake>6000</WorkToMake>
-        </statBases>
-        <verbs>
-            <li Class="CombatExtended.VerbPropertiesCE">
-                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_87Gonne_Lead</defaultProjectile>
-                <warmupTime>1.2</warmupTime>
-                <range>23</range>
-                <soundCast>Pistolet</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <comps>
-            <li Class="CombatExtended.CompProperties_FireModes">
-                <aiAimMode>AimedShot</aiAimMode>
-            </li>
-            <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>1</magazineSize>
-                <reloadTime>6</reloadTime>
-                <ammoSet>AmmoSet_87Gonne</ammoSet>
-            </li>
-        </comps>
-      <modExtensions>
-        <li Class="CombatExtended.GunDrawExtension">
-          <DrawSize>1.6,1.6</DrawSize>
-        </li>
-      </modExtensions>
-        <smeltProducts>
-          <Weapon_Parts>1</Weapon_Parts>
-        </smeltProducts>
-    </ThingDef>
-
-
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_Gonne</defName>
+    <label>Gonne, .87 caliber</label>
+    <description>Miniature cannon, cast in bronze, mounted on the end of a wooden pole. \nCaliber: .87</description>
+    <graphicData>
+      <texPath>Things/Weapons/AFGonne</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <SightsEfficiency>0.3</SightsEfficiency>
+      <ShotSpread>2</ShotSpread>
+      <SwayFactor>1</SwayFactor>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+      <Bulk>10</Bulk>
+      <Mass>6.9</Mass>
+      <WorkToMake>6000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_87Gonne_Lead</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>23</range>
+        <soundCast>Pistolet</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_87Gonne</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.6,1.6</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <Weapon_Parts>1</Weapon_Parts>
+    </smeltProducts>
+  </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_Gonne</defName>
@@ -108,7 +106,7 @@
       </categories>
     </fixedIngredientFilter>
     <recipeUsers>
-      <li>FabricationBench</li>
+      <li>MusketBench</li>
     </recipeUsers>
     <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
   </RecipeDef>
