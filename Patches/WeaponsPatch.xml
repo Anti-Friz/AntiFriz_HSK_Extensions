@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+      <li>HMC Vile's Pre-Industrial Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Pistolet"]/recipeUsers</xpath>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_BrownBess"]/recipeUsers</xpath>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Charleville"]/recipeUsers</xpath>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Jezail"]/recipeUsers</xpath>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Springfield"]/recipeUsers</xpath>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_SharpsCarbine"]/recipeUsers</xpath>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
