@@ -11,7 +11,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/researchViewY</xpath>
           <value>
-            <researchViewY>32.00</researchViewY>
+            <researchViewY>34.00</researchViewY>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -35,14 +35,6 @@
             </ResearchProjectDef>
           </value>
         </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/prerequisites</xpath>
-          <value>
-            <prerequisites>
-              <li>PreMuskets_B1</li>
-            </prerequisites>
-          </value>
-        </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
@@ -53,15 +45,23 @@
               <baseCost>480</baseCost>
               <techLevel>Medieval</techLevel>
               <prerequisites>
-                <li>Muskets_B1</li>
+                <li>PreMuskets_B1</li>
               </prerequisites>
               <researchViewX>4.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
+              <researchViewY>32.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
               </modExtensions>
             </ResearchProjectDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/prerequisites</xpath>
+          <value>
+            <prerequisites>
+              <li>AF_Matchlocks</li>
+            </prerequisites>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -74,10 +74,10 @@
               <baseCost>500</baseCost>
               <techLevel>Medieval</techLevel>
               <prerequisites>
-                <li>Muskets_B1</li>
+                <li>AF_Matchlocks</li>
               </prerequisites>
               <researchViewX>4.00</researchViewX>
-              <researchViewY>34.00</researchViewY>
+              <researchViewY>33.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
@@ -95,6 +95,7 @@
               <baseCost>240</baseCost>
               <techLevel>Medieval</techLevel>
               <prerequisites>
+                <li>AF_Wheellocks</li>
                 <li>Muskets_B2</li>
               </prerequisites>
               <researchViewX>5.00</researchViewX>

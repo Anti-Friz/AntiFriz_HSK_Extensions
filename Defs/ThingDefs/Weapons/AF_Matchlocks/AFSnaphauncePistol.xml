@@ -55,7 +55,7 @@
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildGun_AFQueenAnnePistol</defName>
+    <defName>BuildGun_AF_SnaphauncePistol</defName>
     <label>Build Snaphaunce Pistol</label>
     <description>Snaphaunce Pistol.</description>
     <jobString>Building Snaphaunce Pistol.</jobString>
@@ -71,6 +71,15 @@
           </thingDefs>
         </filter>
         <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RushlightFuel</li>
+            <li>CandleFuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -95,6 +104,8 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>RushlightFuel</li>
+        <li>CandleFuel</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

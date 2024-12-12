@@ -37,7 +37,6 @@
       <li>ExplosivesCat</li>
     </thingCategories>
   </ThingDef>
-
   <RecipeDef>
     <defName>MakeSerpentinePowder</defName>
     <label>Make Serpentine Powder (x20)</label>
@@ -89,7 +88,10 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>Machining</researchPrerequisite>
+    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <recipeUsers>
+      <li>TableStonecutterNeolithic</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
   </RecipeDef>
-  
 </Defs>

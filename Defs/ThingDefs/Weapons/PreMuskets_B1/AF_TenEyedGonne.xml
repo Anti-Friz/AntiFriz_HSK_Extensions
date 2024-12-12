@@ -60,7 +60,7 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Gonne</defName>
+    <defName>BuildAF_FiveGonne</defName>
     <label>Build Gonne</label>
     <description>Builds a miniature cannon, cast in bronze, mounted on the end of a wooden pole. .\nCaliber: .87 Gonne</description>
     <jobString>Building Gonne.</jobString>
@@ -76,6 +76,15 @@
           </thingDefs>
         </filter>
         <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RushlightFuel</li>
+            <li>CandleFuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -100,6 +109,8 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>RushlightFuel</li>
+        <li>CandleFuel</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

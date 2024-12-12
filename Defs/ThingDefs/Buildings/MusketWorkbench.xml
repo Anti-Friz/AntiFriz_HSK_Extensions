@@ -74,5 +74,8 @@
     </placeWorkers>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <researchPrerequisites>
+      <li>PreMuskets_B1</li>
+    </researchPrerequisites>
   </ThingDef>
 </Defs>

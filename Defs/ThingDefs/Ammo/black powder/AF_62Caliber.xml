@@ -23,7 +23,7 @@
     <defName>AmmoSet_62Caliber</defName>
     <label>.62 Caliber</label>
     <ammoTypes>
-      <Ammo_62BCaliber_Lead>Bullet_62BCaliber_Lead</Ammo_62BCaliber_Lead>
+      <Ammo_62Caliber_Lead>Bullet_62Caliber_Lead</Ammo_62Caliber_Lead>
       <Ammo_62Blunderbuss_Buck>Bullet_62Blunderbuss_Buck</Ammo_62Blunderbuss_Buck>
       <Ammo_62Blunderbuss_Bird>Bullet_62Blunderbuss_Bird</Ammo_62Blunderbuss_Bird>
     </ammoTypes>
@@ -87,7 +87,7 @@
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="62BlunderbussBase">
-    <defName>Ammo_62BCaliber_Lead</defName>
+    <defName>Ammo_62Caliber_Lead</defName>
     <label>.62 Caliber Ball</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
@@ -97,7 +97,7 @@
       <MarketValue>0.2</MarketValue>
     </statBases>
     <ammoClass>BuckandBall</ammoClass>
-    <cookOffProjectile>Bullet_62BCaliber_Lead</cookOffProjectile>
+    <cookOffProjectile>Bullet_62Caliber_Lead</cookOffProjectile>
   </ThingDef>
 
   <!-- ================== Projectiles ================== -->
@@ -141,7 +141,7 @@
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base62BlunderbussBullet">
-    <defName>Bullet_62BCaliber_Lead</defName>
+    <defName>Bullet_62Caliber_Lead</defName>
     <label>.62 Caliber Ball</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>20</damageAmountBase>
@@ -248,7 +248,7 @@
 
   <!-- Caliber ball-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_62Blunderbuss_Bird</defName>
+    <defName>MakeAmmo_62Caliber_Lead</defName>
     <label>make .62 Caliber Ball x25</label>
     <description>Craft 25 .62 Caliber Ball rounds.</description>
     <jobString>Making .62 Caliber Ball rounds.</jobString>
@@ -282,7 +282,7 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <Ammo_62BCaliber_Lead>25</Ammo_62BCaliber_Lead>
+      <Ammo_62Caliber_Lead>25</Ammo_62Caliber_Lead>
     </products>
     <skillRequirements>
       <Crafting>1</Crafting>

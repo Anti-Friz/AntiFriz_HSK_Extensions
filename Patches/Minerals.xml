@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+      <li>Minerals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="WeatheredClaystone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SolidClaystone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HewnClaystone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SmoothedHewnClaystone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="BoulderClaystone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="WeatheredLimestone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SolidLimestone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HewnLimestone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SmoothedHewnLimestone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="BoulderLimestone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ZF_WeatheredMudstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ZF_SolidMudstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ZF_HewnMudstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ZF_SmoothedHewnMudstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ZF_BoulderMudstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="WeatheredSandstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SolidSandstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HewnSandstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SmoothedHewnSandstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="BoulderSandstone"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="WeatheredSlate"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SolidSlate"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HewnSlate"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SmoothedHewnSlate"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SlateForest"]/randomlyDropResources</xpath>
+          <value>
+            <li>
+              <ResourceDefName>SmallFlintBlocks</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

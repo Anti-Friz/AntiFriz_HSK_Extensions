@@ -44,7 +44,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Ammo_12Gauge_Bird</defaultProjectile>
+        <defaultProjectile>Bullet_12Gauge_Bird</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>23</range>
         <soundCast>BrownBess</soundCast>
@@ -101,7 +101,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Ammo_12Gauge_Bird</defaultProjectile>
+        <defaultProjectile>Bullet_12Gauge_Bird</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>23</range>
         <soundCast>BrownBess</soundCast>
@@ -150,6 +150,14 @@
       </li>
       <li>
         <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
           <categories>
             <li>SLDBar</li>
           </categories>
@@ -171,6 +179,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -184,7 +193,7 @@
   </RecipeDef>
   <!-- ====================RECIPE_FowlingPieceSingle========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_FowlingPiece</defName>
+    <defName>BuildAF_FowlingPieceDouble</defName>
     <label>Build FowlingPiece</label>
     <description>Builds a miniature cannon, cast in bronze, mounted on the end of a wooden pole. .\nCaliber: 12G FowlingPiece</description>
     <jobString>Building FowlingPiece.</jobString>
@@ -200,6 +209,14 @@
           </thingDefs>
         </filter>
         <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -224,6 +241,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

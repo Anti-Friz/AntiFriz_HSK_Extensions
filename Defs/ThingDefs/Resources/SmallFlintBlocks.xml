@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="SK_ResourceBase">
+    <defName>SmallFlintBlocks</defName>
+    <label>Small flint chunks</label>
+    <description>Small flint blocks</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/RoughGem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(42,42,38)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.9</Mass>
+    </statBases>
+    <stuffProps>
+      <statFactors>
+        <Beauty>1</Beauty>
+        <MarketValue>0.45</MarketValue>
+        <MaxHitPoints>2</MaxHitPoints>
+        <Mass>0.2</Mass>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <!--<RecipeDef>
+    <defName>Make_SmallFlintBlock</defName>
+    <label>Small flint blocks (x40)</label>
+    <description>Small flint blocks. Produces 40.</description>
+    <jobString>Making Small flint blocks.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkFlint</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkFlint</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SmallFlintBlocks>40</SmallFlintBlocks>
+    </products>
+    <recipeUsers>
+      <li>TableStonecutterNeolithic</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+  </RecipeDef>-->
+</Defs>

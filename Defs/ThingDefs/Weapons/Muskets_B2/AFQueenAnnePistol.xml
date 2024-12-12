@@ -74,6 +74,14 @@
       </li>
       <li>
         <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
           <categories>
             <li>SLDBar</li>
           </categories>
@@ -95,6 +103,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

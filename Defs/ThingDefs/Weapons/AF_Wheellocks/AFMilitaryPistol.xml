@@ -55,10 +55,10 @@
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildGun_AF_Tantsutsu</defName>
-    <label>Build Tantsutsu</label>
-    <description>Tantsutsu.</description>
-    <jobString>Building Tantsutsu pistol.</jobString>
+    <defName>BuildGun_AF_MilitaryPistol</defName>
+    <label>Build Military Pistol</label>
+    <description>Military Pistol.</description>
+    <jobString>Building Military Pistol pistol.</jobString>
     <workAmount>5500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
@@ -71,6 +71,15 @@
           </thingDefs>
         </filter>
         <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MagnetiteCrystal</li>
+            <li>CassiteriteCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -95,6 +104,8 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>MagnetiteCrystal</li>
+        <li>CassiteriteCrystal</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

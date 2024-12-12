@@ -1,0 +1,973 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!--not much useful now, in 1.5, but in perspective...-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+      <li>Life Lessons</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_33Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_45Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_47Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_50Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_52Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_53Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_54Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_55Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_56Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_59Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_60Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_60Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_62Blunderbuss_Buck"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_62Blunderbuss_Bird"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Bullet_62BCaliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_65Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_69Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_70Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_87Gonne_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_87Gonne_Buck"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_87Gonne_Emp"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_87Gonne_Bolt"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Ammo_IronFireLance_RocksPowder"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <!--Recepies-->
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_Caliver"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_Teppo"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_WingedTigerGun"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_SnaphauncePistol"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_Tantsutsu"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_Carbine"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_MilitaryPistol"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_Petronel"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_PocketPistol"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_PufferPistol"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_BreechloadingCarbine"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_JagerRifle"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="AF_Blunderbuss"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_FowlingPiece"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_FowlingPieceDouble"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_FlintlockCarbine"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_FlintlockFusil"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildGun_AF_Tantsutsu"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildGun_AFQueenAnnePistol"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_Gonne"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="AF_IronFireLance"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="BuildAF_FiveGonne"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>Smithing</li>
+                <li>Mechanics</li>
+                <li>Labourer</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_33Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_45Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_47Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_50Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_52Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_53Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_54Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_55Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_56Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_59Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_60Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_60Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_62Blunderbuss_Buck"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_62Blunderbuss_Bird"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="Bullet_62BCaliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_65Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_69Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_70Caliber_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_87Gonne_Lead"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_87Gonne_Buck"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_87Gonne_Emp"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_87Gonne_Bolt"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_IronFireLance_RocksPowder"]</xpath>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>BasicFabrication</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <!--Buildings-->
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="MusketBench"]</xpath>
+          <value>
+            <li Class="LifeLessons.BuildingProficiencyExtension">
+              <requirements>
+                <li>Construction</li>
+                <li>Mechanics</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+        <!--Resources-->
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="SerpentinePowder"]</xpath>
+          <value>
+            <li Class="LifeLessons.BuildingProficiencyExtension">
+              <requirements>
+                <li>Chemistry</li>
+              </requirements>
+              <softRequirement>False</softRequirement>
+              <unqualifiedWorkSpeedMultiplier>1</unqualifiedWorkSpeedMultiplier>
+              <unqualifiedQualityCap>Legendary</unqualifiedQualityCap>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

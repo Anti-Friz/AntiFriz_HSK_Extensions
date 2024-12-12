@@ -78,6 +78,15 @@
       </li>
       <li>
         <filter>
+          <thingDefs>
+            <li>RushlightFuel</li>
+            <li>CandleFuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
           <categories>
             <li>SLDBar</li>
           </categories>
@@ -99,6 +108,8 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
+        <li>RushlightFuel</li>
+        <li>CandleFuel</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
