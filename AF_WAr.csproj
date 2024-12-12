@@ -11,6 +11,8 @@
     <Folder Include="Defs\ThingDefs\Weapons\AF_Matchlocks_Rifles\" />
     <Folder Include="Languages\" />
     <Folder Include="Sounds\" />
+    <Folder Include="Textures\Things\Buildings\pucklegunTripod\" />
+    <Folder Include="Textures\Things\Buildings\wallgunTripod\" />
   </ItemGroup>
 
 </Project>

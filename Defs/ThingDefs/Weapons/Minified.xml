@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MinifiedTurretBase">
+    <defName>MinifiedTurret_AF_WallGun</defName>
+    <label>Wall Gun</label>
+    <statBases>
+      <Mass>12.5</Mass>
+      <Bulk>10</Bulk>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="MinifiedTurretBase">
+    <defName>MinifiedTurret_AF_PuckleGun</defName>
+    <label>Puckle Gun</label>
+    <statBases>
+      <Mass>40.82</Mass>
+      <Bulk>25</Bulk>
+    </statBases>
+  </ThingDef>
+</Defs>

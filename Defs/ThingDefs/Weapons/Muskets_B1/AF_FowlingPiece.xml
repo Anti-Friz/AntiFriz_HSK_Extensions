@@ -31,22 +31,22 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>370</MarketValue>
-      <SightsEfficiency>0.3</SightsEfficiency>
-      <ShotSpread>0.3</ShotSpread>
-      <SwayFactor>1.1</SwayFactor>
-      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
-      <Bulk>10</Bulk>
-      <Mass>6.9</Mass>
-      <WorkToMake>6000</WorkToMake>
+      <MarketValue>135</MarketValue>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.11</ShotSpread>
+      <SwayFactor>2.3</SwayFactor>
+      <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+      <Bulk>18.7</Bulk>
+      <Mass>4.3</Mass>
+      <WorkToMake>14500</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_12Gauge_Bird</defaultProjectile>
-        <warmupTime>1.5</warmupTime>
-        <range>23</range>
+        <warmupTime>0.6</warmupTime>
+        <range>15</range>
         <soundCast>BrownBess</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -88,22 +88,22 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>370</MarketValue>
-      <SightsEfficiency>0.3</SightsEfficiency>
-      <ShotSpread>1.2</ShotSpread>
-      <SwayFactor>1</SwayFactor>
-      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
-      <Bulk>10</Bulk>
-      <Mass>6.9</Mass>
-      <WorkToMake>6000</WorkToMake>
+      <MarketValue>170</MarketValue>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.11</ShotSpread>
+      <SwayFactor>2.64</SwayFactor>
+      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+      <Bulk>18.7</Bulk>
+      <Mass>7.71</Mass>
+      <WorkToMake>16500</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_12Gauge_Bird</defaultProjectile>
-        <warmupTime>1.5</warmupTime>
-        <range>23</range>
+        <warmupTime>0.6</warmupTime>
+        <range>15</range>
         <soundCast>BrownBess</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -135,7 +135,7 @@
     <label>Build FowlingPiece</label>
     <description>Builds a miniature cannon, cast in bronze, mounted on the end of a wooden pole. .\nCaliber: 12G FowlingPiece</description>
     <jobString>Building FowlingPiece.</jobString>
-    <workAmount>6000</workAmount>
+    <workAmount>14500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
@@ -154,7 +154,7 @@
             <li>SmallFlintBlocks</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -162,7 +162,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>16</count>
+        <count>80</count>
       </li>
       <li>
         <filter>
@@ -170,7 +170,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>20</count>
+        <count>15</count>
       </li>
     </ingredients>
     <products>
@@ -216,7 +216,7 @@
             <li>SmallFlintBlocks</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -224,7 +224,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>26</count>
+        <count>90</count>
       </li>
       <li>
         <filter>
@@ -232,7 +232,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>20</count>
+        <count>15</count>
       </li>
     </ingredients>
     <products>

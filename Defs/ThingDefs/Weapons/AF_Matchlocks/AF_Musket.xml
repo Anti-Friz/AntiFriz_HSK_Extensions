@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Caliver</defName>
-    <label>Caliver Musket, .59 caliber</label>
-    <description>lighter, handier musket, designed for use by ordinary soldiers without the strength to serve as musketeers. \nCaliber: .59</description>
+    <defName>AF_Musket</defName>
+    <label>Musket, .80 caliber</label>
+    <description>A large smoothbore musket with a very long barrel. \nCaliber: .80</description>
     <graphicData>
-      <texPath>Things/Weapons/AFCaliver</texPath>
+      <texPath>Things/Weapons/AFMusket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,9 +17,9 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.57</SightsEfficiency>
-      <ShotSpread>0.15</ShotSpread>
+      <MarketValue>175</MarketValue>
+      <SightsEfficiency>0.6</SightsEfficiency>
+      <ShotSpread>0.4</ShotSpread>
       <SwayFactor>1.6</SwayFactor>
       <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
       <Bulk>13</Bulk>
@@ -30,10 +30,10 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_59Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>18</range>
-        <recoilAmount>1.64</recoilAmount>
+        <defaultProjectile>Bullet_80Caliber_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>22</range>
+        <recoilAmount>1.13</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -46,12 +46,12 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_59Caliber</ammoSet>
+        <ammoSet>AmmoSet_80Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.4,1.4</DrawSize>
+        <DrawSize>1.6,1.6</DrawSize>
       </li>
     </modExtensions>
     <smeltProducts>
@@ -60,10 +60,10 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Caliver</defName>
-    <label>Build Caliver Musket</label>
-    <description>Caliver Musket. .\nCaliber: .59</description>
-    <jobString>Building Caliver Musket.</jobString>
+    <defName>BuildAF_Musket</defName>
+    <label>Build Musket</label>
+    <description>Musket. .\nCaliber: .80</description>
+    <jobString>Building Musket.</jobString>
     <workAmount>11500</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
@@ -104,7 +104,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_Caliver>1</AF_Caliver>
+      <AF_Musket>1</AF_Musket>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

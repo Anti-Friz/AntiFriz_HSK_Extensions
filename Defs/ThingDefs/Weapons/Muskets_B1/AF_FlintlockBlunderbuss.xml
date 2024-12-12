@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Caliver</defName>
-    <label>Caliver Musket, .59 caliber</label>
-    <description>lighter, handier musket, designed for use by ordinary soldiers without the strength to serve as musketeers. \nCaliber: .59</description>
+    <defName>AF_FlintlockBlunderbuss</defName>
+    <label>Flintlock blunderbuss, .62 caliber</label>
+    <description>A short-barreled shotgun with a muzzle that widens from back to front; the muzzle is 1.25 caliber. This doesn’t much affect performance, but very intimidation against anyone it’s pointed at! \nCaliber: .62</description>
     <graphicData>
-      <texPath>Things/Weapons/AFCaliver</texPath>
+      <texPath>Things/Weapons/AFBlunderbuss</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,26 +17,26 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.57</SightsEfficiency>
+      <MarketValue>190</MarketValue>
+      <SightsEfficiency>0.8</SightsEfficiency>
       <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>1.6</SwayFactor>
-      <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
-      <Bulk>13</Bulk>
-      <Mass>2.99</Mass>
-      <WorkToMake>11500</WorkToMake>
+      <SwayFactor>1.11</SwayFactor>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <Bulk>6</Bulk>
+      <Mass>5</Mass>
+      <WorkToMake>10000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_59Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>18</range>
-        <recoilAmount>1.64</recoilAmount>
-        <soundCast>Springfield</soundCast>
+        <defaultProjectile>Bullet_62Blunderbuss_Buck</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <recoilAmount>1.8</recoilAmount>
+        <range>14</range>
+        <soundCast>BrownBess</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>15</muzzleFlashScale>
       </li>
     </verbs>
     <comps>
@@ -45,13 +45,13 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_59Caliber</ammoSet>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_62Blunderbuss</ammoSet>
       </li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.4,1.4</DrawSize>
+        <DrawSize>1.6,1.6</DrawSize>
       </li>
     </modExtensions>
     <smeltProducts>
@@ -60,31 +60,30 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Caliver</defName>
-    <label>Build Caliver Musket</label>
-    <description>Caliver Musket. .\nCaliber: .59</description>
-    <jobString>Building Caliver Musket.</jobString>
-    <workAmount>11500</workAmount>
+    <defName>BuildAF_FlintlockBlunderbuss</defName>
+    <label>Build Flintlock blunderbuss</label>
+    <description>Builds a short-barreled shotgun with a muzzle that widens from back to front .\nCaliber: .62 Blunderbuss</description>
+    <jobString>Building Flintlock blunderbuss.</jobString>
+    <workAmount>9500</workAmount>
     <skillRequirements>
-      <Crafting>5</Crafting>
+      <Crafting>8</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentIndustrial</li>
+            <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>RushlightFuel</li>
-            <li>CandleFuel</li>
+            <li>SmallFlintBlocks</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -92,7 +91,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>60</count>
+        <count>45</count>
       </li>
       <li>
         <filter>
@@ -104,13 +103,12 @@
       </li>
     </ingredients>
     <products>
-      <AF_Caliver>1</AF_Caliver>
+      <AF_FlintlockBlunderbuss>1</AF_FlintlockBlunderbuss>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentIndustrial</li>
-        <li>RushlightFuel</li>
-        <li>CandleFuel</li>
+        <li>ComponentMedieval</li>
+        <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -120,6 +118,6 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Matchlocks</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
   </RecipeDef>
 </Defs>

@@ -34,7 +34,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="62BlunderbussBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Round bullet with powder, wrapped in paper.</description>
 		<statBases>
-			<Mass>0.06</Mass>
+			<Mass>0.027</Mass>
 			<Bulk>0.06</Bulk>
 		</statBases>
 		<tradeTags>
@@ -144,7 +144,7 @@
     <defName>Bullet_62Caliber_Lead</defName>
     <label>.62 Caliber Ball</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>19</damageAmountBase>
       <!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
       <armorPenetrationSharp>5.5</armorPenetrationSharp>
       <armorPenetrationBlunt>70</armorPenetrationBlunt>

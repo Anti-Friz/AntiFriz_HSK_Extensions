@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="BaseGun_Turret">
+    <defName>Gun_AF_PuckleGun</defName>
+    <label>Puckle Gun</label>
+    <graphicData>
+      <texPath>Things/Turret/Culverin_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>It’s a tripod-mounted weapon, like the wall gun, but with a flintlock. To boost its rate of fire, it has a cylinder that holds nine rounds of ammunition, turned with a hand crank between shots to line up unfired rounds with the firing mechanism.</description>
+    <soundInteract>CannonInteract</soundInteract>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.8</ShotSpread>
+      <SwayFactor>1</SwayFactor>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_125Caliber_Lead</defaultProjectile>
+        <circularError>1.2</circularError>
+        <warmupTime>1</warmupTime>
+        <minRange>2</minRange>
+        <range>16</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SwivelGun</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <indirectFirePenalty>0.2</indirectFirePenalty>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>9</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_125Caliber</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes" />
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>2,2</DrawSize>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

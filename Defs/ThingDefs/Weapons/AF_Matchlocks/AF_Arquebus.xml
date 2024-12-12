@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Caliver</defName>
-    <label>Caliver Musket, .59 caliber</label>
-    <description>lighter, handier musket, designed for use by ordinary soldiers without the strength to serve as musketeers. \nCaliber: .59</description>
+    <defName>AF_Arquebus</defName>
+    <label>Arquebus, .60 caliber</label>
+    <description>Matchlock arquebuse. \nCaliber: .60</description>
     <graphicData>
-      <texPath>Things/Weapons/AFCaliver</texPath>
+      <texPath>Things/Weapons/AFArquebus</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,23 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.57</SightsEfficiency>
-      <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>1.6</SwayFactor>
+      <MarketValue>150</MarketValue>
+      <SightsEfficiency>0.53</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.75</SwayFactor>
       <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
       <Bulk>13</Bulk>
-      <Mass>2.99</Mass>
-      <WorkToMake>11500</WorkToMake>
+      <Mass>4.5</Mass>
+      <WorkToMake>12000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_59Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>18</range>
-        <recoilAmount>1.64</recoilAmount>
+        <defaultProjectile>Bullet_60Caliber_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <recoilAmount>1.34</recoilAmount>
+        <range>15</range>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -46,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_59Caliber</ammoSet>
+        <ammoSet>AmmoSet_60Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -60,11 +60,11 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Caliver</defName>
-    <label>Build Caliver Musket</label>
-    <description>Caliver Musket. .\nCaliber: .59</description>
-    <jobString>Building Caliver Musket.</jobString>
-    <workAmount>11500</workAmount>
+    <defName>BuildAF_Arquebus</defName>
+    <label>Build Arquebus</label>
+    <description>Arquebus. .\nCaliber: .60</description>
+    <jobString>Building Arquebus.</jobString>
+    <workAmount>12000</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -92,7 +92,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>60</count>
+        <count>65</count>
       </li>
       <li>
         <filter>
@@ -104,7 +104,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_Caliver>1</AF_Caliver>
+      <AF_Arquebus>1</AF_Arquebus>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

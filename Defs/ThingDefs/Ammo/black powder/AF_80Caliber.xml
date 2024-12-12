@@ -2,8 +2,8 @@
 <Defs>
 
   <ThingCategoryDef>
-    <defName>Ammo69Caliber</defName>
-    <label>.69 caliber Ball</label>
+    <defName>Ammo80Caliber</defName>
+    <label>.80 caliber Ball</label>
     <parent>AmmoMusket</parent>
     <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
   </ThingCategoryDef>
@@ -11,19 +11,19 @@
   <!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_69Caliber</defName>
-    <label>.69 caliber Ball</label>
+    <defName>AmmoSet_80Caliber</defName>
+    <label>.80 caliber Ball</label>
     <ammoTypes>
-      <Ammo_69Caliber_Lead>Bullet_69Caliber_Lead</Ammo_69Caliber_Lead>
+      <Ammo_80Caliber_Lead>Bullet_80Caliber_Lead</Ammo_80Caliber_Lead>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
   <!-- ==================== Ammo ========================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="69CaliberBase" ParentName="SmallAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="80CaliberBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Round bullet with powder, wrapped in paper.</description>
     <statBases>
-      <Mass>0.08</Mass>
+      <Mass>0.068</Mass>
       <Bulk>0.03</Bulk>
     </statBases>
     <tradeTags>
@@ -31,7 +31,7 @@
       <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <thingCategories>
-      <li>Ammo69Caliber</li>
+      <li>Ammo80Caliber</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -47,9 +47,9 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="69CaliberBase">
-    <defName>Ammo_69Caliber_Lead</defName>
-    <label>.69 caliber Ball</label>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="80CaliberBase">
+    <defName>Ammo_80Caliber_Lead</defName>
+    <label>.80 caliber Ball</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -58,31 +58,30 @@
       <MarketValue>0.2</MarketValue>
     </statBases>
     <ammoClass>LeadBall</ammoClass>
-    <cookOffProjectile>Bullet_69Caliber_Lead</cookOffProjectile>
+    <cookOffProjectile>Bullet_80Caliber_Lead</cookOffProjectile>
   </ThingDef>
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base69CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base80CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <speed>90</speed>
+      <speed>135</speed>
       <dropsCasings>False</dropsCasings>
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base69CaliberBullet">
-    <defName>Bullet_69Caliber_Lead</defName>
-    <label>.69 caliber Ball (Lead)</label>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base80CaliberBullet">
+    <defName>Bullet_80Caliber_Lead</defName>
+    <label>.80 caliber Ball (Lead)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>28</damageAmountBase>
-      <!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
-      <armorPenetrationSharp>5.6</armorPenetrationSharp>
-      <armorPenetrationBlunt>70</armorPenetrationBlunt>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationSharp>5.8</armorPenetrationSharp>
+      <armorPenetrationBlunt>75</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
 
@@ -90,10 +89,10 @@
 
   <!-- BALL FORGE-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_69Caliber_Lead</defName>
-    <label>make .69 caliber Ball x25</label>
-    <description>Craft 25 .69 caliber Ball rounds, and measure out powder charge.</description>
-    <jobString>Making .69 caliber Ball rounds.</jobString>
+    <defName>MakeAmmo_80Caliber_Lead</defName>
+    <label>make .80 caliber Ball x25</label>
+    <description>Craft 25 .80 caliber Ball rounds, and measure out powder charge.</description>
+    <jobString>Making .80 caliber Ball rounds.</jobString>
     <workAmount>450</workAmount>
     <ingredients>
       <li>
@@ -107,10 +106,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -118,18 +117,18 @@
         <li>HeavyBar</li>
       </categories>
       <thingDefs>
-        <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_69Caliber_Lead>25</Ammo_69Caliber_Lead>
+      <Ammo_80Caliber_Lead>25</Ammo_80Caliber_Lead>
     </products>
     <skillRequirements>
       <Crafting>1</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <researchPrerequisite>AF_Matchlocks</researchPrerequisite>
     <!-- Smithing -->
   </RecipeDef>
 

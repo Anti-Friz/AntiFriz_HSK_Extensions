@@ -23,7 +23,7 @@
   <ThingDef Class="CombatExtended.AmmoDef" Name="47CaliberBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Round bullet with powder, wrapped in paper.</description>
     <statBases>
-      <Mass>0.025</Mass>
+      <Mass>0.011</Mass>
       <Bulk>0.03</Bulk>
     </statBases>
     <tradeTags>
@@ -70,7 +70,7 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <speed>90</speed>
+      <speed>110</speed>
       <dropsCasings>False</dropsCasings>
     </projectile>
   </ThingDef>
@@ -79,7 +79,7 @@
     <defName>Bullet_47Caliber_Lead</defName>
     <label>.47 caliber Ball (Lead)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>10</damageAmountBase>
+      <damageAmountBase>16</damageAmountBase>
       <!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
       <armorPenetrationSharp>5</armorPenetrationSharp>
       <armorPenetrationBlunt>45</armorPenetrationBlunt>

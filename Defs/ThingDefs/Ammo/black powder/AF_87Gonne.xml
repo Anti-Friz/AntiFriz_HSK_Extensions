@@ -26,7 +26,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="87GonneBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Round bullet with powder, wrapped in paper.</description>
 		<statBases>
-			<Mass>0.017</Mass>
+			<Mass>0.077</Mass>
 			<Bulk>0.03</Bulk>
 		</statBases>
 		<tradeTags>
@@ -124,10 +124,10 @@
 		<defName>Bullet_87Gonne_Lead</defName>
 		<label>.87 Gonne Ball (Lead)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>9</damageAmountBase>
+			<damageAmountBase>15</damageAmountBase>
 			<!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
 			<armorPenetrationSharp>5.5</armorPenetrationSharp>
-			<armorPenetrationBlunt>60</armorPenetrationBlunt>
+			<armorPenetrationBlunt>75</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	
@@ -135,11 +135,11 @@
 		<defName>Bullet_87Gonne_Buck</defName>
 		<label>.87 Gonne Buck and Ball</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>7</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<pelletCount>6</pelletCount>
 			<!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
 			<armorPenetrationSharp>3.5</armorPenetrationSharp>
-			<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+			<armorPenetrationBlunt>12.5</armorPenetrationBlunt>
 			<spreadMult>8.8</spreadMult>
 		</projectile>
 	</ThingDef>

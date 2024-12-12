@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Wall Gun -->
+  <ThingDef ParentName="TurretMannedBase">
+    <defName>Turret_AF_WallGun</defName>
+    <label>Wall Gun \nCaliber: 1.06</label>
+    <graphicData>
+      <texPath>Things/Turret/Culverin_Base</texPath>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.1, 0.4, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Turret/Culverin_Ico</uiIconPath>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>12.5</Mass>
+      <Bulk>10</Bulk>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <description>A smoothbore weapon even heavier than a musket, placed on a tripod mount atop a city wall for use in defensive fire.</description>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>RuggedMetallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <AF_WallGun_Crate>1</AF_WallGun_Crate>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>1</specialDisplayRadius>
+    <building>
+      <turretGunDef>Gun_AF_WallGun</turretGunDef>
+      <turretTopDrawSize>1</turretTopDrawSize>
+      <buildingTags>
+        <li>Artillery</li>
+      </buildingTags>
+    </building>
+    <size>(1,1)</size>
+    <minifiedDef>MinifiedTurret_AF_WallGun</minifiedDef>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Medieval_Cannons</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

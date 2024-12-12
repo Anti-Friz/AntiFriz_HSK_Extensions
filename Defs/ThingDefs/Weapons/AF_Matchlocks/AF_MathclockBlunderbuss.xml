@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Blunderbuss</defName>
-    <label>Blunderbuss, .62 caliber</label>
+    <defName>AF_MathclockBlunderbuss</defName>
+    <label>Matchlock blunderbuss, .62 caliber</label>
     <description>A short-barreled shotgun with a muzzle that widens from back to front; the muzzle is 1.25 caliber. This doesn’t much affect performance, but very intimidation against anyone it’s pointed at! \nCaliber: .62</description>
     <graphicData>
-      <texPath>Things/Weapons/AFBlunderbuss</texPath>
+      <texPath>Things/Weapons/AFMatchlockBlunderbuss</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,22 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>365</MarketValue>
-      <SightsEfficiency>0.4</SightsEfficiency>
-      <ShotSpread>0.7</ShotSpread>
-      <SwayFactor>1</SwayFactor>
+      <MarketValue>150</MarketValue>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>1.11</SwayFactor>
       <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
-      <Bulk>10</Bulk>
-      <Mass>11.2</Mass>
-      <WorkToMake>6000</WorkToMake>
+      <Bulk>6</Bulk>
+      <Mass>5.08</Mass>
+      <WorkToMake>9500</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_62Blunderbuss_Buck</defaultProjectile>
-        <warmupTime>1.5</warmupTime>
-        <range>32</range>
+        <recoilAmount>2</recoilAmount>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
         <soundCast>BrownBess</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
@@ -40,7 +41,7 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiAimMode>AimedShot</aiAimMode>
+        <aiAimMode>Snapshot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
@@ -59,13 +60,13 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Blunderbuss</defName>
-    <label>Build Blunderbuss</label>
+    <defName>BuildAF_MathclockBlunderbuss</defName>
+    <label>Build Matchlock blunderbuss</label>
     <description>Builds a short-barreled shotgun with a muzzle that widens from back to front .\nCaliber: .62 Blunderbuss</description>
-    <jobString>Building Blunderbuss.</jobString>
-    <workAmount>6000</workAmount>
+    <jobString>Building Matchlock blunderbuss.</jobString>
+    <workAmount>9500</workAmount>
     <skillRequirements>
-      <Crafting>8</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
@@ -74,12 +75,13 @@
             <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>SmallFlintBlocks</li>
+            <li>RushlightFuel</li>
+            <li>CandleFuel</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -90,7 +92,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>38</count>
+        <count>45</count>
       </li>
       <li>
         <filter>
@@ -98,16 +100,17 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
-      <AF_Blunderbuss>1</AF_Blunderbuss>
+      <AF_MathclockBlunderbuss>1</AF_MathclockBlunderbuss>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
-        <li>SmallFlintBlocks</li>
+        <li>RushlightFuel</li>
+        <li>CandleFuel</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

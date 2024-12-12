@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Wall Gun -->
+  <ThingDef ParentName="TurretMannedBase">
+    <defName>Turret_AF_PuckleGun</defName>
+    <label>Wall Gun \nCaliber: 1.25</label>
+    <graphicData>
+      <texPath>Things/Turret/Culverin_Base</texPath>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.1, 0.4, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Turret/Culverin_Ico</uiIconPath>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>12.5</Mass>
+      <Bulk>10</Bulk>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <description>It’s a tripod-mounted weapon, like the wall gun, but with a flintlock. To boost its rate of fire, it has a cylinder that holds nine rounds of ammunition, turned with a hand crank between shots to line up unfired rounds with the firing mechanism.</description>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>RuggedMetallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <AF_PuckleGun_Crate>1</AF_PuckleGun_Crate>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>1</specialDisplayRadius>
+    <building>
+      <turretGunDef>Gun_AF_PuckleGun</turretGunDef>
+      <turretTopDrawSize>1</turretTopDrawSize>
+      <buildingTags>
+        <li>Artillery</li>
+      </buildingTags>
+    </building>
+    <size>(1,1)</size>
+    <minifiedDef>MinifiedTurret_AF_PuckleGun</minifiedDef>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Medieval_Cannons</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
