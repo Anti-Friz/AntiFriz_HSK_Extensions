@@ -68,8 +68,9 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <Weapon_Parts>1</Weapon_Parts>
+      <ComponentMedieval>3</ComponentMedieval>
     </smeltProducts>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </ThingDef>
   <!-- ==================FowlingPieceDouble============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
@@ -126,8 +127,9 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <Weapon_Parts>1</Weapon_Parts>
+      <ComponentMedieval>3</ComponentMedieval>
     </smeltProducts>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </ThingDef>
   <!-- ====================RECIPE_FowlingPieceSingle========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -143,7 +145,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentMedieval</li>
+            <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -178,7 +180,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentMedieval</li>
+        <li>AF_MusketWeaponPart</li>
         <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
@@ -205,7 +207,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentMedieval</li>
+            <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -240,7 +242,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentMedieval</li>
+        <li>AF_MusketWeaponPart</li>
         <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>

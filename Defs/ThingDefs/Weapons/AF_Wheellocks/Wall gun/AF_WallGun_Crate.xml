@@ -61,7 +61,25 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentMedieval</li>
+            <li>MagnetiteCrystal</li>
+            <li>CassiteriteCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RushlightFuel</li>
+            <li>CandleFuel</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
         <count>10</count>
@@ -71,6 +89,13 @@
       <AF_WallGun_Crate>1</AF_WallGun_Crate>
     </products>
     <fixedIngredientFilter>
+      <thingDefs>
+        <li>MagnetiteCrystal</li>
+        <li>CassiteriteCrystal</li>
+        <li>RushlightFuel</li>
+        <li>CandleFuel</li>
+        <li>AF_MusketWeaponPart</li>
+      </thingDefs>
       <categories>
         <li>Wooden</li>
         <li>SLDBar</li>

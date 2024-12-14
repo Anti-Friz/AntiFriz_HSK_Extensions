@@ -55,8 +55,9 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <Weapon_Parts>1</Weapon_Parts>
-    </smeltProducts>
+      <ComponentMedieval>1</ComponentMedieval>
+  </smeltProducts>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -72,7 +73,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentIndustrial</li>
+            <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -108,7 +109,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentIndustrial</li>
+        <li>ComponentMedieval</li>
         <li>RushlightFuel</li>
         <li>CandleFuel</li>
       </thingDefs>

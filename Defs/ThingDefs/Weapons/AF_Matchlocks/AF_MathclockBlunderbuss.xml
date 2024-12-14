@@ -55,8 +55,9 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <Weapon_Parts>1</Weapon_Parts>
+      <ComponentMedieval>1</ComponentMedieval>
     </smeltProducts>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">

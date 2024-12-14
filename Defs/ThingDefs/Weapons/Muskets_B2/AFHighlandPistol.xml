@@ -50,8 +50,9 @@
       </li>
     </comps>
     <smeltProducts Inherit="false">
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentMedieval>3</ComponentMedieval>
     </smeltProducts>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -67,7 +68,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentMedieval</li>
+            <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -86,7 +87,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>35</count>
+        <count>45</count>
       </li>
     </ingredients>
     <products>
@@ -94,7 +95,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentMedieval</li>
+        <li>AF_MusketWeaponPart</li>
         <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>

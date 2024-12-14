@@ -51,8 +51,9 @@
       </li>
     </comps>
     <smeltProducts Inherit="false">
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentMedieval>1</ComponentMedieval>
     </smeltProducts>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">

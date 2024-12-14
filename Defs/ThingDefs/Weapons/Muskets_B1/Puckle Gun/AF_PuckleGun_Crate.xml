@@ -53,7 +53,15 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentMedieval</li>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
         <count>15</count>
@@ -63,6 +71,9 @@
       <AF_PuckleGun_Crate>1</AF_PuckleGun_Crate>
     </products>
     <fixedIngredientFilter>
+      <thingDefs>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
       <categories>
         <li>Wooden</li>
         <li>SLDBar</li>

@@ -3,11 +3,10 @@
   <ThingDef ParentName="SK_ResourceBase">
     <defName>SmallFlintBlocks</defName>
     <label>Small flint chunks</label>
-    <description>Small flint blocks</description>
+    <description>Small flint chunks</description>
     <graphicData>
-      <texPath>Things/Item/Resource/RoughGem</texPath>
+      <texPath>Things/Resource/AF_SmallFlintBlocks</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <color>(42,42,38)</color>
     </graphicData>
     <statBases>
       <MarketValue>1.9</MarketValue>
@@ -23,16 +22,18 @@
     </stuffProps>
   </ThingDef>
   
-  <!--<RecipeDef>
+  <RecipeDef>
     <defName>Make_SmallFlintBlock</defName>
-    <label>Small flint blocks (x40)</label>
-    <description>Small flint blocks. Produces 40.</description>
-    <jobString>Making Small flint blocks.</jobString>
+    <label>Small flint blocks (x5)</label>
+    <description>Small flint chunks. Produces 5.</description>
+    <jobString>Making Small flint chunks.</jobString>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>ZF_ChunkFlint</li>
+            <li>ChunkLimestone</li>
+            <li>ChunkSlate</li>
+            <li>ChunkSandstone</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -40,15 +41,18 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ZF_ChunkFlint</li>
+        <li>ChunkLimestone</li>
+        <li>ChunkSlate</li>
+        <li>ChunkSandstone</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <SmallFlintBlocks>40</SmallFlintBlocks>
+      <SmallFlintBlocks>5</SmallFlintBlocks>
+      <CrushedStone>15</CrushedStone>
     </products>
     <recipeUsers>
       <li>TableStonecutterNeolithic</li>
       <li>TableStonecutter</li>
     </recipeUsers>
-  </RecipeDef>-->
+  </RecipeDef>
 </Defs>
