@@ -6,7 +6,7 @@
     <label>Musket, .80 caliber</label>
     <description>A large smoothbore musket with a very long barrel. \nCaliber: .80</description>
     <graphicData>
-      <texPath>Things/Weapons/AFMusket</texPath>
+      <texPath>Things/Weapons/AF_Musket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>

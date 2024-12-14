@@ -74,6 +74,6 @@
       <li>MusketBench</li>
     </recipeUsers>
     <unfinishedThingDef>UnfinishedTurretMedieval</unfinishedThingDef>
-    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
   </RecipeDef>
 </Defs>

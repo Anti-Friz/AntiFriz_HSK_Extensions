@@ -11,7 +11,7 @@
         <volume>(0.1, 0.4, 0.1)</volume>
       </shadowData>
     </graphicData>
-    <uiIconPath>Things/Turret/Culverin_Ico</uiIconPath>
+    <uiIconPath>Things/Weapons/AF_WheelLockMusket_Ico</uiIconPath>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>1200</WorkToBuild>
@@ -32,7 +32,7 @@
     <specialDisplayRadius>1</specialDisplayRadius>
     <building>
       <turretGunDef>Gun_AF_WallGun</turretGunDef>
-      <turretTopDrawSize>1</turretTopDrawSize>
+      <turretTopDrawSize>2</turretTopDrawSize>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
@@ -41,7 +41,7 @@
     <minifiedDef>MinifiedTurret_AF_WallGun</minifiedDef>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>Medieval_Cannons</li>
+      <li>AF_Wheellocks</li>
     </researchPrerequisites>
   </ThingDef>
 </Defs>

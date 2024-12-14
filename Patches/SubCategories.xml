@@ -6,6 +6,18 @@
       <li>MusketBench</li>
     </value>
   </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_BlackPowder"]/defNames</xpath>
+    <value>
+      <li>Turret_AF_WallGun</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_BlackPowder"]/defNames</xpath>
+    <value>
+      <li>Turret_AF_PuckleGun</li>
+    </value>
+  </Operation>
 </Patch>
 
 

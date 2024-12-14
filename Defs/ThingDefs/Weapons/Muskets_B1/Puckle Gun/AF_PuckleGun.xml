@@ -4,7 +4,7 @@
     <defName>Gun_AF_PuckleGun</defName>
     <label>Puckle Gun</label>
     <graphicData>
-      <texPath>Things/Turret/Culverin_Top</texPath>
+      <texPath>Things/Weapons/AF_PuckleGun_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <description>It’s a tripod-mounted weapon, like the wall gun, but with a flintlock. To boost its rate of fire, it has a cylinder that holds nine rounds of ammunition, turned with a hand crank between shots to line up unfired rounds with the firing mechanism.</description>
@@ -46,7 +46,8 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>2,2</DrawSize>
+        <DrawSize>4,4</DrawSize>
+        <DrawOffset>0.0,-2.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>

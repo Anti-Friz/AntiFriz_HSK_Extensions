@@ -4,7 +4,7 @@
     <defName>Gun_AF_WallGun</defName>
     <label>Wall Gun</label>
     <graphicData>
-      <texPath>Things/Weapons/AF_WheelLockMusket</texPath>
+      <texPath>Things/Weapons/AF_WheelLockMusket_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <description>A smoothbore weapon even heavier than a musket, placed on a tripod mount atop a city wall for use in defensive fire.</description>
@@ -23,7 +23,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_106Caliber_Lead</defaultProjectile>
         <circularError>1.2</circularError>
-        <warmupTime>1</warmupTime>
+        <warmupTime>1.1</warmupTime>
         <minRange>2</minRange>
         <range>22</range>
         <burstShotCount>1</burstShotCount>

@@ -5,13 +5,13 @@
     <defName>Turret_AF_PuckleGun</defName>
     <label>Wall Gun \nCaliber: 1.25</label>
     <graphicData>
-      <texPath>Things/Turret/Culverin_Base</texPath>
-      <drawSize>(1,1)</drawSize>
+      <texPath>Things/Weapons/AF_PuckleGun_Base</texPath>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.1, 0.4, 0.1)</volume>
       </shadowData>
     </graphicData>
-    <uiIconPath>Things/Turret/Culverin_Ico</uiIconPath>
+    <uiIconPath>Things/Weapons/AF_PuckleGun_Ico</uiIconPath>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>1200</WorkToBuild>
@@ -41,7 +41,7 @@
     <minifiedDef>MinifiedTurret_AF_PuckleGun</minifiedDef>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>Medieval_Cannons</li>
+      <li>Muskets_B1</li>
     </researchPrerequisites>
   </ThingDef>
 </Defs>
