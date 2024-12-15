@@ -25,7 +25,7 @@
     <thingCategories>
       <li>Parts</li>
     </thingCategories>
-    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    
   </ThingDef>
   
   <RecipeDef>
@@ -74,5 +74,6 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

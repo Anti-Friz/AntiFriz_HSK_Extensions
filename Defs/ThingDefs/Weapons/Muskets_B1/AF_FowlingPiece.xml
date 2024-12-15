@@ -70,7 +70,7 @@
     <smeltProducts>
       <ComponentMedieval>3</ComponentMedieval>
     </smeltProducts>
-    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    
   </ThingDef>
   <!-- ==================FowlingPieceDouble============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
@@ -129,7 +129,7 @@
     <smeltProducts>
       <ComponentMedieval>3</ComponentMedieval>
     </smeltProducts>
-    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    
   </ThingDef>
   <!-- ====================RECIPE_FowlingPieceSingle========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -192,6 +192,7 @@
       <li>MusketBench</li>
     </recipeUsers>
     <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
   <!-- ====================RECIPE_FowlingPieceSingle========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -254,5 +255,6 @@
       <li>MusketBench</li>
     </recipeUsers>
     <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

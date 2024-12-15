@@ -56,7 +56,7 @@
     <smeltProducts>
       <ComponentMedieval>3</ComponentMedieval>
     </smeltProducts>
-    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -121,5 +121,6 @@
       <li>MusketBench</li>
     </recipeUsers>
     <researchPrerequisite>AF_Wheellocks_Rifles</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>
