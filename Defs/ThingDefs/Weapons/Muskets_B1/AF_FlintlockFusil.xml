@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_FlintlockCarbine</defName>
-    <label>Flintlock Carbine musket, .62 caliber</label>
-    <description>Flintlock Carbine musket. \nCaliber: .62</description>
+    <defName>AF_FlintlockFusil</defName>
+    <label>Flintlock Fusil, .55 caliber</label>
+    <description>The fusil is similar to a caliver, but with a flintlock rather than a matchlock. \nCaliber: .55</description>
     <graphicData>
-      <texPath>Things/Weapons/AFFlintlockCarbine</texPath>
+      <texPath>Things/Weapons/AFFlintlockFusil</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,22 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.97</SightsEfficiency>
-      <ShotSpread>0.35</ShotSpread>
-      <SwayFactor>1.4</SwayFactor>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>7</Bulk>
-      <Mass>3.9</Mass>
+      <MarketValue>145</MarketValue>
+      <SightsEfficiency>0.65</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.59</SwayFactor>
+      <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+      <Bulk>13</Bulk>
+      <Mass>2.94</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>65</range>
+        <defaultProjectile>Bullet_55Caliber_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>16</range>
+        <recoilAmount>1.65</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -45,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <ammoSet>AmmoSet_55Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -60,11 +61,11 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_FlintlockCarbine</defName>
-    <label>Build Flintlock Carbine musket</label>
-    <description>Flintlock Carbine musket. .\nCaliber: .62</description>
-    <jobString>Building Flintlock Carbine musket.</jobString>
-    <workAmount>8000</workAmount>
+    <defName>BuildAF_FlintlockFusil</defName>
+    <label>Build Flintlock Fusil</label>
+    <description>Flintlock Fusil. .\nCaliber: .55</description>
+    <jobString>Building Flintlock Fusil.</jobString>
+    <workAmount>11500</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -75,7 +76,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -91,7 +92,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>60</count>
       </li>
       <li>
         <filter>
@@ -99,11 +100,11 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
-      <AF_FlintlockCarbine>1</AF_FlintlockCarbine>
+      <AF_FlintlockFusil>1</AF_FlintlockFusil>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -118,7 +119,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

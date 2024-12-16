@@ -12,11 +12,11 @@
     <statBases>
       <MarketValue>135</MarketValue>
       <SightsEfficiency>0.6</SightsEfficiency>
-      <ShotSpread>2</ShotSpread>
-      <SwayFactor>1.5</SwayFactor>
-      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
-      <Bulk>3</Bulk>
-      <Mass>2.75</Mass>
+      <ShotSpread>0.6</ShotSpread>
+      <SwayFactor>1.58</SwayFactor>
+      <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+      <Bulk>3.5</Bulk>
+      <Mass>1.24</Mass>
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>60</MaxHitPoints>
       <SellPriceFactor>0.6</SellPriceFactor>
@@ -32,8 +32,9 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_52Caliber_Lead</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>19</range>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
+        <recoilAmount>2.57</recoilAmount>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -41,7 +42,7 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiAimMode>AimedShot</aiAimMode>
+        <aiAimMode>Snapshot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
@@ -60,7 +61,7 @@
     <label>Build Highland Pistol</label>
     <description>Highland Pistol.</description>
     <jobString>Building Highland Pistol pistol.</jobString>
-    <workAmount>8000</workAmount>
+    <workAmount>3500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
@@ -87,7 +88,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>45</count>
+        <count>30</count>
       </li>
     </ingredients>
     <products>
@@ -105,7 +106,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

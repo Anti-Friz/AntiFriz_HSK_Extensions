@@ -19,11 +19,11 @@
     <statBases>
       <MarketValue>200</MarketValue>
       <SightsEfficiency>0.3</SightsEfficiency>
-      <ShotSpread>2</ShotSpread>
+      <ShotSpread>1</ShotSpread>
       <SwayFactor>1</SwayFactor>
-      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
       <Bulk>10</Bulk>
-      <Mass>6.9</Mass>
+      <Mass>3.12</Mass>
       <WorkToMake>6000</WorkToMake>
     </statBases>
     <verbs>
@@ -32,7 +32,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_87Gonne_Lead</defaultProjectile>
         <warmupTime>1.2</warmupTime>
-        <range>23</range>
+        <range>13</range>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -40,7 +40,7 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiAimMode>AimedShot</aiAimMode>
+        <aiAimMode>Snapshot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>

@@ -44,11 +44,19 @@
         <filter>
           <categories>
             <li>Wooden</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Wooden</li>
             <li>SLDBar</li>
             <li>USLDBar</li>
           </categories>
         </filter>
-        <count>110</count>
+        <count>190</count>
       </li>
       <li>
         <filter>
@@ -64,7 +72,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>15</count>
+        <count>18</count>
       </li>
     </ingredients>
     <products>

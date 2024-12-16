@@ -19,11 +19,11 @@
     <statBases>
       <MarketValue>150</MarketValue>
       <SightsEfficiency>0.8</SightsEfficiency>
-      <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>1.11</SwayFactor>
-      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
-      <Bulk>6</Bulk>
-      <Mass>5.08</Mass>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.39</SwayFactor>
+      <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+      <Bulk>8.5</Bulk>
+      <Mass>5.4</Mass>
       <WorkToMake>9500</WorkToMake>
     </statBases>
     <verbs>
@@ -31,9 +31,9 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_62Blunderbuss_Buck</defaultProjectile>
-        <recoilAmount>2</recoilAmount>
+        <recoilAmount>2.35</recoilAmount>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>12</range>        
         <soundCast>BrownBess</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
@@ -93,7 +93,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>45</count>
+        <count>50</count>
       </li>
       <li>
         <filter>

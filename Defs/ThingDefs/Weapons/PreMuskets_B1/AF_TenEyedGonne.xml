@@ -17,13 +17,13 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>350</MarketValue>
+      <MarketValue>920</MarketValue>
       <SightsEfficiency>0.2</SightsEfficiency>
       <ShotSpread>2</ShotSpread>
       <SwayFactor>1</SwayFactor>
-      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
       <Bulk>10</Bulk>
-      <Mass>22</Mass>
+      <Mass>12.24</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
@@ -32,7 +32,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_87Gonne_Lead</defaultProjectile>
         <warmupTime>1.2</warmupTime>
-        <range>20</range>
+        <range>13</range>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

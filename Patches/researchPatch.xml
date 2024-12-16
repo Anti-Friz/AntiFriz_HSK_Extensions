@@ -11,7 +11,13 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/researchViewY</xpath>
           <value>
-            <researchViewY>34.00</researchViewY>
+            <li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
+              <filter>
+                <thingDefs>
+                  <li>Pa_UniversalAR</li>
+                </thingDefs>
+              </filter>
+            </li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -100,6 +106,27 @@
               </prerequisites>
               <researchViewX>5.00</researchViewX>
               <researchViewY>33.00</researchViewY>
+              <tab>Weapon_SK</tab>
+              <modExtensions>
+                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
+              </modExtensions>
+            </ResearchProjectDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef ParentName="MedievalBase">
+              <defName>AF_MusketAttachments</defName>
+              <label>Musket Attachments</label>
+              <description>There is always room for upgrade.</description>
+              <baseCost>200</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>AF_Wheellocks</li>
+              </prerequisites>
+              <researchViewX>5.00</researchViewX>
+              <researchViewY>34.00</researchViewY>
               <tab>Weapon_SK</tab>
               <modExtensions>
                 <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>

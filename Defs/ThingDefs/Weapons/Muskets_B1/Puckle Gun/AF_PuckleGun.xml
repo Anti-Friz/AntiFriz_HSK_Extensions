@@ -11,11 +11,11 @@
     <soundInteract>CannonInteract</soundInteract>
     <techLevel>Medieval</techLevel>
     <statBases>
-      <MarketValue>600</MarketValue>
+      <MarketValue>1800</MarketValue>
       <SightsEfficiency>0.8</SightsEfficiency>
-      <ShotSpread>0.8</ShotSpread>
-      <SwayFactor>1</SwayFactor>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.4</SwayFactor>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -23,9 +23,10 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_125Caliber_Lead</defaultProjectile>
         <circularError>1.2</circularError>
-        <warmupTime>1</warmupTime>
+        <warmupTime>1.1</warmupTime>
         <minRange>2</minRange>
-        <range>16</range>
+        <range>13</range>
+        <recoilAmount>0.22</recoilAmount>
         <burstShotCount>1</burstShotCount>
         <soundCast>SwivelGun</soundCast>
         <targetParams>

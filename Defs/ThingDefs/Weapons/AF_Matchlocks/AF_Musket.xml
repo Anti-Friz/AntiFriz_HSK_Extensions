@@ -18,13 +18,13 @@
     </weaponTags>
     <statBases>
       <MarketValue>175</MarketValue>
-      <SightsEfficiency>0.6</SightsEfficiency>
-      <ShotSpread>0.4</ShotSpread>
-      <SwayFactor>1.6</SwayFactor>
+      <SightsEfficiency>0.63</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>2.45</SwayFactor>
       <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
-      <Bulk>13</Bulk>
-      <Mass>2.99</Mass>
-      <WorkToMake>11500</WorkToMake>
+      <Bulk>15</Bulk>
+      <Mass>9.52</Mass>
+      <WorkToMake>14500</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -65,7 +65,7 @@
     <label>Build Musket</label>
     <description>Musket. .\nCaliber: .80</description>
     <jobString>Building Musket.</jobString>
-    <workAmount>11500</workAmount>
+    <workAmount>14500</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -93,7 +93,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>60</count>
+        <count>85</count>
       </li>
       <li>
         <filter>
@@ -101,7 +101,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>10</count>
+        <count>15</count>
       </li>
     </ingredients>
     <products>
@@ -109,7 +109,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentIndustrial</li>
+        <li>ComponentMedieval</li>
         <li>RushlightFuel</li>
         <li>CandleFuel</li>
       </thingDefs>

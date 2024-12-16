@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_Carbine</defName>
     <label>Carbine musket, .69 caliber</label>
-    <description>musket-like weapon designed for cavalrymen who want more than a pistol. It has a short barrel and weighs much less than a musket or caliver. \nCaliber: .69</description>
+    <description>Musket-like weapon designed for cavalrymen who want more than a pistol. It has a short barrel and weighs much less than a musket or caliver. \nCaliber: .69</description>
     <graphicData>
       <texPath>Things/Weapons/AFCarbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,22 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.97</SightsEfficiency>
-      <ShotSpread>0.35</ShotSpread>
-      <SwayFactor>1.4</SwayFactor>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>7</Bulk>
-      <Mass>6.6</Mass>
-      <WorkToMake>8000</WorkToMake>
+      <MarketValue>290</MarketValue>
+      <SightsEfficiency>0.62</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.41</SwayFactor>
+      <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+      <Bulk>11.14</Bulk>
+      <Mass>2.94</Mass>
+      <WorkToMake>10500</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>80</range>
+        <warmupTime>0.9</warmupTime>
+        <range>17</range>
+        <recoilAmount>1.65</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -54,7 +55,7 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <ComponentMedieval>3</ComponentMedieval>
+      <ComponentMedieval>1</ComponentMedieval>
     </smeltProducts>
     
   </ThingDef>
@@ -64,7 +65,7 @@
     <label>Build Carbine musket</label>
     <description>Carbine musket. .\nCaliber: .69</description>
     <jobString>Building Carbine musket.</jobString>
-    <workAmount>8000</workAmount>
+    <workAmount>10500</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -75,7 +76,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -92,7 +93,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>55</count>
       </li>
       <li>
         <filter>
@@ -100,7 +101,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>

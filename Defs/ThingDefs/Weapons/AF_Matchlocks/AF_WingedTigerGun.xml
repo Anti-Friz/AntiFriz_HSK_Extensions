@@ -17,13 +17,13 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.97</SightsEfficiency>
-      <ShotSpread>0.35</ShotSpread>
-      <SwayFactor>1.4</SwayFactor>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>12</Bulk>
-      <Mass>6.5</Mass>
+      <MarketValue>220</MarketValue>
+      <SightsEfficiency>0.45</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.24</SwayFactor>
+      <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+      <Bulk>9.5</Bulk>
+      <Mass>2.94</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
@@ -31,8 +31,9 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_55Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>45</range>
+        <warmupTime>0.9</warmupTime>
+        <range>12</range>
+        <recoilAmount>1.65</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -76,7 +77,7 @@
             <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -85,7 +86,7 @@
             <li>CandleFuel</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -93,7 +94,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>95</count>
       </li>
       <li>
         <filter>
@@ -101,7 +102,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
@@ -109,7 +110,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentIndustrial</li>
+        <li>ComponentMedieval</li>
         <li>RushlightFuel</li>
         <li>CandleFuel</li>
       </thingDefs>

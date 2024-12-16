@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="AF_MusketBaseAttachment">
+    <defName>AF_MusketBayonet</defName>
+    <label>Musket Bayonet</label>
+    <comps>
+      <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+        <PartTexPath>Things/WeaponPart/Bayonets/AF_MusketBayonet</PartTexPath>
+        <statOffset>
+          <Bulk>1</Bulk>
+        </statOffset>
+        <verbPropertiesOffseter>
+          <li>
+            <range>-1</range>
+          </li>
+        </verbPropertiesOffseter>
+        <statMultiplier>
+          <SightsEfficiency>0.95</SightsEfficiency>
+          <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+        </statMultiplier>
+      </li>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.18</cooldownTime>
+        <armorPenetrationBlunt>0.36</armorPenetrationBlunt>
+        <armorPenetrationSharp>0.32</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.2</cooldownTime>
+        <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+        <armorPenetrationSharp>0.42</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <stuffCategories>
+      <li>SLDBar</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MusketBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

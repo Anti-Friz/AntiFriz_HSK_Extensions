@@ -14,12 +14,12 @@
     <stackLimit>1</stackLimit>
     <techLevel>Medieval</techLevel>
     <statBases>
-      <MarketValue>100</MarketValue>
+      <MarketValue>1800</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>12.5</Mass>
-      <Bulk>10</Bulk>
+      <Bulk>15</Bulk>
     </statBases>
     <thingCategories>
       <li>WeaponCrate</li>
@@ -35,7 +35,7 @@
     <label>Build Wall Gun</label>
     <description>Use this to build a Wall Gun.</description>
     <jobString>Building a Wall Gun crate.</jobString>
-    <workAmount>10500</workAmount>
+    <workAmount>33000</workAmount>
     <skillRequirements>
       <Crafting>6</Crafting>
     </skillRequirements>
@@ -44,11 +44,18 @@
         <filter>
           <categories>
             <li>Wooden</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
             <li>SLDBar</li>
             <li>USLDBar</li>
           </categories>
         </filter>
-        <count>90</count>
+        <count>115</count>
       </li>
       <li>
         <filter>
@@ -56,7 +63,7 @@
             <li>Wooden</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -74,7 +81,7 @@
             <li>CandleFuel</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>6</count>
       </li>
       <li>
         <filter>
@@ -82,7 +89,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>3</count>
       </li>
     </ingredients>
     <products>

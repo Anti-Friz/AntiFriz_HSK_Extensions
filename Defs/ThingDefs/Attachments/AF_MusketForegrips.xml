@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="AF_MusketBaseAttachment">
+    <defName>AF_WoodenPistolForegrip</defName>
+    <label>Wooden Foregrip</label>
+    <comps>
+      <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+        <PartTexPath>Things/WeaponPart/Foregrips/AF_WoodenPistolForegrip</PartTexPath>
+        <statOffset>
+          <Bulk>0.5</Bulk>
+        </statOffset>
+        <statMultiplier>
+          <SwayFactor>0.95</SwayFactor>
+        </statMultiplier>
+      </li>
+    </comps>
+    <costList>
+      <stuffCategories>
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>5</costStuffCount>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MusketBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

@@ -17,22 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.97</SightsEfficiency>
-      <ShotSpread>0.35</ShotSpread>
-      <SwayFactor>1.4</SwayFactor>
+      <MarketValue>170</MarketValue>
+      <SightsEfficiency>0.53</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.75</SwayFactor>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>7</Bulk>
-      <Mass>8.6</Mass>
-      <WorkToMake>8000</WorkToMake>
+      <Bulk>13.58</Bulk>
+      <Mass>3.9</Mass>
+      <WorkToMake>12000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_47Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>45</range>
+        <warmupTime>0.9</warmupTime>
+        <range>12</range>
+        <recoilAmount>1.44</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -64,7 +65,7 @@
     <label>Build Teppo</label>
     <description>Teppo. .\nCaliber: .47</description>
     <jobString>Building Teppo.</jobString>
-    <workAmount>8000</workAmount>
+    <workAmount>12000</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -75,7 +76,7 @@
             <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -84,7 +85,7 @@
             <li>CandleFuel</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -92,7 +93,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>65</count>
       </li>
       <li>
         <filter>
@@ -100,7 +101,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
@@ -108,7 +109,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ComponentIndustrial</li>
+        <li>ComponentMedieval</li>
         <li>RushlightFuel</li>
         <li>CandleFuel</li>
       </thingDefs>

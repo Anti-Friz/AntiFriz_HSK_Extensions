@@ -11,12 +11,12 @@
     <soundInteract>BPInteract</soundInteract>
     <statBases>
       <MarketValue>250</MarketValue>
-      <SightsEfficiency>0.5</SightsEfficiency>
-      <ShotSpread>2</ShotSpread>
+      <SightsEfficiency>0.4</SightsEfficiency>
+      <ShotSpread>0.57</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
-      <Bulk>3</Bulk>
-      <Mass>2.75</Mass>
+      <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+      <Bulk>3.8</Bulk>
+      <Mass>1.24</Mass>
       <WorkToMake>5500</WorkToMake>
       <MaxHitPoints>40</MaxHitPoints>
       <SellPriceFactor>0.6</SellPriceFactor>
@@ -32,8 +32,9 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_55Caliber_Lead</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>25</range>
+        <warmupTime>0.68</warmupTime>
+        <range>12</range>
+        <recoilAmount>2.57</recoilAmount>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -41,7 +42,7 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiAimMode>AimedShot</aiAimMode>
+        <aiAimMode>Snapshot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
@@ -60,7 +61,7 @@
     <label>Build Military Pistol</label>
     <description>Military Pistol.</description>
     <jobString>Building Military Pistol pistol.</jobString>
-    <workAmount>5500</workAmount>
+    <workAmount>3500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
@@ -88,7 +89,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>15</count>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -96,7 +97,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>10</count>
+        <count>5</count>
       </li>
     </ingredients>
     <products>

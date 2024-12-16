@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BaseGun_ShortBarreled">
-    <defName>AF_QueenAnnePistol</defName>
-    <label>Queen Anne Pistol</label>
-    <description>The 8” barrel is “brass” (meaning cast bronze), and screws into the combined lock and grip. To reload, the barrel must be unscrewed, but this allows use of bullets with minimal windage, improving accuracy. \nCaliber: .50</description>
+    <defName>AF_SnaphauncePistol</defName>
+    <label>Snaphaunce Pistol</label>
+    <description>An early variant on the flintlock pistol with a comparatively long 11” barrel. \nCaliber: .45</description>
     <graphicData>
       <texPath>Things/Weapons/AFQueenAnnePistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>BPInteract</soundInteract>
     <statBases>
-      <MarketValue>135</MarketValue>
+      <MarketValue>125</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
-      <ShotSpread>1.75</ShotSpread>
-      <SwayFactor>1.5</SwayFactor>
+      <ShotSpread>0.5</ShotSpread>
+      <SwayFactor>1.36</SwayFactor>
       <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
-      <Bulk>3</Bulk>
-      <Mass>2.4</Mass>
+      <Bulk>3.5</Bulk>
+      <Mass>0.58</Mass>
       <WorkToMake>6500</WorkToMake>
-      <MaxHitPoints>75</MaxHitPoints>
+      <MaxHitPoints>35</MaxHitPoints>
       <SellPriceFactor>0.6</SellPriceFactor>
     </statBases>
     <weaponTags>
@@ -31,9 +31,10 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_50Caliber_Lead</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>20</range>
+        <defaultProjectile>Bullet_45Caliber_Lead</defaultProjectile>
+        <warmupTime>0.65</warmupTime>
+        <range>11</range>
+        <recoilAmount>3.74</recoilAmount>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -41,26 +42,26 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiAimMode>AimedShot</aiAimMode>
+        <aiAimMode>Snapshot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>5</reloadTime>
-        <ammoSet>AmmoSet_50Caliber</ammoSet>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_45Caliber</ammoSet>
       </li>
     </comps>
     <smeltProducts Inherit="false">
-      <ComponentMedieval>3</ComponentMedieval>
+      <ComponentMedieval>1</ComponentMedieval>
     </smeltProducts>
     
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildGun_AFQueenAnnePistol</defName>
-    <label>Build Queen Anne Pistol</label>
-    <description>Queen Anne Pistol.</description>
-    <jobString>Building Queen Anne pistol.</jobString>
-    <workAmount>8000</workAmount>
+    <defName>BuildGun_AF_SnaphauncePistol</defName>
+    <label>Build Snaphaunce Pistol</label>
+    <description>Snaphaunce Pistol.</description>
+    <jobString>Building Snaphaunce Pistol.</jobString>
+    <workAmount>3500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
@@ -68,18 +69,19 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_MusketWeaponPart</li>
+            <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>SmallFlintBlocks</li>
+            <li>RushlightFuel</li>
+            <li>CandleFuel</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -87,7 +89,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>30</count>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -95,16 +97,17 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>15</count>
+        <count>5</count>
       </li>
     </ingredients>
     <products>
-      <AF_QueenAnnePistol>1</AF_QueenAnnePistol>
+      <AF_SnaphauncePistol>1</AF_SnaphauncePistol>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_MusketWeaponPart</li>
-        <li>SmallFlintBlocks</li>
+        <li>ComponentMedieval</li>
+        <li>RushlightFuel</li>
+        <li>CandleFuel</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -114,8 +117,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-    <!-- Smithing -->
   </RecipeDef>
 </Defs>

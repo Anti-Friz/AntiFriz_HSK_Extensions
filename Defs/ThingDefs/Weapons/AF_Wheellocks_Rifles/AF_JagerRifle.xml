@@ -18,12 +18,12 @@
     </weaponTags>
     <statBases>
       <MarketValue>300</MarketValue>
-      <SightsEfficiency>0.97</SightsEfficiency>
-      <ShotSpread>0.35</ShotSpread>
-      <SwayFactor>1.4</SwayFactor>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>9</Bulk>
-      <Mass>11</Mass>
+      <SightsEfficiency>0.75</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1.6</SwayFactor>
+      <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+      <Bulk>11</Bulk>
+      <Mass>4.98</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
@@ -31,8 +31,9 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_65Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>65</range>
+        <warmupTime>0.9</warmupTime>
+        <range>15</range>
+        <recoilAmount>1.27</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -75,7 +76,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -92,7 +93,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>60</count>
       </li>
       <li>
         <filter>
@@ -100,7 +101,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>15</count>
       </li>
     </ingredients>
     <products>

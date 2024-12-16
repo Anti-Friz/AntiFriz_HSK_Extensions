@@ -289,7 +289,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
     <!-- Smithing -->
   </RecipeDef>
   

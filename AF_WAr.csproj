@@ -9,8 +9,12 @@
   <ItemGroup>
     <Folder Include="Defs\RecipeDefs\" />
     <Folder Include="Defs\ThingDefs\Weapons\AF_Matchlocks_Rifles\" />
+    <Folder Include="Defs\ThingDefs\Weapons\Muskets_B2\" />
     <Folder Include="Languages\" />
     <Folder Include="Sounds\" />
+    <Folder Include="Textures\Things\WeaponPart\Foregrips\" />
+    <Folder Include="Textures\Things\WeaponPart\Bayonets\" />
+    <Folder Include="Textures\Things\WeaponPart\Sights\" />
   </ItemGroup>
 
 </Project>

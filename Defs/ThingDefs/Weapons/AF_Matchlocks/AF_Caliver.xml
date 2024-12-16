@@ -17,7 +17,7 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>300</MarketValue>
+      <MarketValue>135</MarketValue>
       <SightsEfficiency>0.57</SightsEfficiency>
       <ShotSpread>0.15</ShotSpread>
       <SwayFactor>1.6</SwayFactor>

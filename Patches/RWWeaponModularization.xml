@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+      <li>RW - Weapon Modularization</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOpertionAdd">
+          <xpatch>Defs/WorkGiverDef[defName="ModularizationWeapon_Apply"]/fixedBillGiverDefs</xpatch>
+          <value>
+            <li>MusketBench</li>
+          </value>
+        </li>
+        <li Class="PatchOpertionAdd">
+          <xpatch>Defs/ThingDef[defName="MusketBench"]/comps</xpatch>
+          <value>
+            <li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
+              <filter>
+                <thingDefs>
+                  <li>AF_Arquebus</li>
+                  <li>AF_Caliver</li>
+                  <li>AF_MathclockBlunderbuss</li>
+                  <li>AF_Musket</li>
+                  <li>AF_Teppo</li>
+                  <li>AF_WingedTigerGun</li>
+                  <li>AF_SnaphauncePistol</li>
+                  <li>AF_Tantsutsu</li><!--pistol-->
+                  <li>AF_Carbine</li>
+                  <li>AF_WheellockBlunderbuss</li>
+                  <li>AF_MilitaryPistol</li><!--pistol-->
+                  <li>AF_Petronel</li><!--pistol-->
+                  <li>AF_PocketPistol</li><!--pistol-->
+                  <li>AF_PufferPistol</li><!--pistol-->
+                  <li>AF_LightDragoonPistol</li><!--pistol-->
+                  <li>AF_HeavyDragoonPistol</li><!--pistol-->
+                  <li>AF_BreechloadingCarbine</li>
+                  <li>AF_JagerRifle</li>
+                  <li>AF_FlintlockBlunderbuss</li>
+                  <li>AF_FowlingPieceSingle</li>
+                  <li>AF_FowlingPieceDouble</li>
+                  <li>AF_FlintlockCarbine</li>
+                  <li>AF_FlintlockFusil</li>
+                  <li>AF_HighlandPistol</li><!--pistol-->
+                  <li>AF_QueenAnnePistol</li><!--pistol-->
+                </thingDefs>
+              </filter>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_Arquebus"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_AF_WoodenPistolForegrip</UITexPath>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_AF_MusketImprovedSight</UITexPath>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_AF_MusketBayonet</UITexPath>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

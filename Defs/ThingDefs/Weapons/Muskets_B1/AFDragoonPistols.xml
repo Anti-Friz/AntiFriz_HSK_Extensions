@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseGun_ShortBarreled">
+    <defName>AF_LightDragoonPistol</defName>
+    <label>Light Dragoon Pistol</label>
+    <description>The light model cavalrymen’s pistol. \nCaliber: .56</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_DragoonPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BPInteract</soundInteract>
+    <statBases>
+      <MarketValue>140</MarketValue>
+      <SightsEfficiency>0.5</SightsEfficiency>
+      <ShotSpread>0.57</ShotSpread>
+      <SwayFactor>1.55</SwayFactor>
+      <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+      <Bulk>3.3</Bulk>
+      <Mass>1.36</Mass>
+      <WorkToMake>5500</WorkToMake>
+      <MaxHitPoints>15</MaxHitPoints>
+      <SellPriceFactor>0.6</SellPriceFactor>
+    </statBases>
+    <weaponTags>
+      <li>BlackPowderGun</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Pistols</li>
+    </thingCategories>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_56Caliber_Lead</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
+        <recoilAmount>2.45</recoilAmount>
+        <soundCast>Pistolet</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>2.5</reloadTime>
+        <ammoSet>AmmoSet_56Caliber</ammoSet>
+      </li>
+    </comps>
+    <smeltProducts Inherit="false">
+      <ComponentMedieval>1</ComponentMedieval>
+    </smeltProducts>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun_ShortBarreled">
+    <defName>AF_HeavyDragoonPistol</defName>
+    <label>Heavy Dragoon Pistol</label>
+    <description>The light model cavalrymen’s pistol. \nCaliber: .65</description>
+    <graphicData>
+      <texPath>Things/Weapons/AFPocketPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BPInteract</soundInteract>
+    <statBases>
+      <MarketValue>145</MarketValue>
+      <SightsEfficiency>0.5</SightsEfficiency>
+      <ShotSpread>0.54</ShotSpread>
+      <SwayFactor>1.6</SwayFactor>
+      <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+      <Bulk>3.4</Bulk>
+      <Mass>1.4</Mass>
+      <WorkToMake>5500</WorkToMake>
+      <MaxHitPoints>15</MaxHitPoints>
+      <SellPriceFactor>0.6</SellPriceFactor>
+    </statBases>
+    <weaponTags>
+      <li>BlackPowderGun</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Pistols</li>
+    </thingCategories>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_65Caliber_Lead</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>12</range>
+        <recoilAmount>2.42</recoilAmount>
+        <soundCast>Pistolet</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>2.5</reloadTime>
+        <ammoSet>AmmoSet_65Caliber</ammoSet>
+      </li>
+    </comps>
+    <smeltProducts Inherit="false">
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+  </ThingDef>
+  <!-- RECIPE -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildGun_AF_HeavyDragoonPistol</defName>
+    <label>Build Heavy Dragoon Pistol</label>
+    <description>Heavy Dragoon Pistol.</description>
+    <jobString>Building Light Dragoon Pistol.</jobString>
+    <workAmount>3500</workAmount>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_HeavyDragoonPistol>1</AF_HeavyDragoonPistol>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildGun_AF_LightDragoonPistol</defName>
+    <label>Build Light Dragoon Pistol</label>
+    <description>Light Dragoon Pistol.</description>
+    <jobString>Building Light Dragoon Pistol.</jobString>
+    <workAmount>3500</workAmount>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_LightDragoonPistol>1</AF_LightDragoonPistol>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

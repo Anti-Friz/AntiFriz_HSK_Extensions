@@ -18,12 +18,12 @@
     </weaponTags>
     <statBases>
       <MarketValue>270</MarketValue>
-      <SightsEfficiency>0.95</SightsEfficiency>
-      <ShotSpread>0.5</ShotSpread>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
       <SwayFactor>1.4</SwayFactor>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <Bulk>10</Bulk>
-      <Mass>9.3</Mass>
+      <RangedWeapon_Cooldown>0.89</RangedWeapon_Cooldown>
+      <Bulk>9.75</Bulk>
+      <Mass>4.21</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
@@ -31,8 +31,9 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_54Caliber_Lead</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>55</range>
+        <warmupTime>0.9</warmupTime>
+        <range>13</range>
+        <recoilAmount>1.38</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -44,7 +45,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>1.5</reloadTime>
+        <reloadTime>2.5</reloadTime>
         <ammoSet>AmmoSet_54Caliber</ammoSet>
       </li>
     </comps>
@@ -64,7 +65,7 @@
     <label>Build Breechloading Carbine</label>
     <description>Breechloading Carbine. .\nCaliber: .54</description>
     <jobString>Building Gonne.</jobString>
-    <workAmount>8000</workAmount>
+    <workAmount>10000</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -75,7 +76,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -84,7 +85,7 @@
             <li>CassiteriteCrystal</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -92,7 +93,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>35</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -100,7 +101,7 @@
             <li>Woody</li>
           </categories>
         </filter>
-        <count>18</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
