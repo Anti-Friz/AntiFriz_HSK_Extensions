@@ -11,13 +11,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/researchViewY</xpath>
           <value>
-            <li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
-              <filter>
-                <thingDefs>
-                  <li>Pa_UniversalAR</li>
-                </thingDefs>
-              </filter>
-            </li>
+            <researchViewY>34.00</researchViewY>
           </value>
         </li>
         <li Class="PatchOperationAdd">

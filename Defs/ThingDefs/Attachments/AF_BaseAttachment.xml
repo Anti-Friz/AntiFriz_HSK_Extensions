@@ -1,6 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <ThingCategoryDef>
+    <defName>ThingCategory_AF_MusketAttachment</defName>
+    <label>musket parts</label>
+    <parent>ThingCategory_GunParts</parent>
+  </ThingCategoryDef>
+
+  <ThingDef Name="GunPartBase" ParentName="ResourceBase"  Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <resourceReadoutPriority>Uncounted</resourceReadoutPriority>
+    <smeltable>true</smeltable>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WeaponCraftingWorkTable</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <WorkToMake>1500</WorkToMake>
+      <Mass>0.2</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>ThingCategory_GunParts</li>
+    </thingCategories>
+    <comps>
+      <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+        <TextureSizeFactor>256</TextureSizeFactor>
+        <TextureFilterMode>Point</TextureFilterMode>
+        <VerbTrackerAllVerbRedictory>true</VerbTrackerAllVerbRedictory>
+      </li>
+    </comps>
+  </ThingDef>
+  
   <ThingDef Name="AF_MusketBaseAttachment" ParentName="GunPartBase" Abstract="True">
-    
+    <thingCategories>
+      <li>ThingCategory_AF_MusketAttachment</li>
+    </thingCategories>
   </ThingDef>
 </Defs>

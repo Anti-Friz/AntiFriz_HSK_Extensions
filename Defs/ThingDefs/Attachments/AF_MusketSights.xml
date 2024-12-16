@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="AF_MusketBaseAttachment">
+  <ThingDef ParentName="GunPartBase">
     <defName>AF_MusketBasicSight</defName>
     <label>Basic musket sights</label>
     <comps>
@@ -34,7 +34,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  <ThingDef ParentName="AF_MusketBaseAttachment">
+  <ThingDef ParentName="GunPartBase">
     <defName>AF_MusketImprovedSight</defName>
     <label>Improved musket sights</label>
     <comps>
@@ -72,7 +72,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  <ThingDef ParentName="AF_MusketBaseAttachment">
+  <ThingDef ParentName="GunPartBase">
     <defName>AF_MusketSharpshooterSight</defName>
     <label>Sharpshooter musket sights</label>
     <statBases>
@@ -113,7 +113,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  <ThingDef ParentName="AF_MusketBaseAttachment">
+  <ThingDef ParentName="GunPartBase">
     <defName>AF_TacticalMusketSightRail</defName>
     <label>Tactical rail</label>
     <statBases>

@@ -9,12 +9,6 @@
       <success>Always</success>
       <operations>
         <li Class="PatchOpertionAdd">
-          <xpatch>Defs/WorkGiverDef[defName="ModularizationWeapon_Apply"]/fixedBillGiverDefs</xpatch>
-          <value>
-            <li>MusketBench</li>
-          </value>
-        </li>
-        <li Class="PatchOpertionAdd">
           <xpatch>Defs/ThingDef[defName="MusketBench"]/comps</xpatch>
           <value>
             <li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">

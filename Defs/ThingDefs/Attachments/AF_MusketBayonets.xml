@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="AF_MusketBaseAttachment">
+  <ThingDef ParentName="GunPartBase">
     <defName>AF_MusketBayonet</defName>
     <label>Musket Bayonet</label>
     <comps>
