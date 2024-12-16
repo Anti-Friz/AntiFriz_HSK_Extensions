@@ -25,17 +25,16 @@
                   <li>AF_MathclockBlunderbuss</li>
                   <li>AF_Musket</li>
                   <li>AF_Teppo</li>
-                  <li>AF_WingedTigerGun</li>
-                  <li>AF_SnaphauncePistol</li>
-                  <li>AF_Tantsutsu</li><!--pistol-->
+                  <!--<li>AF_SnaphauncePistol</li> pistol-->
+                  <!--<li>AF_Tantsutsu</li> pistol-->
                   <li>AF_Carbine</li>
                   <li>AF_WheellockBlunderbuss</li>
-                  <li>AF_MilitaryPistol</li><!--pistol-->
-                  <li>AF_Petronel</li><!--pistol-->
-                  <li>AF_PocketPistol</li><!--pistol-->
-                  <li>AF_PufferPistol</li><!--pistol-->
-                  <li>AF_LightDragoonPistol</li><!--pistol-->
-                  <li>AF_HeavyDragoonPistol</li><!--pistol-->
+                  <!--<li>AF_MilitaryPistol</li> pistol-->
+                  <!--<li>AF_Petronel</li> pistol-->
+                  <!--<li>AF_PocketPistol</li> pistol-->
+                  <!--<li>AF_PufferPistol</li> pistol-->
+                  <!--<li>AF_LightDragoonPistol</li> pistol-->
+                  <!--<li>AF_HeavyDragoonPistol</li> pistol-->
                   <li>AF_BreechloadingCarbine</li>
                   <li>AF_JagerRifle</li>
                   <li>AF_FlintlockBlunderbuss</li>
@@ -43,8 +42,8 @@
                   <li>AF_FowlingPieceDouble</li>
                   <li>AF_FlintlockCarbine</li>
                   <li>AF_FlintlockFusil</li>
-                  <li>AF_HighlandPistol</li><!--pistol-->
-                  <li>AF_QueenAnnePistol</li><!--pistol-->
+                  <!--<li>AF_HighlandPistol</li> pistol-->
+                  <!--<li>AF_QueenAnnePistol</li> pistol-->
                 </thingDefs>
               </filter>
             </li>
@@ -68,7 +67,6 @@
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
-                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_AF_WoodenPistolForegrip</UITexPath>
                   <allowEmpty>true</allowEmpty>
                   <positionInPixelSize>false</positionInPixelSize>
                   <filter>
@@ -83,7 +81,6 @@
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
-                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_AF_MusketImprovedSight</UITexPath>
                   <allowEmpty>true</allowEmpty>
                   <positionInPixelSize>false</positionInPixelSize>
                   <filter>
@@ -97,12 +94,667 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <position>(75,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_Caliver"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
-                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_AF_MusketBayonet</UITexPath>
                   <allowEmpty>true</allowEmpty>
                   <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(118,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_MathclockBlunderbuss"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_Musket"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(125,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_Teppo"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(56,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_Carbine"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(50,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_WheellockBlunderbuss"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_BreechloadingCarbine"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(80,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_JagerRifle"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(87,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_FowlingPieceSingle"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(153,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_FowlingPieceDouble"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_FlintlockCarbine"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(88,0.0,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AF_FlintlockFusil"]/comps</xpath>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+              <ForceNodeIdControl>true</ForceNodeIdControl>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <position>(87,0.0,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
                   <filter>
                     <thingDefs>
                       <li>AF_MusketBayonet</li>
