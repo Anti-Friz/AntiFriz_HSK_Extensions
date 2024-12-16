@@ -57,6 +57,12 @@
           <li>Small_ToolCabinet</li>
         </linkableFacilities>
       </li>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
     </comps>
     <building>
       <uninstallWork>1450</uninstallWork>

@@ -8,8 +8,8 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
-        <li Class="PatchOpertionAdd">
-          <xpatch>Defs/ThingDef[defName="MusketBench"]/comps</xpatch>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName="MusketBench"]/comps</xpath>
           <value>
             <li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
               <filter>
@@ -32,6 +32,7 @@
               </filter>
             </li>
           </value>
+          <order>Append</order>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="AF_Arquebus"]/comps</xpath>
@@ -48,6 +49,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -62,6 +64,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -78,6 +81,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(75,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -109,6 +113,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -123,6 +128,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -139,6 +145,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(118,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -170,6 +177,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -200,6 +208,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -214,6 +223,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -230,6 +240,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(125,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -261,6 +272,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -275,6 +287,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -291,6 +304,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(56,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -322,6 +336,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -336,6 +351,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -352,6 +368,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(50,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -383,6 +400,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -413,6 +431,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -427,6 +446,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -443,6 +463,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(80,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -474,6 +495,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -488,6 +510,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -504,6 +527,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(87,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -535,6 +559,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -549,6 +574,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -565,6 +591,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(153,0.-1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -596,6 +623,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -610,6 +638,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -642,6 +671,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -656,6 +686,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -672,6 +703,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(88,0.0,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -703,6 +735,7 @@
                 <li>
                   <id>foregrip</id>
                   <name>foregrip Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -717,6 +750,7 @@
                 <li>
                   <id>sight</id>
                   <name>sight Part</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
                   <position>(0,0.1,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
@@ -733,6 +767,7 @@
                 <li>
                   <id>bayonet</id>
                   <name>bayonet lug</name>
+                  <UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
                   <position>(87,0.0,0)</position>
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>

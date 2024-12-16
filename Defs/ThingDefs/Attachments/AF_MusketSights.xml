@@ -113,7 +113,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  <ThingDef ParentName="GunPartBase">
+  <!--<ThingDef ParentName="GunPartBase">
     <defName>AF_TacticalMusketSightRail</defName>
     <label>Tactical rail</label>
     <statBases>
@@ -164,5 +164,5 @@
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
-  </ThingDef>
+  </ThingDef>-->
 </Defs>

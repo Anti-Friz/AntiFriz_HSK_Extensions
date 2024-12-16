@@ -28,7 +28,7 @@
     
   </ThingDef>
   
-  <RecipeDef>
+  <RecipeDef ParentName="SK_ResourceBase">
     <defName>Make_AF_MusketWeaponPart</defName>
     <label>Make Musket Weapon Part (x1)</label>
     <description>Musket Weapon Part. Produces 1.</description>

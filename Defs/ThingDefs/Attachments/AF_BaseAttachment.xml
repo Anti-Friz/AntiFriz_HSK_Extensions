@@ -41,7 +41,7 @@
     </statBases>
     <intricate>true</intricate>
     <thingCategories>
-      <li>ThingCategory_GunParts</li>
+      <li>ThingCategory_AF_MusketAttachment</li>
     </thingCategories>
     <comps>
       <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
