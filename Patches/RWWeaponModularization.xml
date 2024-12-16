@@ -19,16 +19,8 @@
                   <li>AF_MathclockBlunderbuss</li>
                   <li>AF_Musket</li>
                   <li>AF_Teppo</li>
-                  <!--<li>AF_SnaphauncePistol</li> pistol-->
-                  <!--<li>AF_Tantsutsu</li> pistol-->
                   <li>AF_Carbine</li>
                   <li>AF_WheellockBlunderbuss</li>
-                  <!--<li>AF_MilitaryPistol</li> pistol-->
-                  <!--<li>AF_Petronel</li> pistol-->
-                  <!--<li>AF_PocketPistol</li> pistol-->
-                  <!--<li>AF_PufferPistol</li> pistol-->
-                  <!--<li>AF_LightDragoonPistol</li> pistol-->
-                  <!--<li>AF_HeavyDragoonPistol</li> pistol-->
                   <li>AF_BreechloadingCarbine</li>
                   <li>AF_JagerRifle</li>
                   <li>AF_FlintlockBlunderbuss</li>
@@ -36,8 +28,6 @@
                   <li>AF_FowlingPieceDouble</li>
                   <li>AF_FlintlockCarbine</li>
                   <li>AF_FlintlockFusil</li>
-                  <!--<li>AF_HighlandPistol</li> pistol-->
-                  <!--<li>AF_QueenAnnePistol</li> pistol-->
                 </thingDefs>
               </filter>
             </li>

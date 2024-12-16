@@ -49,9 +49,9 @@
       </li>
       <li>
         <filter>
-          <thingDefs>
+          <categories>
             <li>SLDBar</li>
-          </thingDefs>
+          </categories>
         </filter>
         <count>10</count>
       </li>
@@ -59,9 +59,11 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>
-        <li>SLDBar</li>
       </thingDefs>
     </fixedIngredientFilter>
+    <categories>
+      <li>SLDBar</li>
+    </categories>
     <products>
       <AF_MusketWeaponPart>1</AF_MusketWeaponPart>
     </products>

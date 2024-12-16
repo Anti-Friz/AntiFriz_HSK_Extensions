@@ -64,7 +64,9 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseIronFireLance" ParentName="SK_BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Bullet_IronFireLance_RocksPowder" ParentName="SK_BaseBullet">
+    <defName>Bullet_IronFireLance_RocksPowder</defName>
+    <label>Powder and rocks</label>
 		<graphicData>
 			<texPath>Things/Mote/FireGlow</texPath>
       <shaderType>MoteGlow</shaderType>
@@ -100,11 +102,6 @@
         </FleckDatas>
       </li>
     </comps>
-	</ThingDef>
-
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseIronFireLance">
-		<defName>Bullet_IronFireLance_RocksPowder</defName>
-		<label>Powder and rocks</label>
 	</ThingDef>
 
   <!-- ==================== Recipes ========================== -->

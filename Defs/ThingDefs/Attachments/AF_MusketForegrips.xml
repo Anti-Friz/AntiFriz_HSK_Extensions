@@ -14,12 +14,10 @@
         </statMultiplier>
       </li>
     </comps>
-    <costList>
-      <stuffCategories>
-        <li>Woody</li>
-      </stuffCategories>
-      <costStuffCount>5</costStuffCount>
-    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
     <recipeMaker>
       <recipeUsers>
         <li>MusketBench</li>
