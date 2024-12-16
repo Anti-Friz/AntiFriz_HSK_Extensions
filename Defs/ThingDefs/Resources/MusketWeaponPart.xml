@@ -60,10 +60,11 @@
       <thingDefs>
         <li>ComponentMedieval</li>
       </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+      </categories>
     </fixedIngredientFilter>
-    <categories>
-      <li>SLDBar</li>
-    </categories>
+    
     <products>
       <AF_MusketWeaponPart>1</AF_MusketWeaponPart>
     </products>
