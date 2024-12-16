@@ -3,7 +3,7 @@
   <ThingCategoryDef>
     <defName>ThingCategory_AF_MusketAttachment</defName>
     <label>musket parts</label>
-    <parent>ThingCategory_GunParts</parent>
+    <parent>Weapons</parent>
   </ThingCategoryDef>
 
   <ThingDef Name="GunPartBase" ParentName="ResourceBase"  Abstract="True">
