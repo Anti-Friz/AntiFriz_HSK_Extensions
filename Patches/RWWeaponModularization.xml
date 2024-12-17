@@ -378,7 +378,7 @@
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
                   <allowEmpty>true</allowEmpty>
-                  <positionInPixelSize>false</positionInPixelSize>
+                  <positionInPixelSize>true</positionInPixelSize>
                   <filter>
                     <thingDefs>
                       <li>AF_LeatherSling</li>
@@ -459,7 +459,7 @@
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
                   <allowEmpty>true</allowEmpty>
-                  <positionInPixelSize>false</positionInPixelSize>
+                  <positionInPixelSize>true</positionInPixelSize>
                   <filter>
                     <thingDefs>
                       <li>AF_LeatherSling</li>
@@ -507,7 +507,7 @@
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
                   <allowEmpty>true</allowEmpty>
-                  <positionInPixelSize>false</positionInPixelSize>
+                  <positionInPixelSize>true</positionInPixelSize>
                   <filter>
                     <thingDefs>
                       <li>AF_LeatherSling</li>
@@ -588,7 +588,7 @@
                   <rotation>(0,0,0)</rotation>
                   <scale>(1,1,1)</scale>
                   <allowEmpty>true</allowEmpty>
-                  <positionInPixelSize>false</positionInPixelSize>
+                  <positionInPixelSize>true</positionInPixelSize>
                   <filter>
                     <thingDefs>
                       <li>AF_LeatherSling</li>
