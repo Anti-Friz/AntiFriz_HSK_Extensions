@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+      <li>HSK Watcher Fallout</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="Railway"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+        </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="PipeGun_Hand"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="PipeRifle"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="OldRevolver_Hand"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

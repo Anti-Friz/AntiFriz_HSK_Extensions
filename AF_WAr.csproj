@@ -15,6 +15,7 @@
     <Folder Include="Textures\Things\WeaponPart\Foregrips\" />
     <Folder Include="Textures\Things\WeaponPart\Bayonets\" />
     <Folder Include="Textures\Things\WeaponPart\Sights\" />
+    <Folder Include="Textures\ui\icons\AttachmentIcon\" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="GunPartBase">
+    <defName>AF_LeatherSling</defName>
+    <label>Leather Sling</label>
+    <comps>
+      <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+        <PartTexPath>Things/WeaponPart/Slings/AF_LeatherSling</PartTexPath>
+        <statMultiplier>
+          <Bulk>0.5</Bulk>
+          <Mass>1.05</Mass>
+          <recoilAmount>0.95</recoilAmount>
+        </statMultiplier>
+      </li>
+    </comps>
+    <stuffCategories>
+      <li>Leathers</li>
+    </stuffCategories>
+    <costStuffCount>10</costStuffCount>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MusketBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="GunPartBase">
+    <defName>AF_TextileSling</defName>
+    <label>Textile Sling</label>
+    <comps>
+      <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+        <PartTexPath>Things/WeaponPart/Slings/AF_LeatherSling</PartTexPath>
+        <statMultiplier>
+          <Bulk>0.5</Bulk>
+          <Mass>1.05</Mass>
+          <recoilAmount>0.95</recoilAmount>
+        </statMultiplier>
+      </li>
+    </comps>
+    <stuffCategories>
+      <li>Textiles</li>
+    </stuffCategories>
+    <costStuffCount>10</costStuffCount>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MusketBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

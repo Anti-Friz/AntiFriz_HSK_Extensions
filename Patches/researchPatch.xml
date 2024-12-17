@@ -128,6 +128,27 @@
             </ResearchProjectDef>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ResearchProjectDef ParentName="MedievalBase">
+              <defName>AF_SurvivalWeapons</defName>
+              <label>Survival weapons</label>
+              <description>Old pipe, piece of wood and nail - bah, its a gun!.</description>
+              <baseCost>500</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>Muskets_B2</li>
+              </prerequisites>
+              <researchViewX>6.00</researchViewX>
+              <researchViewY>31.00</researchViewY>
+              <tab>Weapon_SK</tab>
+              <modExtensions>
+                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
+              </modExtensions>
+            </ResearchProjectDef>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>
