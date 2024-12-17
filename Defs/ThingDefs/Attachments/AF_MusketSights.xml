@@ -11,7 +11,7 @@
         </statOffset>
         <verbPropertiesOffseter>
           <li>
-            <range>0</range>
+            <range>5</range>
           </li>
         </verbPropertiesOffseter>
         <statMultiplier>
@@ -30,7 +30,7 @@
       </recipeUsers>
       <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
       <skillRequirements>
-        <Crafting>2</Crafting>
+        <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
@@ -45,7 +45,7 @@
         </statOffset>
         <verbPropertiesOffseter>
           <li>
-            <range>1</range>
+            <range>15</range>
           </li>
         </verbPropertiesOffseter>
         <statMultiplier>
@@ -68,7 +68,7 @@
       </recipeUsers>
       <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
@@ -86,7 +86,7 @@
         </statOffset>
         <verbPropertiesOffseter>
           <li>
-            <range>2</range>
+            <range>25</range>
           </li>
         </verbPropertiesOffseter>
         <statMultiplier>
@@ -102,7 +102,7 @@
     <stuffCategories>
       <li>SLDBar</li>
     </stuffCategories>
-    <costStuffCount>8</costStuffCount>
+    <costStuffCount>15</costStuffCount>
     <recipeMaker>
       <recipeUsers>
         <li>MusketBench</li>
