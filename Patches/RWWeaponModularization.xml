@@ -8,8 +8,9 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
-        <li Class="PatchOperationAdd">
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
           <xpath>*/ThingDef[defName="MusketBench"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
               <filter>
@@ -32,10 +33,10 @@
               </filter>
             </li>
           </value>
-          <order>Append</order>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_Arquebus"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_Arquebus"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -114,8 +115,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_Caliver"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_Caliver"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -194,8 +196,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_MathclockBlunderbuss"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_MathclockBlunderbuss"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -225,8 +228,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_Musket"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_Musket"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -305,8 +309,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_Teppo"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_Teppo"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -385,8 +390,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_Carbine"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_Carbine"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -465,8 +471,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_WheellockBlunderbuss"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_WheellockBlunderbuss"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -512,8 +519,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_BreechloadingCarbine"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_BreechloadingCarbine"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -592,8 +600,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_JagerRifle"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_JagerRifle"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -672,8 +681,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_FowlingPieceSingle"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_FowlingPieceSingle"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -752,8 +762,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_FowlingPieceDouble"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_FowlingPieceDouble"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -816,8 +827,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_FlintlockCarbine"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_FlintlockCarbine"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>
@@ -896,8 +908,9 @@
             </li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="AF_FlintlockFusil"]/comps</xpath>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_FlintlockFusil"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
           <value>
             <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
               <TextureSizeFactor>512</TextureSizeFactor>

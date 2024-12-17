@@ -59,7 +59,7 @@
       <ComponentMedieval>2</ComponentMedieval>
     </costList>
     <stuffCategories>
-      <li>SLDBar</li>
+      <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>5</costStuffCount>
     <recipeMaker>
@@ -100,7 +100,7 @@
       <ComponentMedieval>2</ComponentMedieval>
     </costList>
     <stuffCategories>
-      <li>SLDBar</li>
+      <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
     <recipeMaker>
@@ -152,7 +152,7 @@
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <stuffCategories>
-      <li>SLDBar</li>
+      <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>10</costStuffCount>
     <recipeMaker>

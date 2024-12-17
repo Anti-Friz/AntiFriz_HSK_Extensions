@@ -9,12 +9,16 @@
         <statMultiplier>
           <Bulk>0.5</Bulk>
           <Mass>1.05</Mass>
-          <recoilAmount>0.95</recoilAmount>
         </statMultiplier>
+        <verbPropertiesMultiplier  Default="1">
+          <li Reader-Class="CombatExtended.VerbPropertiesCE">
+            <recoilAmount>0.95</recoilAmount>
+          </li>
+        </verbPropertiesMultiplier >
       </li>
     </comps>
     <stuffCategories>
-      <li>Leathers</li>
+      <li>Leathery</li>
     </stuffCategories>
     <costStuffCount>10</costStuffCount>
     <recipeMaker>
@@ -36,12 +40,16 @@
         <statMultiplier>
           <Bulk>0.5</Bulk>
           <Mass>1.05</Mass>
-          <recoilAmount>0.95</recoilAmount>
         </statMultiplier>
+        <verbPropertiesMultiplier  Default="1">
+          <li Reader-Class="CombatExtended.VerbPropertiesCE">
+            <recoilAmount>0.95</recoilAmount>
+          </li>
+        </verbPropertiesMultiplier >
       </li>
     </comps>
     <stuffCategories>
-      <li>Textiles</li>
+      <li>Fabric</li>
     </stuffCategories>
     <costStuffCount>10</costStuffCount>
     <recipeMaker>
