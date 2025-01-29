@@ -3,7 +3,7 @@
   <!-- Wall Gun -->
   <ThingDef ParentName="TurretMannedBase">
     <defName>Turret_AF_PuckleGun</defName>
-    <label>Wall Gun \nCaliber: 1.25</label>
+    <label>Puckle Gun \nCaliber: 1.25</label>
     <graphicData>
       <texPath>Things/Weapons/AF_PuckleGun_Base</texPath>
       <drawSize>(2,2)</drawSize>
