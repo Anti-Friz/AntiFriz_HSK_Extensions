@@ -24,7 +24,6 @@
       <li>StoneBlocks</li>
     </thingCategories>
   </ThingDef>
-  
   <RecipeDef>
     <defName>Make_SmallFlintBlock</defName>
     <label>Small flint blocks (x5)</label>
@@ -37,6 +36,7 @@
             <li>ChunkLimestone</li>
             <li>ChunkSlate</li>
             <li>ChunkSandstone</li>
+            <li>ZF_BlocksFlint</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -47,6 +47,7 @@
         <li>ChunkLimestone</li>
         <li>ChunkSlate</li>
         <li>ChunkSandstone</li>
+        <li>ZF_BlocksFlint</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

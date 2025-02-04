@@ -8,8 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Defs\RecipeDefs\" />
-    <Folder Include="Defs\ThingDefs\Weapons\AF_Matchlocks_Rifles\" />
-    <Folder Include="Defs\ThingDefs\Weapons\Muskets_B2\" />
+    <Folder Include="Defs\ThingDefs\Weapons\6AF_Matchlocks_Rifles\" />
     <Folder Include="Languages\" />
     <Folder Include="Sounds\" />
     <Folder Include="Textures\Things\WeaponPart\Foregrips\" />

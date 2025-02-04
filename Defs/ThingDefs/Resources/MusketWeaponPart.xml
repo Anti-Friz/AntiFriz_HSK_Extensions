@@ -12,7 +12,7 @@
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
     <stackLimit>150</stackLimit>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <statBases>
       <MarketValue>6</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
@@ -25,9 +25,7 @@
     <thingCategories>
       <li>Parts</li>
     </thingCategories>
-    
   </ThingDef>
-  
   <RecipeDef>
     <defName>Make_AF_MusketWeaponPart</defName>
     <label>Make Musket Weapon Part (x1)</label>
@@ -64,7 +62,6 @@
         <li>SLDBar</li>
       </categories>
     </fixedIngredientFilter>
-    
     <products>
       <AF_MusketWeaponPart>1</AF_MusketWeaponPart>
     </products>

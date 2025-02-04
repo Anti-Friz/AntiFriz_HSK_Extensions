@@ -17,6 +17,14 @@
       <Ammo_50Caliber_Lead>Bullet_50Caliber_Lead</Ammo_50Caliber_Lead>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
+  
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_50CaliberCap</defName>
+    <label>.50 caliber Ball w/percussion cap</label>
+    <ammoTypes>
+      <Ammo_50CaliberCap_Lead>Bullet_50Caliber_Lead</Ammo_50CaliberCap_Lead>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
 
   <!-- ==================== Ammo ========================== -->
 
@@ -48,8 +56,8 @@
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="50CaliberBase">
-    <defName>Ammo_50Caliber_Lead</defName>
-    <label>.50 caliber Ball</label>
+    <defName>Ammo_50CaliberCap_Lead</defName>
+    <label>.50 caliber Ball w/percussion cap</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -101,7 +109,7 @@
             <li>LeadBar</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>5</count>
       </li>
       <li>
         <filter>
@@ -122,6 +130,59 @@
     </fixedIngredientFilter>
     <products>
       <Ammo_50Caliber_Lead>25</Ammo_50Caliber_Lead>
+    </products>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+  
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_50CaliberCap_Lead</defName>
+    <label>make .50 caliber Ball w/percussion cap x25</label>
+    <description>Craft 25 .50 caliber Ball rounds, and measure out powder charge and percussion cap.</description>
+    <jobString>Making .50 caliber Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadBar</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_PercussionCap</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>HeavyBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>AF_PercussionCap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_50CaliberCap_Lead>25</Ammo_50CaliberCap_Lead>
     </products>
     <skillRequirements>
       <Crafting>1</Crafting>

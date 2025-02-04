@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+      <li>Minerals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ZF_ChunkFlint"]/butcherProducts</xpath>
+          <value>
+            <SmallFlintBlocks>5</SmallFlintBlocks>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

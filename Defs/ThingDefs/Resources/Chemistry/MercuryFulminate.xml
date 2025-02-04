@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="SK_ResourceBase">
+    <defName>AF_MercuryFulminate</defName>
+    <label>Mercury Fulminate</label>
+    <description>Shock sensitive explosive, primary used in percussion caps production.</description>
+    <graphicData>
+      <texPath>Things/Resource/AF_MercuryFulminate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>150</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <SellPriceFactor>0.50</SellPriceFactor>
+      <Mass>0.05</Mass>
+      <Bulk>0.02</Bulk>
+    </statBases>
+    <useHitPoints>true</useHitPoints>
+    <thingCategories>
+      <li>Chemical</li>
+      <li>ExplosivesCat</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>5</min>
+          <max>10</max>
+        </wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Make_AF_MercuryFulminate</defName>
+    <label>Make Mercury Fulminate</label>
+    <description>Musket Weapon Part. Produces 10.</description>
+    <jobString>Making Musket Weapon Part.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSMercurySalts</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Charcoal</li>
+            <li>Coal</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSMercurySalts</li>
+        <li>Charcoal</li>
+        <li>Coal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AF_MercuryFulminate>10</AF_MercuryFulminate>
+    </products>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>Chemistry_C0</researchPrerequisite>
+    <recipeUsers>
+      <li>ChemistryLab</li>
+    </recipeUsers>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

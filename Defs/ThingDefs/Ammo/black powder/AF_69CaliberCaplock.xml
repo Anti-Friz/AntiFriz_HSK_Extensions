@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>Ammo69CaliberCap</defName>
+    <label>.69 caliber Ball w/Cap</label>
+    <parent>AmmoMusket</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_69CaliberCap</defName>
+    <label>.69 caliber Ball w/cap</label>
+    <ammoTypes>
+      <Ammo_69CaliberCap_Lead>Bullet_69Musket_Lead</Ammo_69CaliberCap_Lead>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="69CaliberCapBase" ParentName="SmallAmmoBase" Abstract="True">
+    <description>Round bullet with powder, wrapped in paper and Percussion Cap.</description>
+    <statBases>
+      <Mass>0.029</Mass>
+      <Bulk>0.04</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Ammo69CaliberCap</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0.45</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.653</startWickHitPointsPercent>
+        <wickTicks>
+          <min>5</min>
+          <max>10</max>
+        </wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="69CaliberCapBase">
+    <defName>Ammo_69CaliberCap_Lead</defName>
+    <label>.65 caliber Ball w/Cap</label>
+    <graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.35</MarketValue>
+    </statBases>
+    <ammoClass>LeadBall</ammoClass>
+    <cookOffProjectile>Bullet_69Musket_Lead</cookOffProjectile>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <!-- BALL FORGE-->
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_69CaliberCap_Lead</defName>
+    <label>make .65 caliber Ball x25</label>
+    <description>Craft 25 .65 caliber Ball rounds, and measure out powder charge.</description>
+    <jobString>Making .65 caliber Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadBar</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_PercussionCap</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>HeavyBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>AF_PercussionCap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_69CaliberCap_Lead>25</Ammo_69CaliberCap_Lead>
+    </products>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>AF_Wheellocks_Rifles</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+
+</Defs>

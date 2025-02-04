@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>Ammo557CaliberCap</defName>
+    <label>.557 caliber Ball w/Cap</label>
+    <parent>AmmoMusket</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_557CaliberCap</defName>
+    <label>.557 caliber Ball w/cap</label>
+    <ammoTypes>
+      <Ammo_557CaliberCap_Lead>Bullet_MinieBall</Ammo_557CaliberCap_Lead>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_557CaliberCapMet</defName>
+    <label>.557 Caplock (metalic cartridge)</label>
+    <ammoTypes>
+      <Ammo_557CaliberCapMetal_Lead>Bullet_557CaliberCapMet</Ammo_557CaliberCapMetal_Lead>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ==================== Ammo ========================== -->
+
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="MinieBallBase">
+    <defName>Ammo_557CaliberCap_Lead</defName>
+    <label>.557 caliber Ball w/Cap</label>
+    <thingCategories>
+      <li>Ammo557CaliberCap</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <ammoClass>LeadBall</ammoClass>
+    <cookOffProjectile>Bullet_MinieBall</cookOffProjectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="MinieBallBase">
+    <defName>Ammo_557CaliberCapMetal_Lead</defName>
+    <label>.557 Caplock (metalic cartridge)</label>
+    <thingCategories>
+      <li>Ammo557CaliberCap</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Ammo/HighCaliber/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.7</MarketValue>
+    </statBases>
+    <ammoClass>FullMetalJacket</ammoClass>
+    <cookOffProjectile>Bullet_557CaliberCapMet</cookOffProjectile>
+  </ThingDef>
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="MinieBallBase">
+    <defName>Bullet_557CaliberCapMet</defName>
+    <label>.557 Caplock (metalic cartridge)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>35</damageAmountBase>
+      <armorPenetrationSharp>8</armorPenetrationSharp>
+      <armorPenetrationBlunt>60</armorPenetrationBlunt>
+      <speed>140</speed>
+      <dropsCasings>True</dropsCasings>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <!-- BALL FORGE-->
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_557CaliberCap_Lead</defName>
+    <label>make .557 caliber Ball x25</label>
+    <description>Craft 25 .557 caliber Ball rounds, and measure out powder charge.</description>
+    <jobString>Making .557 caliber Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SLDBar</li>
+            <li>USLDBar</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_PercussionCap</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>HeavyBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>AF_PercussionCap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_577CaliberCap_Lead>25</Ammo_577CaliberCap_Lead>
+    </products>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+  
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_557CaliberCap_Lead</defName>
+    <label>make .557 caliber Ball x25</label>
+    <description>Craft 25 .557 caliber Ball rounds, and measure out powder charge.</description>
+    <jobString>Making .557 caliber Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SLDBar</li>
+            <li>USLDBar</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_PercussionCap</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>HeavyBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>AF_PercussionCap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_557CaliberCapMetal_Lead>25</Ammo_557CaliberCapMetal_Lead>
+    </products>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+</Defs>

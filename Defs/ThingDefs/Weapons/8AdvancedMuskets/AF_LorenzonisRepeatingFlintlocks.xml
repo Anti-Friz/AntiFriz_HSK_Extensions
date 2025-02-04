@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_LorenzonisRepeatingFlintlock</defName>
+    <label>Lorenzonis Repeating Flintlock, .50 caliber</label>
+    <description>Lorenzonis Repeating Flintlock. \nCaliber: .50</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_LorenzonisRepeatingFlintlock</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <SightsEfficiency>0.63</SightsEfficiency>
+      <ShotSpread>0.36</ShotSpread>
+      <SwayFactor>1.07</SwayFactor>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+      <Bulk>8</Bulk>
+      <Mass>2.72</Mass>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>40</MaxHitPoints>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_50Caliber_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>17</range>
+        <recoilAmount>1.61</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>7</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>3.5</reloadTime>
+        <ammoSet>AmmoSet_50Caliber</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+    
+  </ThingDef>
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_LorenzonisRepeatingFlintlock</defName>
+    <label>Build Lorenzonis Repeating Flintlock</label>
+    <description>Lorenzonis Repeating Flintlock. .\nCaliber: .50</description>
+    <jobString>Building Lorenzonis Repeating Flintlock.</jobString>
+    <workAmount>10000</workAmount>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_LorenzonisRepeatingFlintlock>1</AF_LorenzonisRepeatingFlintlock>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

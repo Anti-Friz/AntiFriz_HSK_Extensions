@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_KalthoffRepeater</defName>
+    <label>Kalthoff Repeater. .45 caliber</label>
+    <description>Kalthoff Repeater. \nCaliber: .54</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_KalthoffRepeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <SightsEfficiency>0.76</SightsEfficiency>
+      <MaxHitPoints>45</MaxHitPoints>
+      <ShotSpread>0.33</ShotSpread>
+      <SwayFactor>1.4</SwayFactor>
+      <RangedWeapon_Cooldown>1.76</RangedWeapon_Cooldown>
+      <Bulk>10</Bulk>
+      <Mass>3.98</Mass>
+      <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_54Caliber_Lead</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>17</range>
+        <recoilAmount>1.56</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>30</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>3.5</reloadTime>
+        <ammoSet>AmmoSet_54Caliber</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>4</ComponentMedieval>
+    </smeltProducts>
+    
+  </ThingDef>
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_KalthoffRepeater</defName>
+    <label>Build Kalthoff Repeater</label>
+    <description>Kalthoff Repeater. .\nCaliber: .54</description>
+    <jobString>Building Kalthoff Repeater.</jobString>
+    <workAmount>20000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_KalthoffRepeater>1</AF_KalthoffRepeater>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

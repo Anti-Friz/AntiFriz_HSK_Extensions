@@ -185,7 +185,7 @@
 						<li>LeadBar</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>
@@ -230,7 +230,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>3</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_EnfieldRifledMusket</defName>
+    <label>Enfield Rifled Musket, .557 Caplock caliber</label>
+    <description>Enfield Rifled Musket. \nCaliber: .557 Caplock</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_EnfieldRifledMusket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>245</MarketValue>
+      <SightsEfficiency>0.9</SightsEfficiency>
+      <ShotSpread>0.03</ShotSpread>
+      <SwayFactor>1.82</SwayFactor>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <Bulk>14</Bulk>
+      <Mass>4.2</Mass>
+      <WorkToMake>8000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MinieBall</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>22</range>
+        <recoilAmount>2.66</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>2.6</reloadTime>
+        <ammoSet>AmmoSet_557CaliberCap</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+    
+  </ThingDef>
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_EnfieldRifledMusket</defName>
+    <label>Build Enfield Rifled Musket</label>
+    <description>Enfield Rifled Musket. .\nCaliber: .557 Caplock</description>
+    <jobString>Building Enfield Rifled Musket.</jobString>
+    <workAmount>10000</workAmount>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>65</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_EnfieldRifledMusket>1</AF_EnfieldRifledMusket>
+  </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

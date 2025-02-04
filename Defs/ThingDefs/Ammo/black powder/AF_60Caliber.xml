@@ -79,7 +79,7 @@
 		<defName>Bullet_60Caliber_Lead</defName>
 		<label>.60 caliber Ball (Lead)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationSharp>5.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>55</armorPenetrationBlunt>
 		</projectile>
@@ -101,7 +101,7 @@
 						<li>LeadBar</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>

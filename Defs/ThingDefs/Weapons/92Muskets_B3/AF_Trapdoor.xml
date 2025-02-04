@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_Trapdoor</defName>
+    <label>Trapdoor, .62 caliber</label>
+    <description>Trapdoor. \nCaliber: .62</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_Trapdoor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>245</MarketValue>
+      <SightsEfficiency>0.63</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.07</SwayFactor>
+      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+      <Bulk>6.9</Bulk>
+      <Mass>1.76</Mass>
+      <WorkToMake>8000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>15</range>
+        <recoilAmount>2.14</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_62Caliber</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+    
+  </ThingDef>
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_Trapdoor</defName>
+    <label>Build Trapdoor</label>
+    <description>Trapdoor. .\nCaliber: .62</description>
+    <jobString>Building Trapdoor.</jobString>
+    <workAmount>10000</workAmount>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_Trapdoor>1</AF_Trapdoor>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

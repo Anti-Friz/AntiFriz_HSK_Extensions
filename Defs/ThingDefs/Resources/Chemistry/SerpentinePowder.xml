@@ -12,7 +12,7 @@
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
     <stackLimit>150</stackLimit>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <statBases>
       <MarketValue>15</MarketValue>
       <MaxHitPoints>5</MaxHitPoints>
@@ -88,7 +88,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <researchPrerequisite>GunPowderTech</researchPrerequisite>
     <recipeUsers>
       <li>TableStonecutterNeolithic</li>
       <li>TableStonecutter</li>

@@ -44,6 +44,126 @@
             <li>MusketBench</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Pistolet"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>SmallFlintBlocks</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AF_MusketWeaponPart</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_BrownBess"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>SmallFlintBlocks</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AF_MusketWeaponPart</li>
+                </thingDefs>
+              </filter>
+              <count>2</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Pistolet"]/fixedIngredientFilter</xpath>
+          <value>
+            <thingDefs>
+              <li>AF_MusketWeaponPart</li>
+              <li>SmallFlintBlocks</li>
+            </thingDefs>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="BuildGun_BrownBess"]/fixedIngredientFilter</xpath>
+          <value>
+            <thingDefs>
+              <li>AF_MusketWeaponPart</li>
+              <li>SmallFlintBlocks</li>
+            </thingDefs>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Charleville"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>SmallFlintBlocks</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AF_MusketWeaponPart</li>
+                </thingDefs>
+              </filter>
+              <count>2</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Jezail"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>SmallFlintBlocks</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AF_MusketWeaponPart</li>
+                </thingDefs>
+              </filter>
+              <count>2</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Charleville"]/fixedIngredientFilter</xpath>
+          <value>
+            <thingDefs>
+              <li>AF_MusketWeaponPart</li>
+              <li>SmallFlintBlocks</li>
+            </thingDefs>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="BuildGun_Jezail"]/fixedIngredientFilter</xpath>
+          <value>
+            <thingDefs>
+              <li>AF_MusketWeaponPart</li>
+              <li>SmallFlintBlocks</li>
+            </thingDefs>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

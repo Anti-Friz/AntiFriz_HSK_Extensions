@@ -79,7 +79,7 @@
     <defName>Bullet_106Caliber_Lead</defName>
     <label>1.06 caliber Ball (Lead)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>32</damageAmountBase>
+      <damageAmountBase>35</damageAmountBase>
       <!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
       <armorPenetrationSharp>8</armorPenetrationSharp>
       <armorPenetrationBlunt>106</armorPenetrationBlunt>

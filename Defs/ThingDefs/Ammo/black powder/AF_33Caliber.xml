@@ -80,8 +80,8 @@
     <label>.33 caliber Ball (Lead)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>7</damageAmountBase>
-      <armorPenetrationSharp>5.4</armorPenetrationSharp>
-      <armorPenetrationBlunt>30</armorPenetrationBlunt>
+      <armorPenetrationSharp>4</armorPenetrationSharp>
+      <armorPenetrationBlunt>20</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
 
@@ -101,7 +101,7 @@
             <li>LeadBar</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>3</count>
       </li>
       <li>
         <filter>

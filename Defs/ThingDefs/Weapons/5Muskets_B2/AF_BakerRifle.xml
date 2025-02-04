@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_BakerRifle</defName>
+    <label>Baker Rifle, .625 caliber</label>
+    <description>Flintlock Flintlock rifle for elite rifle units. \nCaliber: .625</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_BakerRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>300</MarketValue>
+      <SightsEfficiency>0.65</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>1.56</SwayFactor>
+      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+      <Bulk>11.62</Bulk>
+      <Mass>4.08</Mass>
+      <WorkToMake>11000</WorkToMake>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>17</range>
+        <recoilAmount>1.95</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_62Caliber</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+    
+  </ThingDef>
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_BakerRifle</defName>
+    <label>Build Baker Rifle</label>
+    <description>Baker Rifle. .\nCaliber: .62</description>
+    <jobString>Building Baker Rifle.</jobString>
+    <workAmount>11000</workAmount>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_BakerRifle>1</AF_BakerRifle>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

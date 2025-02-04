@@ -29,8 +29,89 @@
                   <li>AF_FowlingPieceDouble</li>
                   <li>AF_FlintlockCarbine</li>
                   <li>AF_FlintlockFusil</li>
+                  <li>AF_BakerRifle</li>
                 </thingDefs>
               </filter>
+            </li>
+          </value>
+        </li>
+        <li Class="XmlExtensions.PatchOperationAddOrReplace">
+          <xpath>*/ThingDef[defName="AF_BakerRifle"]/comps</xpath>
+          <checkAttributes>true</checkAttributes>
+          <value>
+            <li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+              <TextureSizeFactor>512</TextureSizeFactor>
+              <TextureFilterMode>Point</TextureFilterMode>
+              <ExceedanceFactor>2</ExceedanceFactor>
+              <ExceedanceOffset>1</ExceedanceOffset>
+            </li>
+            <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+              <attachmentProperties>
+                <li>
+                  <id>foregrip</id>
+                  <name>foregrip Part</name>
+                  <UITexPath>Things/WeaponPart/AF_Empty</UITexPath>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_WoodenPistolForegrip</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sight</id>
+                  <name>sight Part</name>
+                  <UITexPath>Things/WeaponPart/AF_Empty</UITexPath>
+                  <position>(0,0.1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>false</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBasicSight</li>
+                      <li>AF_MusketImprovedSight</li>
+                      <li>AF_MusketSharpshooterSight</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>bayonet</id>
+                  <name>bayonet lug</name>
+                  <UITexPath>Things/WeaponPart/AF_Empty</UITexPath>
+                  <position>(75,0.-1,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <notUseTools>false</notUseTools>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_MusketBayonet</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+                <li>
+                  <id>sling</id>
+                  <name>sling attach points</name>
+                  <UITexPath>Things/WeaponPart/AF_Empty</UITexPath>
+                  <position>(45,0.0,0)</position>
+                  <rotation>(0,0,0)</rotation>
+                  <scale>(1,1,1)</scale>
+                  <allowEmpty>true</allowEmpty>
+                  <positionInPixelSize>true</positionInPixelSize>
+                  <filter>
+                    <thingDefs>
+                      <li>AF_LeatherSling</li>
+                      <li>AF_TextileSling</li>
+                    </thingDefs>
+                  </filter>
+                </li>
+              </attachmentProperties>
             </li>
           </value>
         </li>

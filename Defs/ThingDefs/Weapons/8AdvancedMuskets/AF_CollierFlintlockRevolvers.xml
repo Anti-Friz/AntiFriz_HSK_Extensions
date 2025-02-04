@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==================THING============================ -->
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_CollierFlintlockRevolverRifle</defName>
+    <label>Collier Flintlock Revolver Rifle, .69 caliber</label>
+    <description>Expensive, ahead of its time flintlock repeating rifle. \nCaliber: .50</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_CollierFlintlockRevolverRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>660</MarketValue>
+      <SightsEfficiency>0.63</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.2</SwayFactor>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+      <Bulk>9.9</Bulk>
+      <Mass>2.08</Mass>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>16</range>
+        <recoilAmount>2.74</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>4.25</reloadTime>
+        <ammoSet>AmmoSet_69CaliberCap</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_CollierFlintlockRevolver</defName>
+    <label>Collier Flintlock Revolver, .50 caliber</label>
+    <description>Expensive, ahead of its time flintlock repeating revolver. \nCaliber: .50</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_CollierFlintlockRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.75</ShotSpread>
+      <SwayFactor>0.91</SwayFactor>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+      <Bulk>2</Bulk>
+      <Mass>1.05</Mass>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_50Caliber_Lead</defaultProjectile>
+        <warmupTime>0.50</warmupTime>
+        <range>14</range>
+        <recoilAmount>3.14</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_50Caliber</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_CollierCaplockRevolverRifle</defName>
+    <label>Collier Caplock Revolver Rifle, .50 caliber</label>
+    <description>Expensive, ahead of its time caplock repeating rifle. \nCaliber: .69</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_CollierCaplockRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>660</MarketValue>
+      <SightsEfficiency>0.63</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.2</SwayFactor>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+      <Bulk>9.9</Bulk>
+      <Mass>2.08</Mass>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>55</MaxHitPoints>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>17</range>
+        <recoilAmount>2.14</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_69CaliberCap</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun_LongBarreled">
+    <defName>AF_CollierCaplockRevolver</defName>
+    <label>Collier Caplock Revolver, .50 caliber</label>
+    <description>Expensive, ahead of its time caplock repeating revolver. . \nCaliber: .50</description>
+    <graphicData>
+      <texPath>Things/Weapons/AF_CollierCaplockRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories>
+      <li>BlackPowderGun</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.75</ShotSpread>
+      <SwayFactor>0.91</SwayFactor>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+      <Bulk>2</Bulk>
+      <Mass>1.05</Mass>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_50Caliber_Lead</defaultProjectile>
+        <warmupTime>0.50</warmupTime>
+        <range>14</range>
+        <recoilAmount>3.14</recoilAmount>
+        <soundCast>Springfield</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_50CaliberCap</ammoSet>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.4,1.4</DrawSize>
+      </li>
+    </modExtensions>
+    <smeltProducts>
+      <ComponentMedieval>3</ComponentMedieval>
+    </smeltProducts>
+  </ThingDef>
+  <!-- ====================RECIPE========================== -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_CollierFlintlockRevolverRifle</defName>
+    <label>Build Collier Flintlock Revolver Rifle</label>
+    <description>Collier Flintlock Revolver Rifle. .\nCaliber: .50</description>
+    <jobString>Building Collier Flintlock Revolver Rifle.</jobString>
+    <workAmount>16000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>65</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_CollierFlintlockRevolverRifle>1</AF_CollierFlintlockRevolverRifle>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_CollierFlintlockRevolver</defName>
+    <label>Build Collier Flintlock Revolver</label>
+    <description>Collier Flintlock Revolver. .\nCaliber: .50</description>
+    <jobString>Building Collier Flintlock Revolver.</jobString>
+    <workAmount>16000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmallFlintBlocks</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>45</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_CollierFlintlockRevolver>1</AF_CollierFlintlockRevolver>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>SmallFlintBlocks</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_CollierCaplockRevolverRifle</defName>
+    <label>Build Collier Caplock Revolver Rifle</label>
+    <description>Collier Caplock Revolver Rifle. .\nCaliber: .50</description>
+    <jobString>Building Collier Caplock Revolver Rifle.</jobString>
+    <workAmount>16000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>65</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_CollierCaplockRevolverRifle>1</AF_CollierCaplockRevolverRifle>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_CollierCaplockRevolver</defName>
+    <label>Build Collier Caplock Revolver</label>
+    <description>Collier Caplock Revolver. .\nCaliber: .50</description>
+    <jobString>Building Collier Caplock Revolver.</jobString>
+    <workAmount>16000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>45</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Woody</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_CollierCaplockRevolver>1</AF_CollierCaplockRevolver>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>Woody</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_CollierCaplockRevolverRifle_Conversion</defName>
+    <label>Build Collier Caplock Revolver Rifle</label>
+    <description>Collier Caplock Revolver Rifle. .\nCaliber: .69</description>
+    <jobString>Building Collier Caplock Revolver Rifle.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_CollierFlintlockRevolverRifle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_CollierCaplockRevolverRifle>1</AF_CollierCaplockRevolverRifle>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>AF_CollierFlintlockRevolverRifle</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Caplock_Conversions</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+    <defName>BuildAF_CollierCaplockRevolver_Conversion</defName>
+    <label>Build Collier Caplock Revolver</label>
+    <description>Collier Caplock Revolver. .\nCaliber: .50</description>
+    <jobString>Building Collier Caplock Revolver.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_MusketWeaponPart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_CollierFlintlockRevolver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <AF_CollierCaplockRevolver>1</AF_CollierCaplockRevolver>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AF_MusketWeaponPart</li>
+        <li>AF_CollierFlintlockRevolver</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MusketBench</li>
+    </recipeUsers>
+    <researchPrerequisite>AF_Caplock_Conversions</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+  </RecipeDef>
+</Defs>

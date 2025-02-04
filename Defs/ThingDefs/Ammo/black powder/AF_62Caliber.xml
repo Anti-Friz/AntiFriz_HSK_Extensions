@@ -144,7 +144,7 @@
     <defName>Bullet_62Caliber_Lead</defName>
     <label>.62 Caliber Ball</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>19</damageAmountBase>
+      <damageAmountBase>21</damageAmountBase>
       <!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
       <armorPenetrationSharp>5.5</armorPenetrationSharp>
       <armorPenetrationBlunt>70</armorPenetrationBlunt>

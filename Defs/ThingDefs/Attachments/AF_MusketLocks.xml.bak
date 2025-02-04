@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="GunPartBase">
+    <defName>AF_MusketFlintLock</defName>
+    <label>Flintlock</label>
+    <comps>
+      <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+        <PartTexPath>Things/WeaponPart/AF_Empty</PartTexPath>
+        <statOffset>
+          <Bulk>0</Bulk>
+        </statOffset>
+        <verbPropertiesOffseter>
+          <li>
+            <range>5</range>
+          </li>
+        </verbPropertiesOffseter>
+        <statMultiplier>
+          <SightsEfficiency>1</SightsEfficiency>
+          <ShotSpread>1</ShotSpread>
+          <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statMultiplier>
+      </li>
+    </comps>
+    <costList>
+      <ComponentMedieval>1</ComponentMedieval>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MusketBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="GunPartBase">
+    <defName>AF_MusketCapLock</defName>
+    <label>Collier Caplock</label>
+    <comps>
+      <li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+        <PartTexPath>Things/WeaponPart/AF_Empty</PartTexPath>
+        <statOffset>
+          <Bulk>-0.1</Bulk>
+        </statOffset>
+        <verbPropertiesOffseter>
+          <li>
+            <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
+          </li>
+        </verbPropertiesOffseter>
+        <statMultiplier>
+          <SightsEfficiency>1.1</SightsEfficiency>
+          <ShotSpread>0.9</ShotSpread>
+          <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statMultiplier>
+      </li>
+    </comps>
+    <costList>
+      <ComponentMedieval>2</ComponentMedieval>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MusketBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

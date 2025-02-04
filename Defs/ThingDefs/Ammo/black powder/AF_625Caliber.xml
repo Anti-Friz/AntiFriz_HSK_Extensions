@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo625Caliber</defName>
+		<label>.625 Ball</label>
+		<parent>AmmoMusket</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_62Caliber</defName>
+    <label>.625 Caliber</label>
+    <ammoTypes>
+      <Ammo_62Caliber_Lead>Bullet_62Caliber_Lead</Ammo_62Caliber_Lead>
+      <Ammo_625Caliber_Lead>Bullet_625Caliber_Lead</Ammo_625Caliber_Lead>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="62BlunderbussBase">
+    <defName>Ammo_62Caliber_Lead</defName>
+    <label>.62 Caliber Ball</label>
+    <graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.028</Mass>
+      <Bulk>0.06</Bulk>
+      <MarketValue>0.2</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Ammo625Caliber</li>
+    </thingCategories>
+    <ammoClass>LeadBall</ammoClass>
+    <cookOffProjectile>Bullet_625Caliber_Lead</cookOffProjectile>
+  </ThingDef>
+
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base62BlunderbussBullet">
+    <defName>Bullet_625Caliber_Lead</defName>
+    <label>.625 Caliber Ball</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>120</speed>
+      <damageAmountBase>23</damageAmountBase>
+      <armorPenetrationSharp>5.6</armorPenetrationSharp>
+      <armorPenetrationBlunt>73</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <!-- Caliber ball-->
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_62Caliber_Lead</defName>
+    <label>make .625 Caliber Ball x25</label>
+    <description>Craft 25 .625 Caliber Ball rounds.</description>
+    <jobString>Making .625 Caliber Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>SLDBar</li>
+            <li>USLDBar</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Powder</li>
+      </thingDefs>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_625Caliber_Lead>25</Ammo_625Caliber_Lead>
+    </products>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>Muskets_B2</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+  
+</Defs>
