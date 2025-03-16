@@ -6,7 +6,7 @@
     <description>Shock sensitive explosive, primary used in percussion caps production.</description>
     <graphicData>
       <texPath>Things/Resource/AF_MercuryFulminate</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>

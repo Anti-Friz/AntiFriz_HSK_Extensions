@@ -3,8 +3,8 @@
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_RollingBlock</defName>
-    <label>Rolling Block, .62 caliber</label>
-    <description>Rolling Block. \nCaliber: .62</description>
+    <label>Rolling Block, .45-70</label>
+    <description>The Rolling Block was a highly reliable and robust breech-loading rifle. It featured a simple, strong rolling block action, making it easy to operate and maintain. The rifle was praised for its durability and accuracy but was relatively heavy and had a slower rate of fire compared to some contemporary designs. . \nCaliber: .45-70</description>
     <graphicData>
       <texPath>Things/Weapons/AF_RollingBlock</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,23 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>245</MarketValue>
-      <SightsEfficiency>0.63</SightsEfficiency>
-      <ShotSpread>0.45</ShotSpread>
-      <SwayFactor>1.07</SwayFactor>
+      <MarketValue>650</MarketValue>
+      <SightsEfficiency>0.91</SightsEfficiency>
+      <ShotSpread>0.03</ShotSpread>
+      <SwayFactor>1.77</SwayFactor>
       <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
-      <Bulk>6.9</Bulk>
-      <Mass>1.76</Mass>
+      <Bulk>13.5</Bulk>
+      <Mass>4.17</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_4570Gov_FMJ</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>15</range>
-        <recoilAmount>2.14</recoilAmount>
+        <range>53</range>
+        <recoilAmount>1.39</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -45,8 +45,8 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_4570Gov</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -63,9 +63,9 @@
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_RollingBlock</defName>
     <label>Build Rolling Block</label>
-    <description>Rolling Block. .\nCaliber: .62</description>
+    <description>Rolling Block. .\nCaliber: .45-70</description>
     <jobString>Building Rolling Block.</jobString>
-    <workAmount>10000</workAmount>
+    <workAmount>12000</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -76,15 +76,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SmallFlintBlocks</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -92,7 +84,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>50</count>
+        <count>65</count>
       </li>
       <li>
         <filter>
@@ -109,7 +101,6 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>
-        <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -119,7 +110,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>Muskets_B3</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

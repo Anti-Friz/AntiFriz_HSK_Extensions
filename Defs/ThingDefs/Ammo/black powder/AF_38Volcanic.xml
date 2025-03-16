@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>Ammo38Volcanic</defName>
+    <label>.38 Volcanic Ball</label>
+    <parent>AmmoMusket</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_38Volcanic</defName>
+    <label>.38 Volcanic Ball</label>
+    <ammoTypes>
+      <Ammo_38Volcanic_Lead>Bullet_38Volcanic_Lead</Ammo_38Volcanic_Lead>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="38VolcanicBase" ParentName="SmallAmmoBase" Abstract="True">
+    <description>Self-contained but completely caseless, with the propellant and percussion cap in a hollow in the base of the bullet.</description>
+    <statBases>
+      <Mass>0.009</Mass>
+      <Bulk>0.03</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Ammo38Volcanic</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0.45</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>
+          <min>5</min>
+          <max>10</max>
+        </wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="38VolcanicBase">
+    <defName>Ammo_38Volcanic_Lead</defName>
+    <label>.38 Volcanic Ball</label>
+    <graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.25</MarketValue>
+    </statBases>
+    <ammoClass>LeadBall</ammoClass>
+    <cookOffProjectile>Bullet_38Volcanic_Lead</cookOffProjectile>
+  </ThingDef>
+
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base38VolcanicBullet" ParentName="SK_BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <speed>110</speed>
+      <dropsCasings>False</dropsCasings>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base38VolcanicBullet">
+    <defName>Bullet_38Volcanic_Lead</defName>
+    <label>.38 Volcanic Ball (Lead)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationSharp>4</armorPenetrationSharp>
+      <armorPenetrationBlunt>20</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <!-- BALL FORGE-->
+  <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
+    <defName>MakeAmmo_38Volcanic_Lead</defName>
+    <label>make .33 caliber Ball x25</label>
+    <description>Craft 25 .33 caliber Ball rounds, and measure out powder charge.</description>
+    <jobString>Making .33 caliber Ball rounds.</jobString>
+    <workAmount>450</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LeadBar</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AF_PercussionCap</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>HeavyBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+      </thingDefs>
+      <thingDefs>
+        <li>AF_PercussionCap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_38Volcanic_Lead>25</Ammo_38Volcanic_Lead>
+    </products>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <!-- Smithing -->
+  </RecipeDef>
+
+</Defs>

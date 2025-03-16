@@ -3,8 +3,8 @@
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_VolcanicRepeatingRifle</defName>
-    <label>Volcanic Repeating Rifle, .62 caliber</label>
-    <description>Volcanic Repeating Rifle. \nCaliber: .62</description>
+    <label>Volcanic Repeating Rifle, .38 Volcanic</label>
+    <description>Volcanic Repeating Rifle. \nCaliber: .38 Volcanic</description>
     <graphicData>
       <texPath>Things/Weapons/AF_VolcanicRepeatingRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -18,22 +18,22 @@
     </weaponTags>
     <statBases>
       <MarketValue>245</MarketValue>
-      <SightsEfficiency>0.63</SightsEfficiency>
-      <ShotSpread>0.45</ShotSpread>
-      <SwayFactor>1.07</SwayFactor>
-      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
-      <Bulk>6.9</Bulk>
-      <Mass>1.76</Mass>
+      <SightsEfficiency>0.7</SightsEfficiency>
+      <ShotSpread>0.27</ShotSpread>
+      <SwayFactor>1.47</SwayFactor>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+      <Bulk>10.2</Bulk>
+      <Mass>4.5</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_38Volcanic_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>15</range>
-        <recoilAmount>2.14</recoilAmount>
+        <range>16</range>
+        <recoilAmount>0.85</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -44,9 +44,10 @@
         <aiAimMode>AimedShot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <magazineSize>25</magazineSize>
+        <reloadTime>2</reloadTime>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <ammoSet>AmmoSet_38Volcanic</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -63,28 +64,20 @@
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_VolcanicRepeatingRifle</defName>
     <label>Build Volcanic Repeating Rifle</label>
-    <description>Volcanic Repeating Rifle. .\nCaliber: .62</description>
+    <description>Volcanic Repeating Rifle. .\n .38 Volcanic</description>
     <jobString>Building Volcanic Repeating Rifle.</jobString>
     <workAmount>10000</workAmount>
     <skillRequirements>
-      <Crafting>5</Crafting>
+      <Crafting>12</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>AF_MusketWeaponPart</li>
+           <!--<li>AF_SimpleFirearmPart</li>--><li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SmallFlintBlocks</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -92,7 +85,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>50</count>
+        <count>55</count>
       </li>
       <li>
         <filter>
@@ -108,8 +101,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_MusketWeaponPart</li>
-        <li>SmallFlintBlocks</li>
+        <li>ComponentMedieval</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -119,7 +111,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>AF_RepeatingGuns</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

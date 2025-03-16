@@ -3,8 +3,8 @@
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_Trapdoor</defName>
-    <label>Trapdoor, .62 caliber</label>
-    <description>Trapdoor. \nCaliber: .62</description>
+    <label>Trapdoor Carbine, .45-50 caliber</label>
+    <description>Short, breech-loading rifle. It was known for its reliability and simplicity but had limited firepower and range compared to repeating rifles.. \nCaliber: .45-50</description>
     <graphicData>
       <texPath>Things/Weapons/AF_Trapdoor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,23 +17,23 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>245</MarketValue>
-      <SightsEfficiency>0.63</SightsEfficiency>
-      <ShotSpread>0.45</ShotSpread>
-      <SwayFactor>1.07</SwayFactor>
+      <MarketValue>570</MarketValue>
+      <SightsEfficiency>0.9</SightsEfficiency>
+      <ShotSpread>0.12</ShotSpread>
+      <SwayFactor>1.37</SwayFactor>
       <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
-      <Bulk>6.9</Bulk>
-      <Mass>1.76</Mass>
+      <Bulk>10.5</Bulk>
+      <Mass>3.22</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_4550_FMJ</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>15</range>
-        <recoilAmount>2.14</recoilAmount>
+        <range>48</range>
+        <recoilAmount>1.58</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -45,8 +45,8 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_4550</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -63,7 +63,7 @@
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_Trapdoor</defName>
     <label>Build Trapdoor</label>
-    <description>Trapdoor. .\nCaliber: .62</description>
+    <description>Trapdoor. .\nCaliber: .45-50</description>
     <jobString>Building Trapdoor.</jobString>
     <workAmount>10000</workAmount>
     <skillRequirements>
@@ -76,15 +76,7 @@
             <li>AF_MusketWeaponPart</li>
           </thingDefs>
         </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SmallFlintBlocks</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -109,7 +101,6 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>
-        <li>SmallFlintBlocks</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -119,7 +110,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>Muskets_B3</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

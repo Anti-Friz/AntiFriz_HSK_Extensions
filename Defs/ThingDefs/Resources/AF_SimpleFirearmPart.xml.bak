@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="SK_ResourceBase">
-    <defName>AF_PercussionCap</defName>
-    <label>Percussion Cap</label>
-    <description>Percussion Cap</description>
+    <defName>AF_SimpleFirearmPart</defName>
+    <label>Musket Weapon Part</label>
+    <description>Musket Weapon Part</description>
     <graphicData>
-      <texPath>Things/Resource/AF_PercussionCap</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Resource/AF_MusketWeaponParts</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
     <stackLimit>150</stackLimit>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <statBases>
       <MarketValue>6</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.2</Flammability>
       <SellPriceFactor>0.50</SellPriceFactor>
-      <Mass>0.02</Mass>
-      <Bulk>0.02</Bulk>
+      <Mass>1.5</Mass>
+      <Bulk>1.5</Bulk>
     </statBases>
     <useHitPoints>true</useHitPoints>
     <thingCategories>
@@ -27,10 +27,10 @@
     </thingCategories>
   </ThingDef>
   <RecipeDef>
-    <defName>Make_AF_PercussionCap</defName>
-    <label>Make Percussion Caps (x50)</label>
-    <description>Percussion Cap. Produces 50.</description>
-    <jobString>Making Percussion Caps.</jobString>
+    <defName>Make_AF_MusketWeaponPart</defName>
+    <label>Make Musket Weapon Part (x1)</label>
+    <description>Musket Weapon Part. Produces 1.</description>
+    <jobString>Making Musket Weapon Part.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -40,10 +40,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_MercuryFulminate</li>
+            <li>ComponentMedieval</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -51,26 +51,26 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_MercuryFulminate</li>
+        <li>ComponentMedieval</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
       </categories>
     </fixedIngredientFilter>
     <products>
-      <AF_PercussionCap>50</AF_PercussionCap>
+      <AF_MusketWeaponPart>1</AF_MusketWeaponPart>
     </products>
     <skillRequirements>
       <Crafting>4</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <researchPrerequisite>AF_Matchlocks</researchPrerequisite>
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
