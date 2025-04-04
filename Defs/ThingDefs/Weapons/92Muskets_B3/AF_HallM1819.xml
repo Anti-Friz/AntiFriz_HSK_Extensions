@@ -2,7 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_HallM1819</defName>
+    <defName>AF_HallM1819_BP</defName>
     <label>Hall M1819, .62 caliber</label>
     <description>Hall M1819. \nCaliber: .62</description>
     <graphicData>
@@ -104,8 +104,8 @@
       </li>
     </ingredients>
     <products>
-      <AF_HallM1819>1</AF_HallM1819>
-    </products>
+      <AF_HallM1819_BP>1</AF_HallM1819_BP>
+  </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>

@@ -9,7 +9,8 @@ $itemsToCopy = @(
     "About",
     "Defs",
     "Patches",
-    "Textures"
+    "Textures",
+    "RWWeaponModularization"
 )
 
 if (-Not (Test-Path -Path $destinationPath)) {
