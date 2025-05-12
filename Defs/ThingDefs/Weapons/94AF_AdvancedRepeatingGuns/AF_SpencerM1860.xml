@@ -61,7 +61,7 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_SpencerM1860</defName>
+    <defName>BuildAF_SpencerM1860r</defName>
     <label>Build Spencer M1860</label>
     <description>Spencer M1860. .\nCaliber: .62</description>
     <jobString>Building Spencer M1860.</jobString>
@@ -104,7 +104,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_SpencerM1860>1</AF_SpencerM1860>
+      <AF_SpencerM1860r>1</AF_SpencerM1860r>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
