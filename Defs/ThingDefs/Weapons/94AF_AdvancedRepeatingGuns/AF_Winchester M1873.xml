@@ -2,11 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-<<<<<<< HEAD
     <defName>AF_WinchesterM1873r</defName>
-=======
-    <defName>AF_WinchesterM1873_BP</defName>
->>>>>>> 906309d734ce72576d007e363f309290f298c70a
     <label>Winchester M1873, .62 caliber</label>
     <description>Winchester M1873. \nCaliber: .62</description>
     <graphicData>
@@ -108,13 +104,8 @@
       </li>
     </ingredients>
     <products>
-<<<<<<< HEAD
-      <AF_WinchesterM1873r>1</AF_WinchesterM1873r>
+      <AF_WinchesterM1873>1</AF_WinchesterM1873>
     </products>
-=======
-      <AF_WinchesterM1873_BP>1</AF_WinchesterM1873_BP>
-  </products>
->>>>>>> 906309d734ce72576d007e363f309290f298c70a
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>
