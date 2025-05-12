@@ -1,0 +1,86 @@
+﻿ 
+  <!--<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Muskets_B3"]/researchViewX</xpath>
+    <value>
+      <researchViewX>7.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Muskets_B3"]/researchViewY</xpath>
+    <value>
+      <researchViewY>31.00</researchViewY>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_Alpha"]/researchViewX</xpath>
+    <value>
+      <researchViewX>8.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_Alpha"]/researchViewY</xpath>
+    <value>
+      <researchViewY>30.00</researchViewY>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Machining"]/researchViewX</xpath>
+    <value>
+      <researchViewX>9.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Machining"]/researchViewY</xpath>
+    <value>
+      <researchViewY>30.00</researchViewY>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/researchViewX</xpath>
+    <value>
+      <researchViewX>10.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]/researchViewY</xpath>
+    <value>
+      <researchViewY>31.00</researchViewY>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="GasOperation"]/researchViewX</xpath>
+    <value>
+      <researchViewX>10.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="GasOperation"]/researchViewY</xpath>
+    <value>
+      <researchViewY>32.00</researchViewY>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="ToxGas"]/researchViewX</xpath>
+    <value>
+      <researchViewX>11.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="ToxGas"]/researchViewY</xpath>
+    <value>
+      <researchViewY>28.00</researchViewY>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Pistols_C2"]/researchViewX</xpath>
+    <value>
+      <researchViewX>11.00</researchViewX>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="Pistols_C2"]/researchViewY</xpath>
+    <value>
+      <researchViewY>31.00</researchViewY>
+    </value>
+  </Operation>-->
+  

@@ -6,7 +6,7 @@
     <description>Serpentine Powder</description>
     <graphicData>
       <texPath>Things/Item/Resource/Powder</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>

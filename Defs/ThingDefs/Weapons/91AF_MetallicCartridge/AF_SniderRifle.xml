@@ -3,8 +3,8 @@
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_SniderRifle</defName>
-    <label>Snider Rifle, .557 Caplock caliber</label>
-    <description>Snider Rifle. \nCaliber: .557 Caplock</description>
+    <label>Snider Rifle, .577 Caplock caliber</label>
+    <description>Snider Rifle. \nCaliber: .577 Caplock</description>
     <graphicData>
       <texPath>Things/Weapons/AF_SniderRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -30,7 +30,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_557CaliberCapMet</defaultProjectile>
+        <defaultProjectile>Bullet_577CaliberCapMet</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>31</range>
         <recoilAmount>2.89</recoilAmount>
@@ -46,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>2.6</reloadTime>
-        <ammoSet>AmmoSet_557CaliberCapMet</ammoSet>
+        <ammoSet>AmmoSet_577CaliberCapMet</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -63,7 +63,7 @@
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_SniderRifle</defName>
     <label>Build Snider Rifle</label>
-    <description>Snider Rifle. .\nCaliber: .557 Caplock</description>
+    <description>Snider Rifle. .\nCaliber: .577 Caplock</description>
     <jobString>Building Snider Rifle.</jobString>
     <workAmount>10000</workAmount>
     <skillRequirements>

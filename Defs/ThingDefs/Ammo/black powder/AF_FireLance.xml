@@ -125,7 +125,8 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SerpentinePowder</li>
+            <li>Powder</li>
+            <li>SerpentinePowder</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -134,7 +135,8 @@
 		<fixedIngredientFilter>
       <thingDefs>
         <li>CrushedStone</li>
-				<li>SerpentinePowder</li>
+        <li>Powder</li>
+        <li>SerpentinePowder</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

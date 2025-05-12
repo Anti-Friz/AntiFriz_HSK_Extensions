@@ -56,6 +56,20 @@
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="50CaliberBase">
+    <defName>Ammo_50Caliber_Lead</defName>
+    <label>.50 caliber Ball w/percussion cap</label>
+    <graphicData>
+      <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.15</MarketValue>
+    </statBases>
+    <ammoClass>LeadBall</ammoClass>
+    <cookOffProjectile>Bullet_50Caliber_Lead</cookOffProjectile>
+  </ThingDef>
+  
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="50CaliberBase">
     <defName>Ammo_50CaliberCap_Lead</defName>
     <label>.50 caliber Ball w/percussion cap</label>
     <graphicData>
@@ -115,6 +129,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -126,6 +141,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -159,6 +175,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -178,6 +195,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
         <li>AF_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>

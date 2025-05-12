@@ -107,6 +107,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -118,6 +119,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

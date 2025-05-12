@@ -107,6 +107,7 @@
       <li>
         <filter>
           <thingDefs>
+            <li>Powder</li>
             <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
@@ -118,6 +119,7 @@
         <li>HeavyBar</li>
       </categories>
       <thingDefs>
+        <li>Powder</li>
         <li>SerpentinePowder</li>
       </thingDefs>
     </fixedIngredientFilter>

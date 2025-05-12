@@ -70,7 +70,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <researchPrerequisite>AF_Caplocks</researchPrerequisite>
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>

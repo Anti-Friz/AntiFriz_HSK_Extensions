@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectTagDef>
+    <defName>AF_WAR_Start</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>PreMuskets_B1</defName>
+    <label>Early Experiments</label>
+    <description>Learn how to make a very early firearms, like gonne or firelance.</description>
+    <baseCost>350</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>GunPowderTech</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>31.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>AF_Matchlocks</defName>
+    <label>Matchlocks</label>
+    <description>Develop various matchlock muskets.</description>
+    <baseCost>480</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>PreMuskets_B1</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>33.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>AF_Wheellocks</defName>
+    <label>Wheellocks</label>
+    <description>Develop various wheellocks muskets.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>AF_Matchlocks</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>34.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>AF_Wheellock_Rifles</defName>
+    <label>Wheellocks Rifles</label>
+    <description>Develop various wheellocks rifled muskets.</description>
+    <baseCost>240</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>AF_Wheellocks</li>
+      <li>Muskets_B2</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>33.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>AF_MusketAttachments</defName>
+    <label>Musket Attachments</label>
+    <description>There is always room for upgrade.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>AF_Wheellocks</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>34.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>AF_AdvancedMusktes</defName>
+    <label>Advanced flinlock muskets</label>
+    <description>Some strange, or pushed to the limit flintlocks.</description>
+    <baseCost>350</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Muskets_B2</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>34.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>AF_SurvivalWeapons</defName>
+    <label>Survival weapons</label>
+    <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Muskets_B2</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>35.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>AF_Caplocks</defName>
+    <label>Caplocks</label>
+    <description>New invention - Percussion Cap! And first caplock guns!</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Muskets_B2</li>
+    </prerequisites>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>31.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>AF_MetallicCartridge</defName>
+    <label>Metallic Cartridge</label>
+    <description>Metallic Cartridge</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>AF_Caplocks</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>31.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>AF_Caplocks_Conversions</defName>
+    <label>Caplocks Conversions</label>
+    <description>Sometimes, if you take an old mighty flintlock musket and upgrade it, you can effectively make a better and much cheaper-to-produce caplock gun!</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>AF_Caplocks</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>32.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>AF_RepeatingGuns</defName>
+    <label>Repeating Guns</label>
+    <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Muskets_B2</li>
+    </prerequisites>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>33.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>AF_RepeatingGuns_Advanced</defName>
+    <label>Advanced Repeating Guns</label>
+    <description>Advanced Repeating Guns</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>AF_RepeatingGuns</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>33.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>AF_Breechloaders_Advanced</defName>
+    <label>Advanced Breechloading Guns</label>
+    <description>Advanced Breechloading Guns</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Muskets_B3</li>
+    </prerequisites>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>32.00</researchViewY>
+    <tab>Weapon_SK</tab>
+    <tags>
+      <li>AF_WAR_Start</li>
+    </tags>
+  </ResearchProjectDef>  
+</Defs>

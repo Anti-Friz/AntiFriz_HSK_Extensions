@@ -10,7 +10,7 @@
 	
 	<!-- ==================== AmmoSet ========================== -->
   <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_62Caliber</defName>
+    <defName>AmmoSet_625Caliber</defName>
     <label>.625 Caliber</label>
     <ammoTypes>
       <Ammo_62Caliber_Lead>Bullet_62Caliber_Lead</Ammo_62Caliber_Lead>
@@ -21,8 +21,8 @@
 	<!-- ==================== Ammo ========================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="62BlunderbussBase">
-    <defName>Ammo_62Caliber_Lead</defName>
-    <label>.62 Caliber Ball</label>
+    <defName>Ammo_625Caliber_Lead</defName>
+    <label>.625 Caliber Ball</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -56,7 +56,7 @@
 
   <!-- Caliber ball-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_62Caliber_Lead</defName>
+    <defName>MakeAmmo_625Caliber_Lead</defName>
     <label>make .625 Caliber Ball x25</label>
     <description>Craft 25 .625 Caliber Ball rounds.</description>
     <jobString>Making .625 Caliber Ball rounds.</jobString>
@@ -75,6 +75,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -83,6 +84,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

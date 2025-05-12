@@ -1,373 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Core SK</li>
-      <li>HMC Vile's Pre-Industrial Overhaul</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <success>Always</success>
-      <operations>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/researchViewY</xpath>
-          <value>
-            <researchViewY>34.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Muskets_B3"]</xpath>
-          <value>
-            <researchViewX>7.00</researchViewX>
-            <researchViewY>31.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="AF_SurvivalWeapons"]</xpath>
-          <value>
-            <researchViewX>7.00</researchViewX>
-            <researchViewY>32.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="VPE_CasterGear"]</xpath>
-          <value>
-            <researchViewX>6.00</researchViewX>
-            <researchViewY>39.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Parabellum_Alpha"]</xpath>
-          <value>
-            <researchViewX>8.00</researchViewX>
-            <researchViewY>30.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
-          <value>
-            <researchViewX>9.00</researchViewX>
-            <researchViewY>30.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
-          <value>
-            <researchViewX>10.00</researchViewX>
-            <researchViewY>31.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
-          <value>
-            <researchViewX>10.00</researchViewX>
-            <researchViewY>32.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
-          <value>
-            <researchViewX>11.00</researchViewX>
-            <researchViewY>28.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Pistols_C2"]</xpath>
-          <value>
-            <researchViewX>11.00</researchViewX>
-            <researchViewY>31.00</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>PreMuskets_B1</defName>
-              <label>Early Experiments</label>
-              <description>Learn how to make a very early firearms, like gonne or firelance.</description>
-              <baseCost>350</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>GunPowderTech</li>
-              </prerequisites>
-              <researchViewX>4.00</researchViewX>
-              <researchViewY>31.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>AF_Matchlocks</defName>
-              <label>Matchlocks</label>
-              <description>Develop various matchlock muskets.</description>
-              <baseCost>480</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>PreMuskets_B1</li>
-              </prerequisites>
-              <researchViewX>4.00</researchViewX>
-              <researchViewY>32.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Muskets_B1"]/prerequisites</xpath>
-          <value>
-            <prerequisites>
-              <li>AF_Matchlocks</li>
-            </prerequisites>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>AF_Wheellocks</defName>
-              <label>Wheellocks</label>
-              <description>Develop various wheellocks muskets.</description>
-              <baseCost>500</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>AF_Matchlocks</li>
-              </prerequisites>
-              <researchViewX>4.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>AF_Wheellocks_Rifles</defName>
-              <label>Wheellocks Rifles</label>
-              <description>Develop various wheellocks rifled muskets.</description>
-              <baseCost>240</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>AF_Wheellocks</li>
-                <li>Muskets_B2</li>
-              </prerequisites>
-              <researchViewX>5.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>AF_MusketAttachments</defName>
-              <label>Musket Attachments</label>
-              <description>There is always room for upgrade.</description>
-              <baseCost>200</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>AF_Wheellocks</li>
-              </prerequisites>
-              <researchViewX>6.00</researchViewX>
-              <researchViewY>34.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>AF_AdvancedMusktes</defName>
-              <label>Advanced flinlock muskets</label>
-              <description>Some strange, or pushed to the limit flintlocks.</description>
-              <baseCost>350</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>Muskets_B2</li>
-              </prerequisites>
-              <researchViewX>5.00</researchViewX>
-              <researchViewY>34.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="MedievalBase">
-              <defName>AF_SurvivalWeapons</defName>
-              <label>Survival weapons</label>
-              <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
-              <baseCost>500</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>Muskets_B2</li>
-              </prerequisites>
-              <researchViewX>6.00</researchViewX>
-              <researchViewY>32.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="IndustrialBase">
-              <defName>AF_Caplock</defName>
-              <label>Caplocks</label>
-              <description>New invention - Percussion Cap! And first caplock guns!</description>
-              <baseCost>1500</baseCost>
-              <techLevel>Industrial</techLevel>
-              <prerequisites>
-                <li>Muskets_B2</li>
-              </prerequisites>
-              <researchViewX>6.00</researchViewX>
-              <researchViewY>31.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="IndustrialBase">
-              <defName>AF_MetallicCartridge</defName>
-              <label>Metallic Cartridge</label>
-              <description>Metallic Cartridge</description>
-              <baseCost>2000</baseCost>
-              <techLevel>Industrial</techLevel>
-              <prerequisites>
-                <li>AF_Caplock</li>
-              </prerequisites>
-              <researchViewX>7.00</researchViewX>
-              <researchViewY>30.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ResearchProjectDef[defName="Muskets_B3"]/prerequisites</xpath>
-          <value>
-            <prerequisites>
-              <li>AF_MetallicCartridge</li>
-            </prerequisites>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="IndustrialBase">
-              <defName>AF_Caplock_Conversions</defName>
-              <label>Caplocks Conversions</label>
-              <description>Sometimes, if you take an old mighty flintlock musket and upgrade it, you can effectively make a better and much cheaper-to-produce caplock gun!</description>
-              <baseCost>100</baseCost>
-              <techLevel>Industrial</techLevel>
-              <prerequisites>
-                <li>AF_Caplock</li>
-              </prerequisites>
-              <researchViewX>6.00</researchViewX>
-              <researchViewY>32.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="IndustrialBase">
-              <defName>AF_RepeatingGuns</defName>
-              <label>Repeating Guns</label>
-              <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
-              <baseCost>500</baseCost>
-              <techLevel>Medieval</techLevel>
-              <prerequisites>
-                <li>Muskets_B2</li>
-              </prerequisites>
-              <researchViewX>6.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="IndustrialBase">
-              <defName>AF_RepeatingGuns_Advanced</defName>
-              <label>Advanced Repeating Guns</label>
-              <description>Advanced Repeating Guns</description>
-              <baseCost>500</baseCost>
-              <techLevel>Industrial</techLevel>
-              <prerequisites>
-                <li>AF_RepeatingGuns</li>
-              </prerequisites>
-              <researchViewX>7.00</researchViewX>
-              <researchViewY>33.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <ResearchProjectDef ParentName="IndustrialBase">
-              <defName>AF_Breechloaders_Advanced</defName>
-              <label>Advanced Breechloading Guns</label>
-              <description>Advanced Breechloading Guns</description>
-              <baseCost>600</baseCost>
-              <techLevel>Industrial</techLevel>
-              <prerequisites>
-                <li>Muskets_B3</li>
-              </prerequisites>
-              <researchViewX>6.00</researchViewX>
-              <researchViewY>32.00</researchViewY>
-              <tab>Weapon_SK</tab>
-              <modExtensions>
-                <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
-              </modExtensions>
-            </ResearchProjectDef>
-          </value>
-        </li>
-      </operations>
-    </match>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>Muskets_B1</li>
+      <li>4.00</li>
+      <li>32.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>Muskets_B3</li>
+      <li>7.00</li>
+      <li>31.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions_Cost</patchName>
+    <arguments>
+      <li>Parabellum_Alpha</li>
+      <li>2000</li>
+      <li>7.00</li>
+      <li>30.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>VPE_CasterGear</li>
+      <li>6.00</li>
+      <li>38.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>Machining</li>
+      <li>9.00</li>
+      <li>30.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>Gunsmithing</li>
+      <li>10.00</li>
+      <li>31.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>GasOperation</li>
+      <li>10.00</li>
+      <li>32.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>ToxGas</li>
+      <li>11.00</li>
+      <li>28.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.ApplyPatch">
+    <patchName>Research_Positions</patchName>
+    <arguments>
+      <li>Pistols_C2</li>
+      <li>11.00</li>
+      <li>31.00</li>
+    </arguments>
+  </Operation>
+  <Operation Class="XmlExtensions.PatchOperationReplace">
+    <xmlDoc>ResearchDoc</xmlDoc>
+    <xpath>ResearchDoc/ResearchProjectDef[defName="Muskets_B1"]/prerequisites</xpath>
+    <value>
+      <prerequisites>
+        <li>AF_Matchlocks</li>
+      </prerequisites>
+    </value>
+  </Operation>
+  <Operation Class="XmlExtensions.PatchOperationReplace">
+    <xmlDoc>ResearchDoc</xmlDoc>
+    <xpath>ResearchDoc/ResearchProjectDef[defName="Muskets_B3"]/prerequisites</xpath>
+    <value>
+      <prerequisites>
+        <li>AF_MetallicCartridge</li>
+      </prerequisites>
+    </value>
+  </Operation>
+  <Operation Class="XmlExtensions.PatchOperationReplace">
+    <xmlDoc>ResearchDoc</xmlDoc>
+    <xpath>ResearchDoc/ResearchProjectDef[defName="Muskets_B3"]/baseCost</xpath>
+    <value>
+      <baseCost>1200</baseCost>
+    </value>
   </Operation>
 </Patch>

@@ -83,6 +83,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -102,6 +103,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
         <li>AF_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -113,7 +115,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Wheellocks_Rifles</researchPrerequisite>
+    <researchPrerequisite>AF_Wheellock_Rifles</researchPrerequisite>
     <!-- Smithing -->
   </RecipeDef>
 

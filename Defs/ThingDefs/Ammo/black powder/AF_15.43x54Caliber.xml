@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingCategoryDef>
-    <defName>Ammo_15.43x54Caliber</defName>
+    <defName>Ammo_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <parent>AmmoMusket</parent>
     <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
   </ThingCategoryDef>
   <!-- ==================== AmmoSet ========================== -->
   <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_15.43x54Caliber</defName>
+    <defName>AmmoSet_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <ammoTypes>
-      <Ammo_15.43x54Caliber>Bullet_15.43x54Caliber</Ammo_15.43x54Caliber>
+      <Ammo_1543x54Caliber>Bullet_1543x54Caliber</Ammo_1543x54Caliber>
       <Ammo_MinieBall>Bullet_MinieBall</Ammo_MinieBall>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
   <!-- ==================== Ammo ========================== -->
-  <ThingDef Class="CombatExtended.AmmoDef" Name="15.43x54Caliber" ParentName="SmallAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="1543x54Caliber" ParentName="SmallAmmoBase" Abstract="True">
     <description>Round bullet with powder, wrapped in paper.</description>
     <statBases>
       <Mass>0.03</Mass>
@@ -27,7 +27,7 @@
       <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <thingCategories>
-      <li>Ammo_15.43x54Caliber</li>
+      <li>Ammo_1543x54Caliber</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -43,7 +43,7 @@
     </comps>
   </ThingDef>
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="50CaliberBase">
-    <defName>Ammo_15.43x54Caliber</defName>
+    <defName>Ammo_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
@@ -53,10 +53,10 @@
       <MarketValue>0.4</MarketValue>
     </statBases>
     <ammoClass>LeadBall</ammoClass>
-    <cookOffProjectile>Bullet_15.43x54Caliber_Lead</cookOffProjectile>
+    <cookOffProjectile>Bullet_1543x54Caliber</cookOffProjectile>
   </ThingDef>
   <!-- ================== Projectiles ================== -->
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base50CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base1543x54CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -67,8 +67,8 @@
       <dropsCasings>False</dropsCasings>
     </projectile>
   </ThingDef>
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50CaliberBullet">
-    <defName>Bullet_15.43x54Calibe</defName>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base1543x54CaliberBullet">
+    <defName>Bullet_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>28</damageAmountBase>
@@ -79,7 +79,7 @@
   <!-- ==================== Recipes ========================== -->
   <!-- BALL FORGE-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_15.43x54Caliber</defName>
+    <defName>MakeAmmo_1543x54Caliber</defName>
     <label>make 15.43x54mm paper cartridge x25</label>
     <description>Craft 25 15.43x54mm paper cartridge, and measure out powder charge.</description>
     <jobString>Making 15.43x54mm paper cartridge.</jobString>
@@ -97,6 +97,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -116,11 +117,12 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
         <li>AF_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_15.43x54Caliber>25</Ammo_15.43x54Caliber>
+      <Ammo_1543x54Caliber>25</Ammo_1543x54Caliber>
     </products>
     <skillRequirements>
       <Crafting>3</Crafting>

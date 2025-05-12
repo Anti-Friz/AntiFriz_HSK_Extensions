@@ -119,6 +119,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

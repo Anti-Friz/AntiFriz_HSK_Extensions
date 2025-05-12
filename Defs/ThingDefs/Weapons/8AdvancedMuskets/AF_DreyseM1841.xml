@@ -2,7 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_DreyseM1841</defName>
+    <defName>AF_DreyseM1841r</defName>
     <label>Dreyse M1841, 15.43x54mm</label>
     <description>Single-shot, bolt-action gun that featured a transition technology between muzzleloaders and metallic cartridge breechloaders. \nCaliber: 15.43x54mm</description>
     <graphicData>
@@ -32,7 +32,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_15.43x54Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_1543x54Caliber</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>48</range>
         <recoilAmount>1.92</recoilAmount>
@@ -48,7 +48,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>1.2</reloadTime>
-        <ammoSet>AmmoSet_15.43x54Caliber</ammoSet>
+        <ammoSet>AmmoSet_1543x54Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -63,7 +63,7 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_FlintlockCarbine</defName>
+    <defName>BuildAF_DreyseM1841r</defName>
     <label>Build Dreyse M1841</label>
     <description>Dreyse M1841. .\nCaliber: .62</description>
     <jobString>Building Dreyse M1841.</jobString>
@@ -98,8 +98,8 @@
       </li>
     </ingredients>
     <products>
-      <AF_DreyseM1841>1</AF_DreyseM1841>
-    </products>
+      <AF_DreyseM1841r>1</AF_DreyseM1841r>
+  </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>

@@ -173,7 +173,8 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Powder</li>
+            <li>Powder</li>
+            <li>SerpentinePowder</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -181,7 +182,8 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Powder</li>
+        <li>Powder</li>
+        <li>SerpentinePowder</li>
 			</thingDefs>
 			<categories>
 				<li>SLDBar</li>
@@ -220,6 +222,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -228,6 +231,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -267,6 +271,7 @@
         <filter>
           <thingDefs>
             <li>Powder</li>
+            <li>SerpentinePowder</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -275,6 +280,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Powder</li>
+        <li>SerpentinePowder</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

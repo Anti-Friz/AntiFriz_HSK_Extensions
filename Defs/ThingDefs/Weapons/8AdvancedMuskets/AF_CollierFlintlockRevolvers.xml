@@ -414,7 +414,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <researchPrerequisite>AF_Caplocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -467,7 +467,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Caplock</researchPrerequisite>
+    <researchPrerequisite>AF_Caplocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 
@@ -521,7 +521,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Caplock_Conversions</researchPrerequisite>
+    <researchPrerequisite>AF_Caplocks_Conversions</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -574,7 +574,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Caplock_Conversions</researchPrerequisite>
+    <researchPrerequisite>AF_Caplocks_Conversions</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_HallM1819</defName>
+    <defName>AF_HallM1819r</defName>
     <label>Hall M1819, .54 caliber</label>
     <description>The Hall M1819 one of the first breech-loading rifle Its main advantages were fast loading and high accuracy, but it was complex to manufacture, had a low rate of fire, and was heavy. \nCaliber: .54</description>
     <graphicData>
@@ -104,8 +104,8 @@
       </li>
     </ingredients>
     <products>
-      <AF_HallM1819>1</AF_HallM1819>
-    </products>
+      <AF_HallM1819r>1</AF_HallM1819r>
+  </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>

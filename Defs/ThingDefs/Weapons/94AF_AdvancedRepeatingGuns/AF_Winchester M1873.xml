@@ -2,7 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_WinchesterM1873</defName>
+    <defName>AF_WinchesterM1873r</defName>
     <label>Winchester M1873, .62 caliber</label>
     <description>Winchester M1873. \nCaliber: .62</description>
     <graphicData>
@@ -104,7 +104,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_WinchesterM1873>1</AF_WinchesterM1873>
+      <AF_WinchesterM1873r>1</AF_WinchesterM1873r>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
