@@ -53,7 +53,11 @@
       <MarketValue>0.4</MarketValue>
     </statBases>
     <ammoClass>LeadBall</ammoClass>
+<<<<<<< HEAD
     <cookOffProjectile>Bullet_1543x54Caliber</cookOffProjectile>
+=======
+    <cookOffProjectile>Bullet_1543x54Caliber_Lead</cookOffProjectile>
+>>>>>>> 906309d734ce72576d007e363f309290f298c70a
   </ThingDef>
   <!-- ================== Projectiles ================== -->
   <ThingDef Class="CombatExtended.AmmoDef" Name="Base1543x54CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
@@ -67,7 +71,11 @@
       <dropsCasings>False</dropsCasings>
     </projectile>
   </ThingDef>
+<<<<<<< HEAD
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base1543x54CaliberBullet">
+=======
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50CaliberBullet">
+>>>>>>> 906309d734ce72576d007e363f309290f298c70a
     <defName>Bullet_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">

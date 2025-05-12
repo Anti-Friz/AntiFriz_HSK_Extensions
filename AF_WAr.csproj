@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Defs\RecipeDefs\" />
+    <Compile Remove="AF_HSK_Extension\**" />
+    <Compile Remove="Defs\RecipeDefs\**" />
+    <EmbeddedResource Remove="AF_HSK_Extension\**" />
+    <EmbeddedResource Remove="Defs\RecipeDefs\**" />
+    <None Remove="AF_HSK_Extension\**" />
+    <None Remove="Defs\RecipeDefs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Defs\ThingDefs\Weapons\6AF_Matchlocks_Rifles\" />
     <Folder Include="Languages\" />
     <Folder Include="Sounds\" />

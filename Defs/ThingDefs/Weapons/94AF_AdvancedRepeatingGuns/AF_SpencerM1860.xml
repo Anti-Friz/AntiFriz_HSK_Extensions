@@ -2,7 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
+<<<<<<< HEAD
     <defName>AF_SpencerM1860r</defName>
+=======
+    <defName>AF_SpencerM1860_BP</defName>
+>>>>>>> 906309d734ce72576d007e363f309290f298c70a
     <label>Spencer M1860, .62 caliber</label>
     <description>Spencer M1860. \nCaliber: .62</description>
     <graphicData>
@@ -104,8 +108,13 @@
       </li>
     </ingredients>
     <products>
+<<<<<<< HEAD
       <AF_SpencerM1860r>1</AF_SpencerM1860r>
     </products>
+=======
+      <AF_SpencerM1860_BP>1</AF_SpencerM1860_BP>
+  </products>
+>>>>>>> 906309d734ce72576d007e363f309290f298c70a
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>

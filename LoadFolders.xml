@@ -1,6 +1,6 @@
 <loadFolders>
   <v1.5>
     <li>/</li>
-    <li IfModActive="RWNodeTree.ModularizationVanillaWeapon">Defs/ThingDefs/Attachments</li>
+    <li IfModActive="RWNodeTree.ModularizationVanillaWeapon">RWWeaponModularization</li>
   </v1.5>
 </loadFolders>
