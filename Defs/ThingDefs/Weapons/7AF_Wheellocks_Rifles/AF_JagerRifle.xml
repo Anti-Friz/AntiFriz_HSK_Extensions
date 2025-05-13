@@ -81,8 +81,8 @@
       <li>
         <filter>
           <thingDefs>
-            <li>MagnetiteCrystal</li>
-            <li>CassiteriteCrystal</li>
+            <li>Steel</li>
+            <li>Tin</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -110,8 +110,8 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>AF_MusketWeaponPart</li>
-        <li>MagnetiteCrystal</li>
-        <li>CassiteriteCrystal</li>
+        <li>Steel</li>
+        <li>Tin</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
