@@ -66,7 +66,7 @@
       <AF_PercussionCap>50</AF_PercussionCap>
     </products>
     <skillRequirements>
-      <Crafting>4</Crafting>
+      <Crafting>8</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>

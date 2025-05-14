@@ -25,7 +25,7 @@
         <circularError>1.2</circularError>
         <warmupTime>1.3</warmupTime>
         <minRange>2</minRange>
-        <range>22</range>
+        <range>30</range>
         <recoilAmount>0.71</recoilAmount>
         <burstShotCount>1</burstShotCount>
         <soundCast>SwivelGun</soundCast>

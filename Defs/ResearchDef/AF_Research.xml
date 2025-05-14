@@ -14,7 +14,7 @@
       <li>GunPowderTech</li>
     </prerequisites>
     <researchViewX>3.00</researchViewX>
-    <researchViewY>31.00</researchViewY>
+    <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -30,7 +30,7 @@
       <li>PreMuskets_B1</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>33.00</researchViewY>
+    <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -45,8 +45,8 @@
     <prerequisites>
       <li>AF_Matchlocks</li>
     </prerequisites>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>34.00</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -63,7 +63,7 @@
       <li>Muskets_B2</li>
     </prerequisites>
     <researchViewX>5.00</researchViewX>
-    <researchViewY>33.00</researchViewY>
+    <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -78,8 +78,8 @@
     <prerequisites>
       <li>AF_Wheellocks</li>
     </prerequisites>
-    <researchViewX>7.00</researchViewX>
-    <researchViewY>34.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -94,8 +94,8 @@
     <prerequisites>
       <li>Muskets_B2</li>
     </prerequisites>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>34.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>77.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -110,8 +110,8 @@
     <prerequisites>
       <li>Muskets_B2</li>
     </prerequisites>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>35.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>78.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -127,7 +127,7 @@
       <li>Muskets_B2</li>
     </prerequisites>
     <researchViewX>6.00</researchViewX>
-    <researchViewY>31.00</researchViewY>
+    <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -143,7 +143,7 @@
       <li>AF_Caplocks</li>
     </prerequisites>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>31.00</researchViewY>
+    <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -159,7 +159,7 @@
       <li>AF_Caplocks</li>
     </prerequisites>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>32.00</researchViewY>
+    <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -174,8 +174,8 @@
     <prerequisites>
       <li>Muskets_B2</li>
     </prerequisites>
-    <researchViewX>6.00</researchViewX>
-    <researchViewY>33.00</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -190,8 +190,8 @@
     <prerequisites>
       <li>AF_RepeatingGuns</li>
     </prerequisites>
-    <researchViewX>7.00</researchViewX>
-    <researchViewY>33.00</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>
@@ -206,8 +206,8 @@
     <prerequisites>
       <li>Muskets_B3</li>
     </prerequisites>
-    <researchViewX>6.00</researchViewX>
-    <researchViewY>32.00</researchViewY>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>77.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
       <li>AF_WAR_Start</li>

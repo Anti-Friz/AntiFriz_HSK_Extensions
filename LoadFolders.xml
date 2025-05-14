@@ -1,6 +1,6 @@
 <loadFolders>
   <v1.5>
     <li>/</li>
-    <li IfModActive="RWNodeTree.ModularizationVanillaWeapon">RWWeaponModularization</li>
+    <li IfModActive="rwnodetree.rwweaponmodularization">RWWeaponModularization</li>
   </v1.5>
 </loadFolders>
