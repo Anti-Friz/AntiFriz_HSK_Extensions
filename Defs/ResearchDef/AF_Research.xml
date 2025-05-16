@@ -117,7 +117,7 @@
       <li>AF_WAR_Start</li>
     </tags>
   </ResearchProjectDef>
-  <ResearchProjectDef ParentName="IndustrialBase">
+  <ResearchProjectDef ParentName="MedievalBase">
     <defName>AF_Caplocks</defName>
     <label>Caplocks</label>
     <description>New invention - Percussion Cap! And first caplock guns!</description>
@@ -133,7 +133,7 @@
       <li>AF_WAR_Start</li>
     </tags>
   </ResearchProjectDef>
-  <ResearchProjectDef ParentName="IndustrialBase">
+  <ResearchProjectDef ParentName="MedievalBase">
     <defName>AF_MetallicCartridge</defName>
     <label>Metallic Cartridge</label>
     <description>Metallic Cartridge</description>
@@ -149,7 +149,7 @@
       <li>AF_WAR_Start</li>
     </tags>
   </ResearchProjectDef>
-  <ResearchProjectDef ParentName="IndustrialBase">
+  <ResearchProjectDef ParentName="MedievalBase">
     <defName>AF_Caplocks_Conversions</defName>
     <label>Caplocks Conversions</label>
     <description>Sometimes, if you take an old mighty flintlock musket and upgrade it, you can effectively make a better and much cheaper-to-produce caplock gun!</description>
@@ -165,7 +165,7 @@
       <li>AF_WAR_Start</li>
     </tags>
   </ResearchProjectDef>
-  <ResearchProjectDef ParentName="IndustrialBase">
+  <ResearchProjectDef ParentName="MedievalBase">
     <defName>AF_RepeatingGuns</defName>
     <label>Repeating Guns</label>
     <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
@@ -181,7 +181,7 @@
       <li>AF_WAR_Start</li>
     </tags>
   </ResearchProjectDef>
-  <ResearchProjectDef ParentName="IndustrialBase">
+  <ResearchProjectDef ParentName="MedievalBase">
     <defName>AF_RepeatingGuns_Advanced</defName>
     <label>Advanced Repeating Guns</label>
     <description>Advanced Repeating Guns</description>
@@ -197,7 +197,7 @@
       <li>AF_WAR_Start</li>
     </tags>
   </ResearchProjectDef>
-  <ResearchProjectDef ParentName="IndustrialBase">
+  <ResearchProjectDef ParentName="MedievalBase">
     <defName>AF_Breechloaders_Advanced</defName>
     <label>Advanced Breechloading Guns</label>
     <description>Advanced Breechloading Guns</description>
