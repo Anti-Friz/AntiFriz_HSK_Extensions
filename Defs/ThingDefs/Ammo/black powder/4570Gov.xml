@@ -15,11 +15,11 @@
 		<label>.45-70 Government</label>
 		<ammoTypes>
 			<Ammo_4570Gov_FMJ>Bullet_4570Gov_FMJ</Ammo_4570Gov_FMJ>
-			<Ammo_4570Gov_AP>Bullet_4570Gov_AP</Ammo_4570Gov_AP>
+			<!--<Ammo_4570Gov_AP>Bullet_4570Gov_AP</Ammo_4570Gov_AP>
 			<Ammo_4570Gov_HP>Bullet_4570Gov_HP</Ammo_4570Gov_HP>
 			<Ammo_4570Gov_Incendiary>Bullet_4570Gov_Incendiary</Ammo_4570Gov_Incendiary>
 			<Ammo_4570Gov_HE>Bullet_4570Gov_HE</Ammo_4570Gov_HE>
-			<Ammo_4570Gov_Sabot>Bullet_4570Gov_Sabot</Ammo_4570Gov_Sabot>
+			<Ammo_4570Gov_Sabot>Bullet_4570Gov_Sabot</Ammo_4570Gov_Sabot>-->
 		</ammoTypes>
 		<!--<similarTo>AmmoSet_Rifle</similarTo>-->
 	</CombatExtended.AmmoSetDef>
@@ -55,7 +55,7 @@
 		<cookOffProjectile>Bullet_4570Gov_FMJ</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="4570GovBase">
+	<!--<ThingDef Class="CombatExtended.AmmoDef" ParentName="4570GovBase">
 		<defName>Ammo_4570Gov_AP</defName>
 		<label>.45-70 Government (AP)</label>
 		<graphicData>
@@ -124,7 +124,7 @@
 		</statBases>
 		<ammoClass>Sabot</ammoClass>
 		<cookOffProjectile>Bullet_4570Gov_Sabot</cookOffProjectile>
-	</ThingDef>
+	</ThingDef>-->
 
 	<!-- ================== Projectiles ================== -->
 
@@ -150,7 +150,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base4570GovBullet">
+  <!--<ThingDef ParentName="Base4570GovBullet">
 		<defName>Bullet_4570Gov_AP</defName>
 		<label>.45-70 Government cartridge (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -211,14 +211,14 @@
 			<armorPenetrationBlunt>99.54</armorPenetrationBlunt>
 			<speed>171</speed>
 		</projectile>
-	</ThingDef>
+	</ThingDef>-->
 
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBlackPowderBase">
 		<defName>MakeAmmo_4570Gov_FMJ</defName>
-		<label>make .45-70 Government cartridge (FMJ) cartridge x500</label>
-		<description>Craft 500 .45-70 Government cartridge (FMJ) cartridges.</description>
+		<label>make .45-70 Government cartridge (FMJ) cartridge x25</label>
+		<description>Craft 25 .45-70 Government cartridge (FMJ) cartridges.</description>
 		<jobString>Making .45-70 Government cartridge (FMJ) cartridges.</jobString>
 		<ingredients>
 			<li>

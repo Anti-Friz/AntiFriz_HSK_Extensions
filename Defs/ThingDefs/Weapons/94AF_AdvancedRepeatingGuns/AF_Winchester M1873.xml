@@ -3,8 +3,8 @@
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_WinchesterM1873r</defName>
-    <label>Winchester M1873, .62 caliber</label>
-    <description>Winchester M1873. \nCaliber: .62</description>
+    <label>Winchester M1873, .44-40</label>
+    <description>Winchester M1873. \nCaliber: .44-40</description>
     <graphicData>
       <texPath>Things/Weapons/AF_WinchesterM1873</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,24 +17,24 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>245</MarketValue>
-      <SightsEfficiency>0.63</SightsEfficiency>
-      <ShotSpread>0.45</ShotSpread>
+      <MarketValue>500</MarketValue>
+      <SightsEfficiency>0.75</SightsEfficiency>
+      <ShotSpread>0.63</ShotSpread>
       <SwayFactor>1.07</SwayFactor>
-      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
       <Bulk>6.9</Bulk>
-      <Mass>1.76</Mass>
+      <Mass>4.45</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
-        <range>15</range>
+        <defaultProjectile>40Winchester_FMJ</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>42</range>
         <recoilAmount>2.14</recoilAmount>
-        <soundCast>Springfield</soundCast>
+        <soundCast>Winchester</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -44,9 +44,10 @@
         <aiAimMode>AimedShot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <magazineSize>16</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_44-40Winchester</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -55,15 +56,15 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <ComponentMedieval>3</ComponentMedieval>
-    </smeltProducts>
+      <ComponentIndustrial>6</ComponentIndustrial>
+  </smeltProducts>
     
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_WinchesterM1873r</defName>
     <label>Build Winchester M1873</label>
-    <description>Winchester M1873. .\nCaliber: .62</description>
+    <description>Winchester M1873. .\nCaliber: .44-40</description>
     <jobString>Building Winchester M1873.</jobString>
     <workAmount>10000</workAmount>
     <skillRequirements>
