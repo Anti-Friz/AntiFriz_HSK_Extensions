@@ -142,7 +142,9 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
     <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
-    <!-- Smithing -->
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
   </RecipeDef>
 
 </Defs>

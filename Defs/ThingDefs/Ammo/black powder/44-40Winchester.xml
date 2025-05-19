@@ -259,6 +259,9 @@
 			<Ammo_44-40Winchester_FMJ>25</Ammo_44-40Winchester_FMJ>
 		</products>
 		<workAmount>2600</workAmount>
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
 	</RecipeDef>
 
   <!--<RecipeDef ParentName="AmmoRecipeBase">

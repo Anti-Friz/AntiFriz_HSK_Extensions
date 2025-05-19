@@ -32,8 +32,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>17</range>
-        <recoilAmount>1.95</recoilAmount>
+        <range>19</range>
+        <recoilAmount>1.98</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

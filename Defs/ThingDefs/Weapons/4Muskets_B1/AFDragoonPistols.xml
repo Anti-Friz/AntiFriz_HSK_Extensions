@@ -34,7 +34,7 @@
         <defaultProjectile>Bullet_56Caliber_Lead</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>12</range>
-        <recoilAmount>2.45</recoilAmount>
+        <recoilAmount>4.47</recoilAmount>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -46,7 +46,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>2.5</reloadTime>
+        <reloadTime>1.5</reloadTime>
         <ammoSet>AmmoSet_56Caliber</ammoSet>
       </li>
     </comps>
@@ -54,6 +54,7 @@
       <ComponentMedieval>1</ComponentMedieval>
     </smeltProducts>
   </ThingDef>
+  
   <ThingDef ParentName="BaseGun_ShortBarreled">
     <defName>AF_HeavyDragoonPistol</defName>
     <label>Heavy Dragoon Pistol</label>
@@ -88,7 +89,7 @@
         <defaultProjectile>Bullet_65Caliber_Lead</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>12</range>
-        <recoilAmount>2.42</recoilAmount>
+        <recoilAmount>4.83</recoilAmount>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -100,7 +101,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>2.5</reloadTime>
+        <reloadTime>1.5</reloadTime>
         <ammoSet>AmmoSet_65Caliber</ammoSet>
       </li>
     </comps>

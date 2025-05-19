@@ -32,8 +32,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>17</range>
-        <recoilAmount>1.65</recoilAmount>
+        <range>22</range>
+        <recoilAmount>3.19</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

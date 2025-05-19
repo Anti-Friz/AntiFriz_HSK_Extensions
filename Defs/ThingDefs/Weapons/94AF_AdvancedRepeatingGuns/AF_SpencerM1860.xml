@@ -3,8 +3,8 @@
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_SpencerM1860r</defName>
-    <label>Spencer M1860, .62 caliber</label>
-    <description>Spencer M1860. \nCaliber: .62</description>
+    <label>Spencer M1860, .56-56 caliber</label>
+    <description>Spencer M1860. \nCaliber: .56-56</description>
     <graphicData>
       <texPath>Things/Weapons/AF_SpencerM1860</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -30,10 +30,10 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
-        <range>15</range>
-        <recoilAmount>2.14</recoilAmount>
+        <defaultProjectile>Bullet_5656Spencer_FMJ</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>25</range>
+        <recoilAmount>2.15</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -44,9 +44,10 @@
         <aiAimMode>AimedShot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <magazineSize>8</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>3</reloadTime>
+        <ammoSet>AmmoSet_5656Spencer</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -73,15 +74,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_MusketWeaponPart</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SmallFlintBlocks</li>
+            <li>AF_SimpleFirearmPart</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -108,8 +101,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_MusketWeaponPart</li>
-        <li>SmallFlintBlocks</li>
+        <li>AF_SimpleFirearmPart</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

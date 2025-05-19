@@ -131,7 +131,9 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
     <researchPrerequisite>Muskets_B3</researchPrerequisite>
-    <!-- Smithing -->
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
   </RecipeDef>
 
 </Defs>

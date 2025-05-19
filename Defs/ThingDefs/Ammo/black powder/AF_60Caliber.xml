@@ -130,7 +130,10 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>AF_Matchlocks</researchPrerequisite> <!-- Smithing -->
+		<researchPrerequisite>AF_Matchlocks</researchPrerequisite>
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
 	</RecipeDef>
 	
 </Defs>

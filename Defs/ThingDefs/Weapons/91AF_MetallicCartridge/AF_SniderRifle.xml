@@ -32,7 +32,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_577CaliberCapMet</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <range>31</range>
+        <range>40</range>
         <recoilAmount>2.89</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

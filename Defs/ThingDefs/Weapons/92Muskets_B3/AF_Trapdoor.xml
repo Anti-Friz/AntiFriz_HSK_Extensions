@@ -73,10 +73,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_MusketWeaponPart</li>
+            <li>AF_SimpleFirearmPart</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>1</count>
       </li>
       <li>
         <filter>

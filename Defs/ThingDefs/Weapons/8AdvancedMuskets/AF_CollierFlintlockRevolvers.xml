@@ -33,7 +33,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>16</range>
+        <range>19</range>
         <recoilAmount>2.74</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -47,7 +47,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>5</magazineSize>
         <reloadOneAtATime>true</reloadOneAtATime>
-        <reloadTime>4.25</reloadTime>
+        <reloadTime>3</reloadTime>
         <ammoSet>AmmoSet_69CaliberCap</ammoSet>
       </li>
     </comps>
@@ -92,7 +92,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50Caliber_Lead</defaultProjectile>
         <warmupTime>0.50</warmupTime>
-        <range>14</range>
+        <range>16</range>
         <recoilAmount>3.14</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -106,7 +106,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>5</magazineSize>
         <reloadOneAtATime>true</reloadOneAtATime>
-        <reloadTime>4</reloadTime>
+        <reloadTime>3</reloadTime>
         <ammoSet>AmmoSet_50Caliber</ammoSet>
       </li>
     </comps>
@@ -152,7 +152,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>17</range>
+        <range>20</range>
         <recoilAmount>2.14</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -211,7 +211,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50Caliber_Lead</defaultProjectile>
         <warmupTime>0.50</warmupTime>
-        <range>14</range>
+        <range>16</range>
         <recoilAmount>3.14</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

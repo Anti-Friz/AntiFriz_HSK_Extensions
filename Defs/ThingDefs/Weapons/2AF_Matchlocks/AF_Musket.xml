@@ -32,8 +32,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_80Caliber_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <range>22</range>
-        <recoilAmount>1.13</recoilAmount>
+        <range>29</range>
+        <recoilAmount>1.9</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -45,7 +45,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
+        <reloadTime>2</reloadTime>
         <ammoSet>AmmoSet_80Caliber</ammoSet>
       </li>
     </comps>

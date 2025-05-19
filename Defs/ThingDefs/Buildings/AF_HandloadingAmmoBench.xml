@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="WorkTable">
-    <defName>MusketBench</defName>
-    <label>Musket workbench</label>
-    <description>A table for the assembling early firearms, muskets, rifled muskets.</description>
+    <defName>AF_HandloadingAmmoBench</defName>
+    <label>Handloading Ammo Bench</label>
+    <description>A table for the assembling early ammo.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Buildings/musketBench/mskbench</texPath>
+      <texPath>Things/Buildings/handloadingBench/hdnlngbench</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(2,1)</drawSize>

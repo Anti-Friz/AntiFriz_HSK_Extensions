@@ -30,10 +30,10 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>40Winchester_FMJ</defaultProjectile>
+        <defaultProjectile>Bullet_44-40Winchester_FMJ</defaultProjectile>
         <warmupTime>1.2</warmupTime>
-        <range>42</range>
-        <recoilAmount>2.14</recoilAmount>
+        <range>45</range>
+        <recoilAmount>1.14</recoilAmount>
         <soundCast>Winchester</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -46,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>16</magazineSize>
         <reloadOneAtATime>true</reloadOneAtATime>
-        <reloadTime>3</reloadTime>
+        <reloadTime>2</reloadTime>
         <ammoSet>AmmoSet_44-40Winchester</ammoSet>
       </li>
     </comps>
@@ -74,15 +74,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_MusketWeaponPart</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SmallFlintBlocks</li>
+            <li>AF_SimpleFirearmPart</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -109,8 +101,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_MusketWeaponPart</li>
-        <li>SmallFlintBlocks</li>
+        <li>AF_SimpleFirearmPart</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>

@@ -20,7 +20,7 @@
       <MarketValue>150</MarketValue>
       <SightsEfficiency>0.53</SightsEfficiency>
       <ShotSpread>0.45</ShotSpread>
-      <SwayFactor>1.75</SwayFactor>
+      <SwayFactor>1.11</SwayFactor>
       <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
       <Bulk>13</Bulk>
       <Mass>4.5</Mass>
@@ -32,7 +32,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_60Caliber_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <recoilAmount>1.34</recoilAmount>
+        <recoilAmount>2.26</recoilAmount>
         <range>15</range>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -45,7 +45,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
+        <reloadTime>2.2</reloadTime>
         <ammoSet>AmmoSet_60Caliber</ammoSet>
       </li>
     </comps>
@@ -59,6 +59,7 @@
     </smeltProducts>
     
   </ThingDef>
+  
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>BuildAF_Arquebus</defName>

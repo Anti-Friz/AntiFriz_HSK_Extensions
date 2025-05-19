@@ -214,7 +214,10 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>PreMuskets_B1</researchPrerequisite> <!-- Smithing -->
+		<researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
 	</RecipeDef>
 	
 	<!-- BUCK AND BALL FORGE-->
@@ -262,7 +265,10 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>PreMuskets_B1</researchPrerequisite> <!-- Smithing -->
+		<researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
 	</RecipeDef>
 
   <!-- EMP -->
@@ -307,7 +313,9 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
     <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
-    <!-- Smithing -->
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
   </RecipeDef>
 
   <!-- BOLT -->
@@ -352,7 +360,9 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
     <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
-    <!-- Smithing -->
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
   </RecipeDef>
   
 </Defs>

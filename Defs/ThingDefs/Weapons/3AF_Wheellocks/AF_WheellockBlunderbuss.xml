@@ -44,7 +44,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>3</reloadTime>
+				<reloadTime>1.6</reloadTime>
 				<ammoSet>AmmoSet_62Blunderbuss</ammoSet>
 			</li>
 		</comps>

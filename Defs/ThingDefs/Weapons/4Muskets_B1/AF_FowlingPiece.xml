@@ -14,7 +14,9 @@
       <Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
+  
   <!-- ==================FowlingPieceSingle============================ -->
+  
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_FowlingPieceSingle</defName>
     <label>FowlingPiece, 12G caliber</label>
@@ -58,7 +60,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6</reloadTime>
+        <reloadTime>2</reloadTime>
         <ammoSet>AmmoSet_FowlingPiece</ammoSet>
       </li>
     </comps>

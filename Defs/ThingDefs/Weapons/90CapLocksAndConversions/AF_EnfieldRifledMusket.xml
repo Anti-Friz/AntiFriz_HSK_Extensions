@@ -32,7 +32,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_MinieBall</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <range>22</range>
+        <range>29</range>
         <recoilAmount>2.66</recoilAmount>
         <soundCast>Springfield</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -46,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>2.6</reloadTime>
-        <ammoSet>AmmoSet_577CaliberCap</ammoSet>
+        <ammoSet>AmmoSet_MinieBall</ammoSet>
       </li>
     </comps>
     <modExtensions>

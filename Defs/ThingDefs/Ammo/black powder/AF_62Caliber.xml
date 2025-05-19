@@ -198,7 +198,10 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>Muskets_B1</researchPrerequisite> <!-- Smithing -->
+		<researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
 	</RecipeDef>
   
   <!-- BUCK AND BALL FORGE-->
@@ -247,7 +250,9 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
     <researchPrerequisite>Muskets_B1</researchPrerequisite>
-    <!-- Smithing -->
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
   </RecipeDef>
 
   <!-- Caliber ball-->
@@ -296,7 +301,9 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
     <researchPrerequisite>Muskets_B1</researchPrerequisite>
-    <!-- Smithing -->
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
   </RecipeDef>
   
 </Defs>

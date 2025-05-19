@@ -13,7 +13,7 @@
       <MarketValue>250</MarketValue>
       <SightsEfficiency>0.4</SightsEfficiency>
       <ShotSpread>0.57</ShotSpread>
-      <SwayFactor>1.5</SwayFactor>
+      <SwayFactor>1.25</SwayFactor>
       <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
       <Bulk>3.8</Bulk>
       <Mass>1.24</Mass>
@@ -33,8 +33,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_55Caliber_Lead</defaultProjectile>
         <warmupTime>0.68</warmupTime>
-        <range>12</range>
-        <recoilAmount>2.57</recoilAmount>
+        <range>14</range>
+        <recoilAmount>4.37</recoilAmount>
         <soundCast>Pistolet</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -46,7 +46,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>3</reloadTime>
+        <reloadTime>2</reloadTime>
         <ammoSet>AmmoSet_55Caliber</ammoSet>
       </li>
     </comps>

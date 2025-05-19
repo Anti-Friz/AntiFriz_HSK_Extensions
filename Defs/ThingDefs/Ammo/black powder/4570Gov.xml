@@ -254,11 +254,14 @@
         <li>Powder</li>
         <li>AF_PercussionCap</li>
       </thingDefs>
-  </fixedIngredientFilter>
+		</fixedIngredientFilter>
 		<products>
 			<Ammo_4570Gov_FMJ>25</Ammo_4570Gov_FMJ>
 		</products>
 		<workAmount>550</workAmount>
+    <recipeUsers>
+      <li>AF_HandloadingAmmoBench</li>
+    </recipeUsers>
 	</RecipeDef>
 
   <!--<RecipeDef ParentName="AmmoRecipeBase">
