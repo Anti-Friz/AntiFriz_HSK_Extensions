@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_Alpha"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Chemistry</li>
+          <li>Engineering</li>
+          <li>Smithing</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_Beta"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Physics</li>
+          <li>Chemistry</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_Gamma"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Physics</li>
+          <li>Smithing</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_I"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>MaterialsChemistry</li>
+          <li>Engineering</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="Parabellum_A"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>MaterialsChemistry</li>
+          <li>Nuclear</li>
+          <li>AdvancedChemistry</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

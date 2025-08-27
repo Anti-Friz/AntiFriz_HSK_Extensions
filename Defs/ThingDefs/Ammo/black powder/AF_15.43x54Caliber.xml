@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingCategoryDef>
-    <defName>Ammo_1543x54Caliber</defName>
+    <defName>AF_Ammo_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <parent>AmmoMusket</parent>
     <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
   </ThingCategoryDef>
   <!-- ==================== AmmoSet ========================== -->
   <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_1543x54Caliber</defName>
+    <defName>AF_AmmoSet_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <ammoTypes>
-      <Ammo_1543x54Caliber>Bullet_1543x54Caliber</Ammo_1543x54Caliber>
+      <AF_Ammo_1543x54Caliber>AF_Bullet_1543x54Caliber</AF_Ammo_1543x54Caliber>
       <Ammo_MinieBall>Bullet_MinieBall</Ammo_MinieBall>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
   <!-- ==================== Ammo ========================== -->
-  <ThingDef Class="CombatExtended.AmmoDef" Name="1543x54Caliber" ParentName="SmallAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AF_1543x54Caliber" ParentName="SmallAmmoBase" Abstract="True">
     <description>Round bullet with powder, wrapped in paper.</description>
     <statBases>
       <Mass>0.03</Mass>
@@ -27,7 +27,7 @@
       <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <thingCategories>
-      <li>Ammo_1543x54Caliber</li>
+      <li>AF_Ammo_1543x54Caliber</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -43,7 +43,7 @@
     </comps>
   </ThingDef>
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="50CaliberBase">
-    <defName>Ammo_1543x54Caliber</defName>
+    <defName>AF_Ammo_1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <graphicData>
       <texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
@@ -53,10 +53,10 @@
       <MarketValue>0.4</MarketValue>
     </statBases>
     <ammoClass>LeadBall</ammoClass>
-    <cookOffProjectile>Bullet_1543x54Caliber</cookOffProjectile>
+    <cookOffProjectile>AF_Bullet_1543x54Caliber</cookOffProjectile>
   </ThingDef>
   <!-- ================== Projectiles ================== -->
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base1543x54CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AF_Base1543x54CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -67,9 +67,9 @@
       <dropsCasings>False</dropsCasings>
     </projectile>
   </ThingDef>
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base1543x54CaliberBullet">
-    <defName>Bullet_1543x54Caliber</defName>
-    <label>15.43x54mm paper cartridge</label>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AF_Base1543x54CaliberBullet">
+    <defName>AF_Bullet_1543x54Caliber</defName>
+    <label>15.43x54mm bullet</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>28</damageAmountBase>
       <armorPenetrationSharp>6</armorPenetrationSharp>
@@ -79,9 +79,9 @@
   <!-- ==================== Recipes ========================== -->
   <!-- BALL FORGE-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAmmo_1543x54Caliber</defName>
+    <defName>MakeAF_Ammo_1543x54Caliber</defName>
     <label>make 15.43x54mm paper cartridge x25</label>
-    <description>Craft 25 15.43x54mm paper cartridge, and measure out powder charge.</description>
+    <description>Craft 25 15.43x54mm paper cartridges with measured powder charges. These advanced paper cartridges are designed for Dreyse needle rifles and similar breech-loading weapons.</description>
     <jobString>Making 15.43x54mm paper cartridge.</jobString>
     <workAmount>550</workAmount>
     <ingredients>
@@ -105,7 +105,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_PercussionCap</li>
+            <li>AF_Resource_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -118,18 +118,18 @@
       <thingDefs>
         <li>Powder</li>
         <li>SerpentinePowder</li>
-        <li>AF_PercussionCap</li>
+        <li>AF_Resource_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_1543x54Caliber>25</Ammo_1543x54Caliber>
+      <AF_Ammo_1543x54Caliber>25</AF_Ammo_1543x54Caliber>
     </products>
     <skillRequirements>
       <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <researchPrerequisite>AF_Research_AdvancedFlintlocks</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>

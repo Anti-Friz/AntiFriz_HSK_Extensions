@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="SK_ResourceBase">
-    <defName>AF_SimpleFirearmPart</defName>
-    <label>Simple Gun Part</label>
-    <description>Simple Gun Part</description>
+    <defName>AF_Resource_SimpleFirearmPart</defName>
+    <label>simple firearm component</label>
+    <description>Basic mechanical components for early firearms - springs, screws, pins, and simple trigger mechanisms. These rudimentary parts form the foundation of matchlock and wheellock firing systems, though they require skilled assembly to create a functional weapon.</description>
     <graphicData>
       <texPath>Things/Resource/AF_SimpleWeaponParts</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -27,10 +27,10 @@
     </thingCategories>
   </ThingDef>
   <RecipeDef>
-    <defName>Make_AF_MusketWeaponPart</defName>
-    <label>Make Simple Gun Part (x1)</label>
-    <description>Simple Gun Part. Produces 1.</description>
-    <jobString>Making Simple Gun Part.</jobString>
+    <defName>MakeAF_Resource_SimpleFirearmPart</defName>
+    <label>make simple firearm component x1</label>
+    <description>Craft basic mechanical components needed for early firearms. Requires medieval components and metal working. Produces 1 component.</description>
+    <jobString>Making simple firearm component.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -63,14 +63,14 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <AF_SimpleFirearmPart>1</AF_SimpleFirearmPart>
-  </products>
+      <AF_Resource_SimpleFirearmPart>1</AF_Resource_SimpleFirearmPart>
+    </products>
     <skillRequirements>
       <Crafting>6</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_RepeatingGuns</researchPrerequisite>
+    <researchPrerequisite>AF_Research_RepeatingMechanisms</researchPrerequisite>
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>

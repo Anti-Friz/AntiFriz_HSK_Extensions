@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="SK_ResourceBase">
-    <defName>AF_PercussionCap</defName>
-    <label>Percussion Cap</label>
-    <description>Percussion Cap</description>
+    <defName>AF_Resource_PercussionCap</defName>
+    <label>percussion cap</label>
+    <description>A small copper cap containing mercury fulminate primer compound. When struck by a hammer, it creates a spark that ignites the main powder charge in caplock firearms. This revolutionary invention replaced flint-and-steel ignition systems, providing more reliable firing in wet conditions.</description>
     <graphicData>
       <texPath>Things/Resource/AF_PercussionCap</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -27,10 +27,10 @@
     </thingCategories>
   </ThingDef>
   <RecipeDef>
-    <defName>Make_AF_PercussionCap</defName>
-    <label>Make Percussion Caps (x50)</label>
-    <description>Percussion Cap. Produces 50.</description>
-    <jobString>Making Percussion Caps.</jobString>
+    <defName>MakeAF_Resource_PercussionCap</defName>
+    <label>make percussion caps x50</label>
+    <description>Craft percussion caps using mercury fulminate and copper. These small but crucial components enable reliable ignition in caplock firearms. Produces 50 caps.</description>
+    <jobString>Making percussion caps.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -63,14 +63,14 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <AF_PercussionCap>50</AF_PercussionCap>
+      <AF_Resource_PercussionCap>50</AF_Resource_PercussionCap>
     </products>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Caplocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Caplocks</researchPrerequisite>
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>

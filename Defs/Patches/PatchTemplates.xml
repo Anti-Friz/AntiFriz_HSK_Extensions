@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <XmlExtensions.PatchDef Name="AF_Thing_LifeLessons_Patch" Abstract="True">
+    <parameters>
+      <li>def</li>
+      <li>proficiency</li>
+      <li>hardRequirement</li>
+    </parameters>
+    <apply>
+      <Operation Class="XmlExtensions.PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="{def}"]</xpath>
+        <value>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>{proficiency}</li>
+              </requirements>
+              <hardRequirement>{hardRequirement}</hardRequirement>
+            </li>
+          </value>
+        </value>
+      </Operation>
+    </apply>
+  </XmlExtensions.PatchDef>
+
+  <XmlExtensions.PatchDef Name="AF_Recipe_LifeLessons_Patch" Abstract="True">
+    <parameters>
+      <li>def</li>
+      <li>proficiency</li>
+      <li>hardRequirement</li>
+    </parameters>
+    <apply>
+      <Operation Class="XmlExtensions.PatchOperationAddModExtension">
+        <xpath>Defs/RecipeDef[defName="{def}"]</xpath>
+        <value>
+          <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+              <requirements>
+                <li>{proficiency}</li>
+              </requirements>
+              <hardRequirement>{hardRequirement}</hardRequirement>
+            </li>
+          </value>
+        </value>
+      </Operation>
+    </apply>
+  </XmlExtensions.PatchDef>
+
+
+</Patch>

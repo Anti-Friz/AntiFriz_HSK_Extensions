@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ResearchProjectTagDef>
-    <defName>AF_WAR_Start</defName>
+    <defName>AF_Research_EarlyFirearms</defName>
   </ResearchProjectTagDef>
   
+  <ResearchTabDef>
+    <defName>AF_Research_WeaponsTab</defName>
+    <label>Early firearms and more</label>
+  </ResearchTabDef>
+  
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>PreMuskets_B1</defName>
-    <label>Early Experiments</label>
-    <description>Learn how to make a very early firearms, like gonne or firelance.</description>
+    <defName>AF_Research_EarlyExperiments</defName>
+    <label>early gunpowder experiments</label>
+    <description>Learn to craft the first primitive firearms - hand cannons, gonnes, and fire lances. These crude but revolutionary weapons mark the dawn of the gunpowder age, forever changing warfare and hunting.</description>
     <baseCost>350</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
@@ -17,78 +22,78 @@
     <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_Matchlocks</defName>
-    <label>Matchlocks</label>
-    <description>Develop various matchlock muskets.</description>
+    <defName>AF_Research_Matchlocks</defName>
+    <label>matchlock mechanisms</label>
+    <description>Develop matchlock firing systems that use a slow-burning match cord to ignite gunpowder. These early firearms require constant attention to keep the match lit but offer greater reliability than hand cannons.</description>
     <baseCost>480</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>PreMuskets_B1</li>
+      <li>AF_Research_EarlyExperiments</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
     <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_Wheellocks</defName>
-    <label>Wheellocks</label>
-    <description>Develop various wheellocks muskets.</description>
+    <defName>AF_Research_Wheellocks</defName>
+    <label>wheellock mechanisms</label>
+    <description>Master the complex wheellock system that uses a spinning steel wheel against pyrite to create sparks. More expensive than matchlocks but eliminates the need for a burning match, making them ideal for cavalry and wet conditions.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>AF_Matchlocks</li>
+      <li>AF_Research_Matchlocks</li>
     </prerequisites>
     <researchViewX>5.00</researchViewX>
     <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_Wheellock_Rifles</defName>
-    <label>Wheellocks Rifles</label>
-    <description>Develop various wheellocks rifled muskets.</description>
+    <defName>AF_Research_WheellockRifles</defName>
+    <label>wheellock rifling</label>
+    <description>Combine wheellock reliability with rifled barrels for improved accuracy. These precision weapons are favored by wealthy hunters and elite military units who can afford the extra manufacturing cost.</description>
     <baseCost>240</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>AF_Wheellocks</li>
+      <li>AF_Research_Wheellocks</li>
       <li>Muskets_B2</li>
     </prerequisites>
     <researchViewX>5.00</researchViewX>
     <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_MusketAttachments</defName>
-    <label>Musket Attachments</label>
-    <description>There is always room for upgrade.</description>
+    <defName>AF_Research_MusketAttachments</defName>
+    <label>musket attachments</label>
+    <description>Develop various attachments and accessories for firearms - bayonet lugs, sling swivels, and ramrod guides. These improvements enhance the versatility and battlefield effectiveness of firearms.</description>
     <baseCost>200</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>AF_Wheellocks</li>
+      <li>AF_Research_Wheellocks</li>
     </prerequisites>
     <researchViewX>6.00</researchViewX>
     <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_AdvancedMusktes</defName>
-    <label>Advanced flinlock muskets</label>
-    <description>Some strange, or pushed to the limit flintlocks.</description>
+    <defName>AF_Research_AdvancedFlintlocks</defName>
+    <label>advanced flintlock designs</label>
+    <description>Push flintlock technology to its limits with innovative designs - multi-barrel systems, improved lock mechanisms, and experimental firing systems. These weapons represent the pinnacle of pre-industrial firearms technology.</description>
     <baseCost>350</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
@@ -98,13 +103,13 @@
     <researchViewY>77.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_SurvivalWeapons</defName>
-    <label>Survival weapons</label>
-    <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
+    <defName>AF_Research_SurvivalWeapons</defName>
+    <label>improvised firearms</label>
+    <description>Learn to craft functional firearms from scavenged materials - pipes, wood scraps, and salvaged metal. These crude but effective weapons can be built when proper manufacturing isn't available.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
@@ -114,15 +119,15 @@
     <researchViewY>78.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_Caplocks</defName>
-    <label>Caplocks</label>
-    <description>New invention - Percussion Cap! And first caplock guns!</description>
+    <defName>AF_Research_Caplocks</defName>
+    <label>percussion cap systems</label>
+    <description>Develop the revolutionary percussion cap system using mercury fulminate. This innovation provides more reliable ignition than flintlocks, especially in adverse weather conditions, marking the transition to the industrial age of firearms.</description>
     <baseCost>1500</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Muskets_B2</li>
     </prerequisites>
@@ -130,45 +135,45 @@
     <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_MetallicCartridge</defName>
-    <label>Metallic Cartridge</label>
-    <description>Metallic Cartridge</description>
+    <defName>AF_Research_MetallicCartridges</defName>
+    <label>metallic cartridges</label>
+    <description>Perfect the self-contained metallic cartridge that combines bullet, powder, and primer in a single unit. This breakthrough technology enables rapid reloading and more reliable ammunition storage.</description>
     <baseCost>2000</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>AF_Caplocks</li>
+      <li>AF_Research_Caplocks</li>
     </prerequisites>
     <researchViewX>7.00</researchViewX>
     <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_Caplocks_Conversions</defName>
-    <label>Caplocks Conversions</label>
-    <description>Sometimes, if you take an old mighty flintlock musket and upgrade it, you can effectively make a better and much cheaper-to-produce caplock gun!</description>
+    <defName>AF_Research_CaplockConversions</defName>
+    <label>caplock conversions</label>
+    <description>Learn to convert existing flintlock weapons to use percussion caps. This cost-effective upgrade improves reliability without requiring completely new weapons, extending the service life of existing firearms.</description>
     <baseCost>100</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>AF_Caplocks</li>
+      <li>AF_Research_Caplocks</li>
     </prerequisites>
     <researchViewX>7.00</researchViewX>
     <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_RepeatingGuns</defName>
-    <label>Repeating Guns</label>
-    <description>Old pipe, piece of wood and nail - bah, its a gun!</description>
+    <defName>AF_Research_RepeatingMechanisms</defName>
+    <label>repeating mechanisms</label>
+    <description>Develop multi-shot firearms using lever-action, revolver, and magazine-fed systems. These complex mechanisms allow multiple shots without complete reloading, revolutionizing combat effectiveness.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
@@ -178,31 +183,31 @@
     <researchViewY>75.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_RepeatingGuns_Advanced</defName>
-    <label>Advanced Repeating Guns</label>
-    <description>Advanced Repeating Guns</description>
+    <defName>AF_Research_AdvancedRepeaters</defName>
+    <label>advanced repeating systems</label>
+    <description>Perfect sophisticated repeating mechanisms with improved reliability and capacity. These weapons represent the cutting edge of mechanical firearm design before the advent of modern manufacturing.</description>
     <baseCost>500</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>AF_RepeatingGuns</li>
+      <li>AF_Research_RepeatingMechanisms</li>
     </prerequisites>
     <researchViewX>8.00</researchViewX>
     <researchViewY>76.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>
   <ResearchProjectDef ParentName="MedievalBase">
-    <defName>AF_Breechloaders_Advanced</defName>
-    <label>Advanced Breechloading Guns</label>
-    <description>Advanced Breechloading Guns</description>
+    <defName>AF_Research_AdvancedBreechloaders</defName>
+    <label>advanced breech-loading systems</label>
+    <description>Master sophisticated breech-loading mechanisms that allow loading from the rear of the barrel. These weapons offer faster reloading and better gas sealing than muzzle-loaders, representing the final evolution of single-shot firearms.</description>
     <baseCost>600</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Muskets_B3</li>
     </prerequisites>
@@ -210,7 +215,7 @@
     <researchViewY>77.00</researchViewY>
     <tab>Weapon_SK</tab>
     <tags>
-      <li>AF_WAR_Start</li>
+      <li>AF_Research_EarlyFirearms</li>
     </tags>
   </ResearchProjectDef>  
 </Defs>

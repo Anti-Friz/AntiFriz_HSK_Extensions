@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AF_HandloadingAmmoBench"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <deconstructRewards />
+        <requirements>
+          <li>Construction</li>
+          <li>Labourer</li>
+          <li>BasicFabrication</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Turret_AF_PuckleGun"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>Labourer</li>
+          <li>Construction</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Turret_AF_WallGun"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>Construction</li>
+          <li>Labourer</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="MusketBench"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Labourer</li>
+          <li>BasicFabrication</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

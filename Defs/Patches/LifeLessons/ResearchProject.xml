@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="PreMuskets_B1"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>BasicMathematics</li>
+          <li>Chemistry</li>
+          <li>Geology</li>
+          <li>ReadingWriting</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_Matchlocks"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Chemistry</li>
+          <li>BasicMathematics</li>
+          <li>Mechanics</li>
+        </requirements>
+        <rewards />
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_Wheellocks"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>BasicMathematics</li>
+          <li>Chemistry</li>
+          <li>Geology</li>
+          <li>BasicScience</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_Wheellock_Rifles"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Smithing</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_MusketAttachments"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Smithing</li>
+          <li>Artisan</li>
+          <li>Engineering</li>
+          <li>AdvancedMathematics</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_AdvancedMusktes"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Geology</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_SurvivalWeapons"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>BasicFabrication</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_Caplocks"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Mineralogy</li>
+          <li>AdvancedGeology</li>
+          <li>Engineering</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_MetallicCartridge"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Smithing</li>
+          <li>Engineering</li>
+          <li>AdvancedMathematics</li>
+          <li>Chemistry</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_Caplocks_Conversions"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>BasicFabrication</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_RepeatingGuns"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Mechanics</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_RepeatingGuns_Advanced"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Mechanics</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="AF_Breechloaders_Advanced"]</xpath>
+    <value>
+      <li Class="LifeLessons.ResearchProficiencyExtension">
+        <requirements>
+          <li>Engineering</li>
+          <li>Mechanics</li>
+          <li>AdvancedMathematics</li>
+        </requirements>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BaseGun_ShortBarreled">
-    <defName>AF_Tantsutsu</defName>
-    <label>Tantsutsu</label>
-    <description>Tantsutsu are made as presentation weapons \nCaliber: .70</description>
+    <defName>AF_Weapon_Tantsutsu</defName>
+    <label>tantsutsu matchlock pistol</label>
+    <description>An ornate Japanese matchlock pistol, originally designed as a ceremonial weapon for samurai. Despite its decorative nature, this single-shot firearm is surprisingly effective in combat. The elaborate metalwork and artistic details make it as much a work of art as a weapon, reflecting the Japanese craftsmanship of the era. \nCaliber: .70</description>
     <graphicData>
       <texPath>Things/Weapons/AFTantsutsu</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -58,10 +58,10 @@
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildGun_AF_Tantsutsu</defName>
-    <label>Build Tantsutsu</label>
-    <description>Tantsutsu.</description>
-    <jobString>Building Tantsutsu pistol.</jobString>
+    <defName>BuildAF_Weapon_Tantsutsu</defName>
+    <label>build tantsutsu matchlock pistol</label>
+    <description>Craft an ornate Japanese matchlock pistol. Requires both gunsmithing and artistic skills to create this ceremonial weapon. \nCaliber: .70</description>
+    <jobString>Building tantsutsu pistol.</jobString>
     <workAmount>5500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
@@ -103,7 +103,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_Tantsutsu>1</AF_Tantsutsu>
+      <AF_Weapon_Tantsutsu>1</AF_Weapon_Tantsutsu>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BaseGun_ShortBarreled">
-    <defName>AF_MilitaryPistol</defName>
-    <label>Military Pistol</label>
-    <description>A large, heavy pistol for cavalrymen. At least two are carried into battle, allowing more than one shot without struggling to reload on horseback. \nCaliber: .55</description>
+    <defName>AF_Weapon_WheellockMilitaryPistol</defName>
+    <label>wheellock military pistol</label>
+    <description>A robust wheellock pistol designed for cavalry use. Built to withstand the rigors of mounted combat, these large-bore pistols were typically carried in pairs by horsemen. The reliable wheellock mechanism makes them superior to matchlocks for cavalry, as there's no burning match to extinguish while riding. \nCaliber: .55</description>
     <graphicData>
       <texPath>Things/Weapons/AFMilitaryPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -57,10 +57,10 @@
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildGun_AF_MilitaryPistol</defName>
-    <label>Build Military Pistol</label>
-    <description>Military Pistol.</description>
-    <jobString>Building Military Pistol pistol.</jobString>
+    <defName>BuildAF_Weapon_WheellockMilitaryPistol</defName>
+    <label>build wheellock military pistol</label>
+    <description>Craft a robust wheellock pistol designed for cavalry combat. The wheellock mechanism provides reliable ignition in mounted warfare. \nCaliber: .55</description>
+    <jobString>Building wheellock military pistol.</jobString>
     <workAmount>3500</workAmount>
     <skillRequirements>
       <Crafting>8</Crafting>
@@ -101,7 +101,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_MilitaryPistol>1</AF_MilitaryPistol>
+      <AF_Weapon_WheellockMilitaryPistol>1</AF_Weapon_WheellockMilitaryPistol>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -117,7 +117,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

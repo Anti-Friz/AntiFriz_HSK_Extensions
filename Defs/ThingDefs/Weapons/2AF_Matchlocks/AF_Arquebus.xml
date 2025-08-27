@@ -2,9 +2,9 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Arquebus</defName>
-    <label>Arquebus, .60 caliber</label>
-    <description>Matchlock arquebuse. \nCaliber: .60</description>
+    <defName>AF_Weapon_Arquebus</defName>
+    <label>arquebus (.60 caliber)</label>
+    <description>A heavy matchlock firearm, the predecessor to the musket. This early gunpowder weapon requires a burning slow match to ignite the charge. While cumbersome and slow to reload, it packs a devastating punch that can penetrate most armor of its era. The weight requires a forked rest for accurate shooting. \nCaliber: .60</description>
     <graphicData>
       <texPath>Things/Weapons/AFArquebus</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -62,10 +62,10 @@
   
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Arquebus</defName>
-    <label>Build Arquebus</label>
-    <description>Arquebus. .\nCaliber: .60</description>
-    <jobString>Building Arquebus.</jobString>
+    <defName>BuildAF_Weapon_Arquebus</defName>
+    <label>build arquebus</label>
+    <description>Craft a heavy matchlock arquebus, one of the earliest effective firearms. Requires a slow-burning match cord for ignition. \nCaliber: .60</description>
+    <jobString>Building arquebus.</jobString>
     <workAmount>12000</workAmount>
     <skillRequirements>
       <Crafting>5</Crafting>
@@ -106,7 +106,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_Arquebus>1</AF_Arquebus>
+      <AF_Weapon_Arquebus>1</AF_Weapon_Arquebus>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -122,7 +122,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Matchlocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Matchlocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

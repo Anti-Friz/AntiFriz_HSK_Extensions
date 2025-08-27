@@ -2,9 +2,9 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_DreyseM1841r</defName>
-    <label>Dreyse M1841, 15.43x54mm</label>
-    <description>Single-shot, bolt-action gun that featured a transition technology between muzzleloaders and metallic cartridge breechloaders. \nCaliber: 15.43x54mm</description>
+    <defName>AF_Weapon_DreyseM1841</defName>
+    <label>Dreyse M1841 needle rifle</label>
+    <description>The world's first military breech-loading bolt-action rifle. This revolutionary Prussian design features a needle firing pin that pierces through the paper cartridge to strike the primer at the bullet's base. While revolutionary for its time, the needle mechanism is delicate and gas leakage reduces range compared to muzzle-loaders. A true game-changer in military firearms evolution. \nCaliber: 15.43x54mm</description>
     <graphicData>
       <texPath>Things/Weapons/AF_DreyseM1841</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -32,7 +32,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_15.43x54Caliber_Lead</defaultProjectile>
+        <defaultProjectile>AF_Bullet_1543x54Caliber</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>62</range>
         <recoilAmount>1.92</recoilAmount>
@@ -48,7 +48,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>1.2</reloadTime>
-        <ammoSet>AmmoSet_1543x54Caliber</ammoSet>
+        <ammoSet>AF_AmmoSet_1543x54Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -63,10 +63,10 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_DreyseM1841r</defName>
-    <label>Build Dreyse M1841</label>
-    <description>Dreyse M1841. .\nCaliber: .62</description>
-    <jobString>Building Dreyse M1841.</jobString>
+    <defName>BuildAF_Weapon_DreyseM1841</defName>
+    <label>build Dreyse M1841 needle rifle</label>
+    <description>Craft the revolutionary Dreyse needle rifle, the world's first military breech-loading bolt-action rifle. Requires advanced gunsmithing skills. \nCaliber: 15.43x54mm</description>
+    <jobString>Building Dreyse M1841 needle rifle.</jobString>
     <workAmount>15000</workAmount>
     <skillRequirements>
       <Crafting>12</Crafting>
@@ -98,7 +98,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_DreyseM1841r>1</AF_DreyseM1841r>
+      <AF_Weapon_DreyseM1841>1</AF_Weapon_DreyseM1841>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -112,7 +112,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <researchPrerequisite>AF_Research_AdvancedFlintlocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>
