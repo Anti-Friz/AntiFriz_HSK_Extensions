@@ -2,7 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Weapon_Arquebus</defName>
+    <defName>AF_Arquebus</defName>
     <label>arquebus (.60 caliber)</label>
     <description>A heavy matchlock firearm, the predecessor to the musket. This early gunpowder weapon requires a burning slow match to ignite the charge. While cumbersome and slow to reload, it packs a devastating punch that can penetrate most armor of its era. The weight requires a forked rest for accurate shooting. \nCaliber: .60</description>
     <graphicData>
@@ -106,8 +106,8 @@
       </li>
     </ingredients>
     <products>
-      <AF_Weapon_Arquebus>1</AF_Weapon_Arquebus>
-    </products>
+      <AF_Arquebus>1</AF_Arquebus>
+  </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>ComponentMedieval</li>

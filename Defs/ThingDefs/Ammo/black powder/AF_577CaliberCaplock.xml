@@ -28,8 +28,24 @@
 
   <!-- ==================== Ammo ========================== -->
 
+  <ThingDef Name="AF_BaseBlackPowderBulletMinieBallBase" ParentName="MinieBallBase" Abstract="true">
+    <comps>
+      <li Class="CombatExtended.CompProperties_ProjectileFleck">
+        <FleckDatas>
+          <li>
+            <startDelayTick>0</startDelayTick>
+            <fleck>Fleck_CEBlackpowderSmokeShort</fleck>
+            <emissionsPerTick>4</emissionsPerTick>
+            <flecksPerEmission>1</flecksPerEmission>
+            <cutoffTickRange>3~3</cutoffTickRange>
+            <scale>2.0~2.5</scale>
+          </li>
+        </FleckDatas>
+      </li>
+    </comps>
+  </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="MinieBallBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AF_BaseBlackPowderBulletMinieBallBase">
     <defName>Ammo_577CaliberCap_Lead</defName>
     <description>Round bullet with powder, wrapped in paper and Percussion Cap.</description>
     <label>.577 caliber Ball w/Cap</label>
@@ -47,7 +63,7 @@
     <cookOffProjectile>Bullet_MinieBall</cookOffProjectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="MinieBallBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AF_BaseBlackPowderBulletMinieBallBase">
     <defName>Ammo_577CaliberCapMetal_Lead</defName>
     <description>Round bullet with powder in early metallic cartridge with Percussion Cap.</description>
     <label>.577 Caplock (metalic cartridge)</label>
@@ -109,7 +125,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_PercussionCap</li>
+            <li>AF_Resource_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -122,7 +138,7 @@
       <thingDefs>
         <li>Powder</li>
         <li>SerpentinePowder</li>
-        <li>AF_PercussionCap</li>
+        <li>AF_Resource_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -133,7 +149,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Caplocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Caplocks</researchPrerequisite>
     <!-- Smithing -->
   </RecipeDef>
   
@@ -164,7 +180,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_PercussionCap</li>
+            <li>AF_Resource_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -176,7 +192,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
-        <li>AF_PercussionCap</li>
+        <li>AF_Resource_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -187,7 +203,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Caplocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Caplocks</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>

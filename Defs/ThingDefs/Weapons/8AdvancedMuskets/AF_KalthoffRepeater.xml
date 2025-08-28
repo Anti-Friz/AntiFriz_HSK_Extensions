@@ -121,7 +121,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_AdvancedMusktes</researchPrerequisite>
+    <researchPrerequisite>AF_Research_AdvancedFlintlocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

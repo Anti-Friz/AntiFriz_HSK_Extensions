@@ -52,7 +52,7 @@
       <recipeUsers>
         <li>MusketBench</li>
       </recipeUsers>
-      <researchPrerequisite>AF_MusketAttachments</researchPrerequisite>
+      <researchPrerequisite>AF_Research_MusketAttachments</researchPrerequisite>
       <skillRequirements>
         <Crafting>2</Crafting>
       </skillRequirements>

@@ -41,7 +41,7 @@
     <minifiedDef>MinifiedTurret_AF_PuckleGun</minifiedDef>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>Muskets_B1</li>
+      <li>AF_Research_AdvancedFlintlocks</li>
     </researchPrerequisites>
   </ThingDef>
 </Defs>

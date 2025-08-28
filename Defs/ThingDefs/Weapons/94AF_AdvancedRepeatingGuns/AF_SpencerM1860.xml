@@ -74,7 +74,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_SimpleFirearmPart</li>
+            <li>AF_Resource_SimpleFirearmPart</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -101,7 +101,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_SimpleFirearmPart</li>
+        <li>AF_Resource_SimpleFirearmPart</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -111,7 +111,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_RepeatingGuns_Advanced</researchPrerequisite>
+    <researchPrerequisite>AF_Research_AdvancedRepeaters</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

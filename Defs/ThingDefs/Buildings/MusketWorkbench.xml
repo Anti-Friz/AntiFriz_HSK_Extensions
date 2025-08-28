@@ -81,7 +81,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
     <researchPrerequisites>
-      <li>PreMuskets_B1</li>
+      <li>AF_Research_EarlyExperiments</li>
     </researchPrerequisites>
   </ThingDef>
 </Defs>

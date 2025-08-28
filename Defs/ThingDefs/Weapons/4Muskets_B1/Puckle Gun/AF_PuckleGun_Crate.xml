@@ -92,6 +92,6 @@
       <li>MusketBench</li>
     </recipeUsers>
     <unfinishedThingDef>UnfinishedTurretMedieval</unfinishedThingDef>
-    <researchPrerequisite>Muskets_B1</researchPrerequisite>
+    <researchPrerequisite>AF_Research_AdvancedFlintlocks</researchPrerequisite>
   </RecipeDef>
 </Defs>

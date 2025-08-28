@@ -63,7 +63,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base38VolcanicBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base38VolcanicBullet" ParentName="AF_BaseBlackPowderBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -115,7 +115,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_PercussionCap</li>
+            <li>AF_Resource_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -130,7 +130,7 @@
         <li>SerpentinePowder</li>
       </thingDefs>
       <thingDefs>
-        <li>AF_PercussionCap</li>
+        <li>AF_Resource_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -141,7 +141,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>

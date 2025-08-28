@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="PreMuskets_B1"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_EarlyExperiments"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -15,7 +15,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_Matchlocks"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_Matchlocks"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -29,7 +29,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_Wheellocks"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_Wheellocks"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -43,7 +43,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_Wheellock_Rifles"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_WheellockRifles"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -55,7 +55,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_MusketAttachments"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_MusketAttachments"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -69,7 +69,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_AdvancedMusktes"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_AdvancedFlintlocks"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -81,7 +81,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_SurvivalWeapons"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_SurvivalWeapons"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -92,7 +92,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_Caplocks"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_Caplocks"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -105,7 +105,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_MetallicCartridge"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_MetallicCartridges"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -119,7 +119,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_Caplocks_Conversions"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_CaplockConversions"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -131,7 +131,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_RepeatingGuns"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_RepeatingMechanisms"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -143,7 +143,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_RepeatingGuns_Advanced"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_AdvancedRepeaters"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
@@ -155,7 +155,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ResearchProjectDef[defName="AF_Breechloaders_Advanced"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AF_Research_AdvancedBreechloaders"]</xpath>
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>

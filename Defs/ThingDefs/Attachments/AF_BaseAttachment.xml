@@ -24,7 +24,7 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>AF_Research_MusketAttachments</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>

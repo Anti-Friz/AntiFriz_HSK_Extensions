@@ -63,7 +63,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base106CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base106CaliberBullet" ParentName="AF_BaseBlackPowderBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +131,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>AF_Matchlocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Matchlocks</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>

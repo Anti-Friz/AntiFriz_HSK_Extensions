@@ -2,7 +2,7 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_Weapon_FlintlockBlunderbuss</defName>
+    <defName>AF_FlintlockBlunderbuss</defName>
     <label>flintlock blunderbuss (.62 caliber)</label>
     <description>A short-barreled flintlock firearm with a distinctive flared muzzle designed for close-quarters combat. The wide bore and flared muzzle make loading easier and create a fearsome appearance, though the spread effect is largely psychological. Popular among naval crews, coachmen, and guards who need stopping power at short range. \nCaliber: .62</description>
     <graphicData>
@@ -104,7 +104,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_Weapon_FlintlockBlunderbuss>1</AF_Weapon_FlintlockBlunderbuss>
+      <AF_FlintlockBlunderbuss>1</AF_FlintlockBlunderbuss>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

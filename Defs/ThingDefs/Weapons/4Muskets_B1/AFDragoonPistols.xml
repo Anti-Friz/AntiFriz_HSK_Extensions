@@ -169,7 +169,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
   <RecipeDef ParentName="RangedWeaponRecipeBase">
@@ -231,7 +231,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

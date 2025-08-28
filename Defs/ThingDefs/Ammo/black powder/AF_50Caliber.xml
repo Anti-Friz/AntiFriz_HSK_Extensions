@@ -85,7 +85,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base50CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base50CaliberBullet" ParentName="AF_BaseBlackPowderBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -185,7 +185,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_PercussionCap</li>
+            <li>AF_Resource_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -198,7 +198,7 @@
       <thingDefs>
         <li>Powder</li>
         <li>SerpentinePowder</li>
-        <li>AF_PercussionCap</li>
+        <li>AF_Resource_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

@@ -24,6 +24,7 @@
     <Folder Include="Defs\ThingDefs\Weapons\99SolidProjectileWH\" />
     <Folder Include="Languages\" />
     <Folder Include="Sounds\" />
+    <Folder Include="Textures\Things\Mote\" />
     <Folder Include="Textures\Things\WeaponPart\Foregrips\" />
     <Folder Include="Textures\Things\WeaponPart\Bayonets\" />
     <Folder Include="Textures\Things\WeaponPart\Sights\" />

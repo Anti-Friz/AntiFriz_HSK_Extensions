@@ -41,7 +41,7 @@
     <minifiedDef>MinifiedTurret_AF_WallGun</minifiedDef>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>AF_Wheellocks</li>
+      <li>AF_Research_Wheellocks</li>
     </researchPrerequisites>
   </ThingDef>
 </Defs>

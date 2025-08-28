@@ -108,7 +108,7 @@
   
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="Base87GonneBullet" ParentName="SK_BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base87GonneBullet" ParentName="AF_BaseBlackPowderBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -214,7 +214,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+		<researchPrerequisite>AF_Research_EarlyExperiments</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>
@@ -265,7 +265,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+		<researchPrerequisite>AF_Research_EarlyExperiments</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>
@@ -312,7 +312,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <researchPrerequisite>AF_Research_EarlyExperiments</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>
@@ -359,7 +359,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+    <researchPrerequisite>AF_Research_EarlyExperiments</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>

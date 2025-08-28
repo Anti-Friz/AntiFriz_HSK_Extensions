@@ -11,25 +11,25 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/RecipeDef[defName="Railway"]/researchPrerequisite</xpath>
           <value>
-            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+            <researchPrerequisite>AF_Research_SurvivalWeapons</researchPrerequisite>
         </value>
         </li>
         <li Class="PatchOperationReplace">
           <xpath>Defs/RecipeDef[defName="PipeGun_Hand"]/researchPrerequisite</xpath>
           <value>
-            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+            <researchPrerequisite>AF_Research_SurvivalWeapons</researchPrerequisite>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <xpath>Defs/RecipeDef[defName="PipeRifle"]/researchPrerequisite</xpath>
           <value>
-            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+            <researchPrerequisite>AF_Research_SurvivalWeapons</researchPrerequisite>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <xpath>Defs/RecipeDef[defName="OldRevolver_Hand"]/researchPrerequisite</xpath>
           <value>
-            <researchPrerequisite>AF_SurvivalWeapons</researchPrerequisite>
+            <researchPrerequisite>AF_Research_SurvivalWeapons</researchPrerequisite>
           </value>
         </li>
       </operations>

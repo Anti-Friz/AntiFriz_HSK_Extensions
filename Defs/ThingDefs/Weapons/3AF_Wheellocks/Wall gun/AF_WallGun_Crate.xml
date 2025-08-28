@@ -114,6 +114,6 @@
       <li>MusketBench</li>
     </recipeUsers>
     <unfinishedThingDef>UnfinishedTurretMedieval</unfinishedThingDef>
-    <researchPrerequisite>AF_Wheellocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
   </RecipeDef>
 </Defs>

@@ -64,7 +64,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="Bullet_IronFireLance_RocksPowder" ParentName="SK_BaseBullet">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Bullet_IronFireLance_RocksPowder" ParentName="AF_BaseBlackPowderBullet">
     <defName>Bullet_IronFireLance_RocksPowder</defName>
     <label>Powder and rocks</label>
 		<graphicData>
@@ -147,7 +147,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>PreMuskets_B1</researchPrerequisite>
+		<researchPrerequisite>AF_Research_EarlyExperiments</researchPrerequisite>
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>

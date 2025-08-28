@@ -119,7 +119,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Matchlocks</researchPrerequisite>
+    <researchPrerequisite>AF_Research_Matchlocks</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

@@ -128,7 +128,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Name="Base44-40WinchesterBullet" ParentName="BaseBulletCE" Abstract="true">
+	<ThingDef Name="Base44-40WinchesterBullet" ParentName="AF_BaseBlackPowderBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -232,7 +232,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_PercussionCap</li>
+            <li>AF_Resource_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -252,7 +252,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
-        <li>AF_PercussionCap</li>
+        <li>AF_Resource_PercussionCap</li>
       </thingDefs>
 		</fixedIngredientFilter>
 		<products>

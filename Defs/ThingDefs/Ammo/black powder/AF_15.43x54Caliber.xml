@@ -56,7 +56,7 @@
     <cookOffProjectile>AF_Bullet_1543x54Caliber</cookOffProjectile>
   </ThingDef>
   <!-- ================== Projectiles ================== -->
-  <ThingDef Class="CombatExtended.AmmoDef" Name="AF_Base1543x54CaliberBullet" ParentName="SK_BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AF_Base1543x54CaliberBullet" ParentName="AF_BaseBlackPowderBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>

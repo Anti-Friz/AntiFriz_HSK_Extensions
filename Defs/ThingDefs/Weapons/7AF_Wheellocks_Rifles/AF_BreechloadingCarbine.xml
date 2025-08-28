@@ -121,7 +121,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_Wheellock_Rifles</researchPrerequisite>
+    <researchPrerequisite>AF_Research_WheellockRifles</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

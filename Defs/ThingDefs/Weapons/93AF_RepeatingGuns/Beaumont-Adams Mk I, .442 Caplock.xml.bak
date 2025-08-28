@@ -119,7 +119,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_RepeatingGuns</researchPrerequisite>
+    <researchPrerequisite>AF_Research_RepeatingMechanisms</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

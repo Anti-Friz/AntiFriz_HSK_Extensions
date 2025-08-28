@@ -110,7 +110,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>AF_MetallicCartridge</researchPrerequisite>
+    <researchPrerequisite>AF_Research_MetallicCartridges</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>
