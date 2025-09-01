@@ -33,8 +33,8 @@
         <defaultProjectile>Bullet_IronFireLance_RocksPowder</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>5</range>
-        <soundCast>BrownBess</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCast>Shot_Gonne</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>20</muzzleFlashScale>
       </li>
     </verbs>

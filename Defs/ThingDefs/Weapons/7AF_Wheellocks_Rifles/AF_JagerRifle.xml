@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_JagerRifle</defName>
     <label>Jäger Rifle, .54 caliber</label>
-    <description>The hunting rifled barrel is short but the construction is substantial. \nCaliber: .65</description>
+    <description>The hunting rifled barrel is short but the construction is substantial. \nCaliber: .54</description>
     <graphicData>
       <texPath>Things/Weapons/AFJagerRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -30,7 +30,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_65Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_54Caliber_Lead</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>15</range>
         <recoilAmount>2.55</recoilAmount>
@@ -46,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>3</reloadTime>
-        <ammoSet>AmmoSet_65Caliber</ammoSet>
+        <ammoSet>AmmoSet_54Caliber</ammoSet>
       </li>
     </comps>
     <modExtensions>

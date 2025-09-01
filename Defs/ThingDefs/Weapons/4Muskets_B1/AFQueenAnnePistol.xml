@@ -3,7 +3,7 @@
   <ThingDef ParentName="BaseGun_ShortBarreled">
     <defName>AF_QueenAnnePistol</defName>
     <label>Queen Anne Pistol</label>
-    <description>The 8” barrel is “brass” (meaning cast bronze), and screws into the combined lock and grip. To reload, the barrel must be unscrewed, but this allows use of bullets with minimal windage, improving accuracy. \nCaliber: .50</description>
+    <description>The 8” barrel is brass, and screws into the combined lock and grip. To reload, the barrel must be unscrewed, but this allows use of bullets with minimal windage, improving accuracy. \nCaliber: .50</description>
     <graphicData>
       <texPath>Things/Weapons/AFQueenAnnePistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>

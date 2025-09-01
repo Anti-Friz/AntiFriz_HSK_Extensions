@@ -262,7 +262,8 @@
     <recipeUsers>
       <li>AF_HandloadingAmmoBench</li>
     </recipeUsers>
-	</RecipeDef>
+    <researchPrerequisite>AF_Research_AdvancedRepeaters</researchPrerequisite>
+  </RecipeDef>
 
   <!--<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_44-40Winchester_AP</defName>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseGun_LongBarreled">
     <defName>AF_CollierFlintlockRevolverRifle</defName>
     <label>Collier Flintlock Revolver Rifle, .69 caliber</label>
-    <description>Expensive, ahead of its time flintlock repeating rifle. \nCaliber: .50</description>
+    <description>Expensive, ahead of its time flintlock repeating rifle. \nCaliber: .69</description>
     <graphicData>
       <texPath>Things/Weapons/AF_CollierFlintlockRevolverRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>

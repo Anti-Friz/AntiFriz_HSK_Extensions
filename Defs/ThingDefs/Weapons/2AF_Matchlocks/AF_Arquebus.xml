@@ -34,7 +34,7 @@
         <warmupTime>0.9</warmupTime>
         <recoilAmount>2.26</recoilAmount>
         <range>15</range>
-        <soundCast>Springfield</soundCast>
+        <soundCast>Shot_MatchlockArquebus</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

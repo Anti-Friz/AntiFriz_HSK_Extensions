@@ -33,7 +33,7 @@
         <defaultProjectile>Bullet_87Gonne_Lead</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>13</range>
-        <soundCast>Pistolet</soundCast>
+        <soundCast>Shot_Gonne</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
