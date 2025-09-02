@@ -2,11 +2,11 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_EnfieldRifledMusket</defName>
-    <label>Enfield Rifled Musket, .62 caliber</label>
-    <description>Enfield Rifled Musket. \nCaliber: .62</description>
+    <defName>AF_BeaumontAdamsRevolver</defName>
+    <label>Beaumont-Adams Mk I, .442 Caplock</label>
+    <description>The Beaumont–Adams revolver is a black powder, double-action, percussion revolver. \nCaliber: .442 Caplock</description>
     <graphicData>
-      <texPath>Things/Weapons/AF_EnfieldRifledMusket</texPath>
+      <texPath>Things/Weapons/AF_BeaumontAdamsRevolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -17,20 +17,20 @@
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>245</MarketValue>
-      <SightsEfficiency>0.63</SightsEfficiency>
-      <ShotSpread>0.45</ShotSpread>
+      <MarketValue>250</MarketValue>
+      <SightsEfficiency>0.65</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
       <SwayFactor>1.07</SwayFactor>
-      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
       <Bulk>6.9</Bulk>
-      <Mass>1.76</Mass>
+      <Mass>1.2</Mass>
       <WorkToMake>8000</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_62Caliber_Lead</defaultProjectile>
+        <defaultProjectile>Bullet_442CaliberCapMet</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>15</range>
         <recoilAmount>2.14</recoilAmount>
@@ -46,7 +46,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>6</reloadTime>
-        <ammoSet>AmmoSet_62Caliber</ammoSet>
+        <ammoSet>AmmoSet_442CaliberCapMet</ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -61,27 +61,19 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_EnfieldRifledMusket</defName>
-    <label>Build Enfield Rifled Musket</label>
-    <description>Enfield Rifled Musket. .\nCaliber: .62</description>
-    <jobString>Building Enfield Rifled Musket.</jobString>
+    <defName>BuildAF_BeaumontAdamsRevolver</defName>
+    <label>Build Beaumont-Adams Mk I</label>
+    <description>Beaumont-Adams Mk I. .\nCaliber: .442 Caplock</description>
+    <jobString>Building Beaumont-Adams Mk I.</jobString>
     <workAmount>10000</workAmount>
     <skillRequirements>
-      <Crafting>5</Crafting>
+      <Crafting>8</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
             <li>AF_MusketWeaponPart</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SmallFlintBlocks</li>
           </thingDefs>
         </filter>
         <count>2</count>

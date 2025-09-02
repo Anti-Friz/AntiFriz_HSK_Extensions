@@ -10,6 +10,7 @@ $itemsToCopy = @(
     "Defs",
     "Patches",
     "Textures",
+    "Sounds",
     "RWWeaponModularization"
 )
 
