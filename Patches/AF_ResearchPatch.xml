@@ -78,14 +78,14 @@
 		<xmlDoc>ResearchDoc</xmlDoc>
 		<xpath>ResearchDoc/ResearchProjectDef[defName="Muskets_B1"]/prerequisites</xpath>
 		<value>
-			 <li>AF_Matchlocks</li>
+			 <li>AF_Research_Matchlocks</li>
 		</value>
 	</Operation>
 	<Operation Class="XmlExtensions.PatchOperationReplace">
 		<xmlDoc>ResearchDoc</xmlDoc>
 		<xpath>ResearchDoc/ResearchProjectDef[defName="Muskets_B3"]/prerequisites</xpath>
 		<value>
-			 <li>AF_MetallicCartridge</li>
+			 <li>AF_Research_MetallicCartridges</li>
 		</value>
 	</Operation>
 	<Operation Class="XmlExtensions.PatchOperationReplace">

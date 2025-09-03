@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+  <!--
   <XmlExtensions.PatchDef Name="AF_Thing_LifeLessons_Patch" Abstract="True">
     <parameters>
       <li>def</li>
@@ -45,6 +46,6 @@
       </Operation>
     </apply>
   </XmlExtensions.PatchDef>
-
+-->
 
 </Patch>
