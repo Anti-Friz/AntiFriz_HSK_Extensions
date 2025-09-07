@@ -2,39 +2,40 @@
 <Defs>
   <!-- ==================THING============================ -->
   <ThingDef ParentName="BaseGun_LongBarreled">
-    <defName>AF_RollingBlock</defName>
-    <label>Rolling Block, .45-70</label>
-    <description>The Rolling Block was a highly reliable and robust breech-loading rifle. It featured a simple, strong rolling block action, making it easy to operate and maintain. The rifle was praised for its durability and accuracy but was relatively heavy and had a slower rate of fire compared to some contemporary designs. . \nCaliber: .45-70</description>
+    <defName>AF_WH_GenericAutogun</defName>
+    <label>Autogun, -----</label>
+    <description>Grimdark autogun. \nCaliber: -----</description>
+    <equippedAngleOffset>45</equippedAngleOffset>
     <graphicData>
-      <texPath>Things/Weapons/AF_RollingBlock</texPath>
+      <texPath>Things/Weapons/WH/AF_WH_GenericAutogun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_Shotgun</soundInteract>
+    <soundInteract>-----</soundInteract>
     <thingCategories>
-      <li>BlackPowderGun</li>
+      <li>-----</li>
     </thingCategories>
     <weaponTags>
       <li>Rifles</li>
     </weaponTags>
     <statBases>
-      <MarketValue>650</MarketValue>
-      <SightsEfficiency>0.91</SightsEfficiency>
-      <ShotSpread>0.03</ShotSpread>
-      <SwayFactor>1.77</SwayFactor>
-      <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
-      <Bulk>13.5</Bulk>
-      <Mass>4.17</Mass>
-      <WorkToMake>8000</WorkToMake>
+      <MarketValue>-----</MarketValue>
+      <SightsEfficiency>-----</SightsEfficiency>
+      <ShotSpread>-----</ShotSpread>
+      <SwayFactor>-----</SwayFactor>
+      <RangedWeapon_Cooldown>-----</RangedWeapon_Cooldown>
+      <Bulk>-----</Bulk>
+      <Mass>-----</Mass>
+      <WorkToMake>-----</WorkToMake>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_4570Gov_FMJ</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
-        <range>53</range>
-        <recoilAmount>1.39</recoilAmount>
-        <soundCast>Springfield</soundCast>
+        <defaultProjectile>------40Winchester_FMJ</defaultProjectile>
+        <warmupTime>-----</warmupTime>
+        <range>-----</range>
+        <recoilAmount>-----</recoilAmount>
+        <soundCast>-----</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -44,9 +45,10 @@
         <aiAimMode>AimedShot</aiAimMode>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>1</magazineSize>
-        <reloadTime>0.85</reloadTime>
-        <ammoSet>AmmoSet_4570Gov</ammoSet>
+        <magazineSize>-----</magazineSize>
+        <reloadOneAtATime>false</reloadOneAtATime>
+        <reloadTime>-----</reloadTime>
+        <ammoSet></ammoSet>
       </li>
     </comps>
     <modExtensions>
@@ -55,28 +57,28 @@
       </li>
     </modExtensions>
     <smeltProducts>
-      <ComponentMedieval>3</ComponentMedieval>
-    </smeltProducts>
+      -----
+  </smeltProducts>
     
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_RollingBlock</defName>
-    <label>Build Rolling Block</label>
-    <description>Rolling Block. .\nCaliber: .45-70</description>
-    <jobString>Building Rolling Block.</jobString>
-    <workAmount>12000</workAmount>
+    <defName>BuildAF_WH_GenericAutogun</defName>
+    <label>Build Autogun</label>
+    <description>Autogun. .\nCaliber: .-----</description>
+    <jobString>Building Autogun.</jobString>
+    <workAmount>-----</workAmount>
     <skillRequirements>
-      <Crafting>5</Crafting>
+      <Crafting>-----</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>AF_SimpleFirearmPart</li>
+            <li>-----</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -84,7 +86,7 @@
             <li>SLDBar</li>
           </categories>
         </filter>
-        <count>65</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -96,11 +98,11 @@
       </li>
     </ingredients>
     <products>
-      <AF_RollingBlock>1</AF_RollingBlock>
+      <AF_WinchesterM1873r>1</AF_WinchesterM1873r>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AF_MusketWeaponPart</li>
+        <li>-----</li>
       </thingDefs>
       <categories>
         <li>SLDBar</li>
@@ -110,7 +112,7 @@
     <recipeUsers>
       <li>MusketBench</li>
     </recipeUsers>
-    <researchPrerequisite>Muskets_B3</researchPrerequisite>
+    <researchPrerequisite>-----</researchPrerequisite>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
   </RecipeDef>
 </Defs>

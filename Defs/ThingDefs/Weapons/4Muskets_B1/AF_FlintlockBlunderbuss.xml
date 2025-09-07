@@ -61,7 +61,7 @@
   </ThingDef>
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Weapon_FlintlockBlunderbuss</defName>
+    <defName>BuildAF_FlintlockBlunderbuss</defName>
     <label>build flintlock blunderbuss</label>
     <description>Craft a flintlock blunderbuss with its distinctive flared muzzle. Effective for close-quarters defense and crowd control. \nCaliber: .62 blunderbuss</description>
     <jobString>Building flintlock blunderbuss.</jobString>

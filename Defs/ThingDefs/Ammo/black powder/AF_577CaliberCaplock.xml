@@ -125,7 +125,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_Resource_PercussionCap</li>
+            <li>AF_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -138,7 +138,7 @@
       <thingDefs>
         <li>Powder</li>
         <li>SerpentinePowder</li>
-        <li>AF_Resource_PercussionCap</li>
+        <li>AF_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -180,7 +180,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_Resource_PercussionCap</li>
+            <li>AF_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -192,7 +192,7 @@
       </categories>
       <thingDefs>
         <li>Powder</li>
-        <li>AF_Resource_PercussionCap</li>
+        <li>AF_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

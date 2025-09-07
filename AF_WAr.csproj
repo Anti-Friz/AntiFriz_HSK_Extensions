@@ -21,7 +21,6 @@
     <Folder Include="Defs\ThingDefs\Ammo\WH_Energy\" />
     <Folder Include="Defs\ThingDefs\Ammo\WH_SP\" />
     <Folder Include="Defs\ThingDefs\Weapons\6AF_Matchlocks_Rifles\" />
-    <Folder Include="Defs\ThingDefs\Weapons\99SolidProjectileWH\" />
     <Folder Include="Languages\" />
     <Folder Include="Sounds\" />
     <Folder Include="Textures\Things\Mote\" />

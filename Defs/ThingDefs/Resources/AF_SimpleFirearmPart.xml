@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="SK_ResourceBase">
-    <defName>AF_Resource_SimpleFirearmPart</defName>
+    <defName>AF_SimpleFirearmPart</defName>
     <label>simple firearm component</label>
     <description>Basic mechanical components for early firearms - springs, screws, pins, and simple trigger mechanisms. These rudimentary parts form the foundation of matchlock and wheellock firing systems, though they require skilled assembly to create a functional weapon.</description>
     <graphicData>
@@ -27,7 +27,7 @@
     </thingCategories>
   </ThingDef>
   <RecipeDef>
-    <defName>MakeAF_Resource_SimpleFirearmPart</defName>
+    <defName>MakeAF_SimpleFirearmPart</defName>
     <label>make simple firearm component x1</label>
     <description>Craft basic mechanical components needed for early firearms. Requires medieval components and metal working. Produces 1 component.</description>
     <jobString>Making simple firearm component.</jobString>
@@ -63,8 +63,8 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <AF_Resource_SimpleFirearmPart>1</AF_Resource_SimpleFirearmPart>
-    </products>
+      <AF_SimpleFirearmPart>1</AF_SimpleFirearmPart>
+  </products>
     <skillRequirements>
       <Crafting>6</Crafting>
     </skillRequirements>

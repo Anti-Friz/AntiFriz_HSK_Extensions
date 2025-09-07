@@ -8,6 +8,18 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_69Musket_Lead"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="MakeAmmo_69Musket_Buck"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>AF_Research_Wheellocks</researchPrerequisite>
+          </value>
+        </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs/RecipeDef[defName="BuildGun_Pistolet"]/recipeUsers</xpath>
           <value>

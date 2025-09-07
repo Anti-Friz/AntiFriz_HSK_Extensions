@@ -47,7 +47,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>Smithing</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
@@ -61,7 +61,7 @@
         <requirements>
           <li>Smithing</li>
           <li>Artisan</li>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>AdvancedMathematics</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
@@ -73,7 +73,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>Geology</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
@@ -98,7 +98,7 @@
         <requirements>
           <li>Mineralogy</li>
           <li>AdvancedGeology</li>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
       </li>
@@ -110,7 +110,7 @@
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
           <li>Smithing</li>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>AdvancedMathematics</li>
           <li>Chemistry</li>
         </requirements>
@@ -123,7 +123,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>BasicFabrication</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
@@ -135,7 +135,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>Mechanics</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
@@ -147,7 +147,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>Mechanics</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
@@ -159,7 +159,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
+          <li>BasicEngineeringg</li>
           <li>Mechanics</li>
           <li>AdvancedMathematics</li>
         </requirements>

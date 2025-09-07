@@ -52,7 +52,6 @@
     <value>
       <li Class="LifeLessons.BuildingProficiencyExtension">
         <requirements>
-          <li>Engineering</li>
           <li>Labourer</li>
           <li>BasicFabrication</li>
         </requirements>

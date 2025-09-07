@@ -74,7 +74,7 @@
       <li>
         <filter>
           <thingDefs>
-           <li>AF_Resource_SimpleFirearmPart</li>
+           <li>AF_SimpleFirearmPart</li>
           </thingDefs>
         </filter>
         <count>4</count>

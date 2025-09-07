@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingCategoryDef>
-    <defName>AF_Ammo_1543x54Caliber</defName>
+    <defName>Ammo1543x54Caliber</defName>
     <label>15.43x54mm paper cartridge</label>
     <parent>AmmoMusket</parent>
     <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
@@ -79,7 +79,7 @@
   <!-- ==================== Recipes ========================== -->
   <!-- BALL FORGE-->
   <RecipeDef ParentName="AmmoRecipeBlackPowderBase">
-    <defName>MakeAF_Ammo_1543x54Caliber</defName>
+    <defName>MakeAmmo_1543x54Caliber</defName>
     <label>make 15.43x54mm paper cartridge x25</label>
     <description>Craft 25 15.43x54mm paper cartridges with measured powder charges. These advanced paper cartridges are designed for Dreyse needle rifles and similar breech-loading weapons.</description>
     <jobString>Making 15.43x54mm paper cartridge.</jobString>
@@ -105,7 +105,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AF_Resource_PercussionCap</li>
+            <li>AF_PercussionCap</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -118,7 +118,7 @@
       <thingDefs>
         <li>Powder</li>
         <li>SerpentinePowder</li>
-        <li>AF_Resource_PercussionCap</li>
+        <li>AF_PercussionCap</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

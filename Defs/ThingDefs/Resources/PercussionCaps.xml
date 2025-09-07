@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="SK_ResourceBase">
-    <defName>AF_Resource_PercussionCap</defName>
+    <defName>AF_PercussionCap</defName>
     <label>percussion cap</label>
     <description>A small copper cap containing mercury fulminate primer compound. When struck by a hammer, it creates a spark that ignites the main powder charge in caplock firearms. This revolutionary invention replaced flint-and-steel ignition systems, providing more reliable firing in wet conditions.</description>
     <graphicData>
@@ -27,7 +27,7 @@
     </thingCategories>
   </ThingDef>
   <RecipeDef>
-    <defName>MakeAF_Resource_PercussionCap</defName>
+    <defName>MakeAF_PercussionCap</defName>
     <label>make percussion caps x50</label>
     <description>Craft percussion caps using mercury fulminate and copper. These small but crucial components enable reliable ignition in caplock firearms. Produces 50 caps.</description>
     <jobString>Making percussion caps.</jobString>
@@ -63,7 +63,7 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <AF_Resource_PercussionCap>50</AF_Resource_PercussionCap>
+      <AF_PercussionCap>50</AF_PercussionCap>
     </products>
     <skillRequirements>
       <Crafting>8</Crafting>

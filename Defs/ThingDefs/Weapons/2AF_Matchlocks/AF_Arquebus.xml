@@ -62,7 +62,7 @@
   
   <!-- ====================RECIPE========================== -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Weapon_Arquebus</defName>
+    <defName>BuildAF_Arquebus</defName>
     <label>build arquebus</label>
     <description>Craft a heavy matchlock arquebus, one of the earliest effective firearms. Requires a slow-burning match cord for ignition. \nCaliber: .60</description>
     <jobString>Building arquebus.</jobString>

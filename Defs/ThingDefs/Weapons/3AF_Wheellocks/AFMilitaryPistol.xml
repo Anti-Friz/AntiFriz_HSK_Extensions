@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BaseGun_ShortBarreled">
-    <defName>AF_Weapon_WheellockMilitaryPistol</defName>
+    <defName>AF_WheellockMilitaryPistol</defName>
     <label>wheellock military pistol</label>
     <description>A robust wheellock pistol designed for cavalry use. Built to withstand the rigors of mounted combat, these large-bore pistols were typically carried in pairs by horsemen. The reliable wheellock mechanism makes them superior to matchlocks for cavalry, as there's no burning match to extinguish while riding. \nCaliber: .55</description>
     <graphicData>
@@ -57,7 +57,7 @@
   </ThingDef>
   <!-- RECIPE -->
   <RecipeDef ParentName="RangedWeaponRecipeBase">
-    <defName>BuildAF_Weapon_WheellockMilitaryPistol</defName>
+    <defName>BuildAF_WheellockMilitaryPistol</defName>
     <label>build wheellock military pistol</label>
     <description>Craft a robust wheellock pistol designed for cavalry combat. The wheellock mechanism provides reliable ignition in mounted warfare. \nCaliber: .55</description>
     <jobString>Building wheellock military pistol.</jobString>
@@ -101,7 +101,7 @@
       </li>
     </ingredients>
     <products>
-      <AF_Weapon_WheellockMilitaryPistol>1</AF_Weapon_WheellockMilitaryPistol>
+      <AF_WheellockMilitaryPistol>1</AF_WheellockMilitaryPistol>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

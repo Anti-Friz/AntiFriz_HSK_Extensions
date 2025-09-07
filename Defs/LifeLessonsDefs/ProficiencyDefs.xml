@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Smithing Subcategories -->
+  <LifeLessons.ProficiencyDef ParentName="ProficiencyBase">
+    <defName>AF_PrimitiveMuskets</defName>
+    <label>Primitive gunsmithing</label>
+    <generationRules>
+      <generateTextbook>true</generateTextbook>
+      <generateNeurotrainer>false</generateNeurotrainer>
+    </generationRules>
+    <category>ProficiencyCategory_Fabrication</category>
+    <description>The ability to create primitive firearms.</description>
+    <costPractical>2000</costPractical>
+    <viewerX>2</viewerX>
+    <viewerY>3</viewerY>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <color>RGBA(0.86, 0.86, 0.86, 1.000)</color>
+    <thoughtIcons>
+      <li>UI/Buttons/UsePlanetDayNightSystem</li>
+      <li>Things/Mote/Disoriented</li>
+    </thoughtIcons>
+    <assignmentTips>Flafor text for simple gunsmithing.</assignmentTips>
+  </LifeLessons.ProficiencyDef>
+  
+  <LifeLessons.ProficiencyDef ParentName="ProficiencyBase">
+    <defName>AF_SimpleMuskets</defName>
+    <label>Simple gunsmithing</label>
+    <generationRules>
+      <generateTextbook>true</generateTextbook>
+      <generateNeurotrainer>false</generateNeurotrainer>
+    </generationRules>
+    <category>ProficiencyCategory_Fabrication</category>
+    <description>The ability to create simple firearms.</description>
+    <costTheoretical>400</costTheoretical>
+    <costPractical>2000</costPractical>
+    <viewerX>3</viewerX>
+    <viewerY>3</viewerY>
+    <prerequisites>
+      <li>AF_PrimitiveMuskets</li>
+    </prerequisites>
+    <color>RGBA(0.86, 0.86, 0.86, 1.000)</color>
+    <thoughtIcons>
+      <li>UI/Buttons/UsePlanetDayNightSystem</li>
+      <li>Things/Mote/Disoriented</li>
+    </thoughtIcons>
+    <assignmentTips>Flafor text for simple gunsmithing.</assignmentTips>
+  </LifeLessons.ProficiencyDef>
+
+  <LifeLessons.ProficiencyDef ParentName="ProficiencyBase">
+    <defName>AF_ExoticMuskets</defName>
+    <label>Exotic gunsmithing</label>
+    <generationRules>
+      <generateTextbook>true</generateTextbook>
+      <generateNeurotrainer>false</generateNeurotrainer>
+    </generationRules>
+    <category>ProficiencyCategory_Fabrication</category>
+    <description>The ability to create exotic firearms.</description>
+    <costPractical>3000</costPractical>
+    <viewerX>3</viewerX>
+    <viewerY>4</viewerY>
+    <prerequisites>
+      <li>AF_SimpleMuskets</li>
+    </prerequisites>
+    <color>RGBA(0.86, 0.86, 0.86, 1.000)</color>
+    <thoughtIcons>
+      <li>UI/Buttons/UsePlanetDayNightSystem</li>
+      <li>Things/Mote/Disoriented</li>
+    </thoughtIcons>
+    <assignmentTips>Flafor text for simple gunsmithing.</assignmentTips>
+  </LifeLessons.ProficiencyDef>
+
+  <LifeLessons.ProficiencyDef ParentName="ProficiencyBase">
+    <defName>AF_Parabellum</defName>
+    <label>Parabellum gunsmithing</label>
+    <generationRules>
+      <generateTextbook>true</generateTextbook>
+      <generateNeurotrainer>false</generateNeurotrainer>
+    </generationRules>
+    <category>ProficiencyCategory_Fabrication</category>
+    <description>The ability to create industrial firearms.</description>
+    <costTheoretical>900</costTheoretical>
+    <costPractical>4000</costPractical>
+    <viewerX>4</viewerX>
+    <viewerY>5</viewerY>
+    <prerequisites>
+      <li>AF_SimpleMuskets</li>
+    </prerequisites>
+    <color>RGBA(0.86, 0.86, 0.86, 1.000)</color>
+    <thoughtIcons>
+      <li>UI/Buttons/UsePlanetDayNightSystem</li>
+      <li>Things/Mote/Disoriented</li>
+    </thoughtIcons>
+    <assignmentTips>Flafor text for simple gunsmithing.</assignmentTips>
+  </LifeLessons.ProficiencyDef>
+  
+  <LifeLessons.ProficiencyDef ParentName="ProficiencyBase">
+    <defName>BasicEngineeringg</defName>
+    <label>Basic Engineering</label>
+    <generationRules>
+      <textbookValue>300</textbookValue>
+      <neurotrainerValue>1000</neurotrainerValue>
+    </generationRules>
+
+    <proficiencyAdjective>simple mathematical</proficiencyAdjective>
+    <category>ProficiencyCategory_Knowledge</category>
+    <description>A basic understanding of fundamental mathematics and the ability to figure with numbers.</description>
+    <costTheoretical>400</costTheoretical>
+    <canBePioneered>true</canBePioneered>
+    <viewerX>2</viewerX>
+    <viewerY>13</viewerY>
+    <prerequisites>
+      <li>BasicMathematics</li>
+    </prerequisites>
+    <color>RGBA(0.604, 0.804, 0.196, 1.000)</color>
+    <thoughtIcons>
+      <li>UI/Buttons/UsePlanetDayNightSystem</li>
+      <li>Things/Mote/Disoriented</li>
+      <li>Thoughts/Math/Plus</li>
+      <li>Thoughts/Math/Minus</li>
+      <li>Thoughts/Math/Equals</li>
+      <li>Thoughts/Math/Percent</li>
+      <li>Thoughts/Math/Division</li>
+    </thoughtIcons>
+    <assignmentTips>Simple Engeenering is simple.</assignmentTips>
+
+    <theoreticalLearningActivityDefs>
+      <li>LLDocument</li>
+      <li>LLBrainstorm</li>
+      <li>LLCountsAndMeasures</li>
+      <li>LLRigorization</li>
+    </theoreticalLearningActivityDefs>
+  </LifeLessons.ProficiencyDef>
+  
+</Defs>
